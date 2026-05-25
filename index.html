@@ -3,26 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Achtgrad · Alexander Ataii MBA</title>
-<meta name="description" content="Physiotherapie und Prävention für anspruchsvolle Menschen. Acht Dimensionen. Kontinuierlich. Diskret.">
+<title>Achtgrad &middot; Alexander Ataii MBA</title>
+<meta name="description" content="Physiotherapie und Pr&#228;vention f&#252;r anspruchsvolle Menschen. Acht Dimensionen. Kontinuierlich. Diskret.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://achtgrad.at/">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://achtgrad.at/">
-<meta property="og:title" content="Achtgrad · Alexander Ataii MBA · Innsbruck">
-<meta property="og:description" content="Physiotherapeut. Prävention. Innsbruck.">
-<meta property="og:locale" content="de_AT">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Achtgrad","description":"Physiotherapie und Prävention für anspruchsvolle Menschen.","url":"https://achtgrad.at","email":"kontakt@achtgrad.at","address":{"@type":"PostalAddress","streetAddress":"Goethestrasse 9","addressLocality":"Innsbruck","postalCode":"6020","addressCountry":"AT"},"founder":{"@type":"Person","name":"Alexander Ataii","jobTitle":"Physiotherapeut"}}
-</script>
-<script>
-(function(){
-  var light=window.matchMedia('(prefers-color-scheme:light)').matches;
-  var dark=window.matchMedia('(prefers-color-scheme:dark)').matches;
-  var h=new Date().getHours();
-  if(light||(h>=7&&h<21&&!dark))document.documentElement.classList.add('day');
-})();
-</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" media="print" onload="this.media='all'">
@@ -30,227 +14,177 @@
 <style>
 :root{
   --gold:#c49a30;--gold-hi:#d4aa50;--gold-lo:rgba(196,154,48,0.14);
-  --bg:#090e0c;--bg2:#0d1410;--bg3:#101812;
-  --ink:#ede8dc;--ink-50:rgba(237,232,220,0.50);--ink-20:rgba(237,232,220,0.12);
-  --edge:rgba(237,232,220,0.08);--edge-gold:rgba(196,154,48,0.20);
-  --nav-stuck:rgba(9,14,12,0.97);--panel-bg:rgba(9,14,12,0.96);
+  --dark:#090e0c;--mid:#0d1410;--card:#101812;
   --green:#2a7060;--green-lo:rgba(42,112,96,0.18);
+  --cream:#ede8dc;--cream-50:rgba(237,232,220,0.50);--cream-20:rgba(237,232,220,0.12);
+  --edge:rgba(237,232,220,0.08);--edge-gold:rgba(196,154,48,0.20);
   --serif:'Cormorant Garamond',Georgia,serif;
   --sans:'DM Sans',system-ui,sans-serif;
   --ease:cubic-bezier(0.16,1,0.3,1);
 }
-html.day{
-  --bg:#f7f4ef;--bg2:#ede8dc;--bg3:#e5e0d5;
-  --ink:#0D0C0A;--ink-50:rgba(13,12,10,0.55);--ink-20:rgba(13,12,10,0.10);
-  --edge:rgba(13,12,10,0.09);--edge-gold:rgba(196,154,48,0.30);
-  --nav-stuck:rgba(247,244,239,0.97);--panel-bg:rgba(247,244,239,0.97);
-  --green-lo:rgba(30,84,72,0.10);
-}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;background:var(--bg);color:var(--ink)}
-body{font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden;background:var(--bg);transition:background .35s,color .35s}
+html{scroll-behavior:smooth;background:var(--dark);color:var(--cream)}
+body{font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden;background:var(--dark)}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 button{cursor:pointer;font-family:var(--sans)}
-h1,h2,h3{font-family:var(--serif);font-weight:300;line-height:1.04;color:var(--ink);transition:color .35s}
+h1,h2,h3{font-family:var(--serif);font-weight:300;line-height:1.04;color:var(--cream)}
 .ey{font-family:var(--sans);font-size:.68rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:1.1rem}
 .w{width:100%;max-width:1200px;margin:0 auto;padding:0 1.75rem}
-section{padding:7rem 0;position:relative;transition:background .35s}
+section{padding:7rem 0;position:relative}
 .rule{width:2.8rem;height:1px;background:var(--gold);margin:1.8rem 0}
 .btn{display:inline-block;font-size:.7rem;font-weight:500;letter-spacing:.17em;text-transform:uppercase;padding:.95rem 2.1rem;transition:all .25s var(--ease);border:none;cursor:pointer}
-.bg{background:var(--gold);color:var(--bg)}
+.bg{background:var(--gold);color:var(--dark)}
 .bg:hover{background:var(--gold-hi);transform:translateY(-2px);box-shadow:0 8px 28px rgba(196,154,48,.22)}
 .bo{background:transparent;color:var(--gold);border:1px solid var(--edge-gold)}
-.bo:hover{background:var(--gold);color:var(--bg)}
-
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:800;padding:1.25rem 0;transition:background .3s,padding .3s,border-color .3s;background:var(--nav-stuck);border-bottom:1px solid var(--edge);backdrop-filter:blur(14px)}
-nav.stuck{padding:.85rem 0}
+.bo:hover{background:var(--gold);color:var(--dark)}
+nav{position:fixed;top:0;left:0;right:0;z-index:800;padding:1.25rem 0}
+nav.stuck{background:rgba(9,14,12,0.97);padding:.85rem 0;border-bottom:1px solid var(--edge)}
 .nr{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 1.75rem}
-.nl{font-family:var(--serif);font-size:1.2rem;font-weight:400;letter-spacing:.07em;color:var(--ink);transition:color .35s}
-.nl em{font-style:normal;color:var(--gold)}
+.nl{font-family:var(--serif);font-size:1.2rem;font-weight:400;letter-spacing:.07em;color:var(--cream)}
+.nl em{font-style:normal;color:var(--gold);font-size:.9rem;margin-left:.15em}
 .nm{display:flex;align-items:center;gap:1.8rem}
 .nl2{display:flex;align-items:center;gap:2.2rem;list-style:none}
-.nl2 a{font-size:.72rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-50);transition:color .2s}
-.nl2 a:hover{color:var(--ink)}
-.lb{display:flex;align-items:center;gap:.5rem;margin-left:.8rem}
-.lbtn{font-family:var(--sans);font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-50);background:none;border:none;padding:.15rem .3rem;transition:color .2s;line-height:1;cursor:pointer}
+.nl2 a{font-size:.72rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-50);transition:color .2s}
+.nl2 a:hover{color:var(--cream)}
+.lb{display:flex;align-items:center;gap:.4rem;margin-left:.8rem}
+.lbtn{font-family:var(--sans);font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--cream-50);background:none;border:none;padding:.15rem .3rem;transition:color .2s;line-height:1;cursor:pointer}
 .lbtn.on{color:var(--gold)}
-.lbtn:hover{color:var(--ink)}
-.lsep{color:var(--edge-gold);font-size:.5rem;opacity:.6}
-.nc{font-size:.68rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--bg);background:var(--gold);border:none;padding:.6rem 1.3rem;transition:background .2s,transform .2s;cursor:pointer;display:inline-block}
+.lbtn:hover{color:var(--cream)}
+.ld{color:var(--edge-gold);font-size:.5rem}
+.nc{font-size:.68rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--dark);background:var(--gold);border:none;padding:.6rem 1.3rem;transition:background .2s,transform .2s;cursor:pointer;display:inline-block}
 .nc:hover{background:var(--gold-hi);transform:translateY(-1px)}
-.nportal{font-size:.62rem;font-weight:400;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-50);border:1px solid var(--edge-gold);padding:.45rem 1rem;transition:color .2s,border-color .2s}
-.nportal:hover{color:var(--gold);border-color:var(--gold)}
-.hb{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:4px}
-.hb span{display:block;width:21px;height:1px;background:var(--ink);transition:all .3s}
-
-/* HERO */
+.hb{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:4px;cursor:pointer}
+.hb span{display:block;width:21px;height:1px;background:var(--cream);transition:all .3s}
 #hero{min-height:100vh;display:flex;align-items:center;overflow:hidden;padding:0}
-.hbg{position:absolute;inset:0;background:var(--bg);transition:background .35s}
+.hbg{position:absolute;inset:0;background:var(--dark)}
 .hbg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 75% 55% at 65% 38%,rgba(42,112,96,.11) 0%,transparent 65%),radial-gradient(ellipse 35% 35% at 15% 78%,rgba(196,154,48,.05) 0%,transparent 58%)}
-html.day .hbg::before{background:radial-gradient(ellipse 75% 55% at 65% 38%,rgba(30,84,72,.07) 0%,transparent 65%),radial-gradient(ellipse 35% 35% at 15% 78%,rgba(196,154,48,.06) 0%,transparent 58%)}
 .hbg::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(196,154,48,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(196,154,48,.035) 1px,transparent 1px);background-size:58px 58px;mask-image:radial-gradient(ellipse 65% 65% at 72% 28%,black 0%,transparent 80%);-webkit-mask-image:radial-gradient(ellipse 65% 65% at 72% 28%,black 0%,transparent 80%)}
-.nl em{display:inline-block;background:linear-gradient(90deg,var(--gold) 0%,#e8c850 45%,var(--gold) 100%);background-size:220% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:logoShimmer 4s linear infinite}
-@keyframes logoShimmer{0%{background-position:100% center}100%{background-position:-120% center}}
-.hi{position:relative;z-index:2;padding:8rem 0 6rem;width:100%;display:flex;flex-direction:column;align-items:center;gap:3.5rem;text-align:center}
-.hitext{width:100%;display:flex;flex-direction:column;align-items:center}
-/* BRAND MARK */
-.hbrand{display:flex;align-items:center;gap:clamp(6px,1vw,12px);pointer-events:none;user-select:none}
-.ool{width:clamp(90px,12vw,158px);height:clamp(90px,12vw,158px);border:1.5px solid var(--gold);border-radius:50%;position:relative;flex-shrink:0}
-.ooi{position:absolute;inset:8%;border:1px solid rgba(196,154,48,.3);border-radius:50%}
-.ool1{animation:olglow 5s ease-in-out infinite}
-.ool2{animation:olglow 5s ease-in-out .9s infinite}
-.oodg{position:absolute;top:-13%;right:-15%;width:30%;height:30%;border:1.5px solid var(--gold);border-radius:50%;display:block;animation:olglow 5s ease-in-out 1.8s infinite}
-@keyframes olglow{0%,100%{opacity:.55;box-shadow:none}50%{opacity:1;box-shadow:0 0 26px rgba(196,154,48,.22)}}
-@media(max-width:640px){.ool{width:clamp(70px,20vw,100px);height:clamp(70px,20vw,100px)}}
-@media(max-width:640px){.ool{width:clamp(75px,22vw,110px);height:clamp(75px,22vw,110px)}}
-.ho{font-size:.62rem;font-weight:400;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-50);margin-bottom:2.8rem;opacity:0;animation:up .8s var(--ease) .2s forwards}
-.h1{font-size:clamp(3.6rem,8.2vw,7.8rem);font-weight:300;line-height:1.12;max-width:9em;margin-bottom:2.8rem;opacity:0;animation:up .9s var(--ease) .35s forwards;color:var(--ink)}
+.hm{position:absolute;right:-1%;top:50%;transform:translateY(-50%);font-family:var(--serif);font-size:clamp(16rem,28vw,36rem);font-weight:300;color:rgba(196,154,48,.038);line-height:1;pointer-events:none;user-select:none}
+.hi{position:relative;z-index:2;padding:10rem 0 7rem;width:100%}
+.ho{font-size:.62rem;font-weight:400;letter-spacing:.26em;text-transform:uppercase;color:var(--cream-50);margin-bottom:2.8rem;opacity:0;animation:up .8s var(--ease) .2s forwards}
+.h1{font-size:clamp(3.6rem,8.2vw,7.8rem);font-weight:300;line-height:.97;max-width:9em;margin-bottom:2.8rem;opacity:0;animation:up .9s var(--ease) .35s forwards}
 .h1 .ln{display:block}
 .h1 em{font-style:italic;color:var(--gold)}
-.hs{max-width:34em;font-size:clamp(.94rem,1.4vw,1.05rem);font-weight:300;color:var(--ink-50);line-height:1.82;margin-bottom:3rem;opacity:0;animation:up .9s var(--ease) .5s forwards}
-.hc{display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;opacity:0;animation:up .9s var(--ease) .65s forwards}
+.hs{max-width:34em;font-size:clamp(.88rem,1.4vw,1rem);font-weight:300;color:var(--cream-50);line-height:1.8;margin-bottom:3rem;opacity:0;animation:up .9s var(--ease) .5s forwards}
+.hc{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;opacity:0;animation:up .9s var(--ease) .65s forwards}
 .sh{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;opacity:0;animation:fd 1s var(--ease) 1.3s forwards}
-.sh span{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-50)}
+.sh span{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cream-50)}
 .sl{width:1px;height:38px;background:linear-gradient(to bottom,var(--gold),transparent);animation:pl 2s ease-in-out infinite}
-
-/* SERVICES */
-#services{background:var(--bg2);border-top:1px solid var(--edge);border-bottom:1px solid var(--edge)}
+#services{background:var(--mid);border-top:1px solid var(--edge);border-bottom:1px solid var(--edge)}
 .slead{max-width:660px;margin-bottom:5rem}
 .slead h2{font-size:clamp(2.2rem,4vw,3.8rem);margin-bottom:1.8rem;line-height:1.05}
-.slead p{font-size:.96rem;color:var(--ink-50);line-height:1.88}
+.slead p{font-size:.96rem;color:var(--cream-50);line-height:1.88}
 .sg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--edge);border:1px solid var(--edge)}
-.sc{background:var(--bg);padding:2.4rem 2rem;position:relative;overflow:hidden;transition:background .3s;cursor:pointer}
+.sc{background:var(--dark);padding:2.4rem 2rem;position:relative;overflow:hidden;transition:background .3s}
 .sc::after{content:'';position:absolute;top:0;left:0;right:0;height:1.5px;background:linear-gradient(to right,var(--gold),transparent);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
-.sc:hover{background:var(--bg3)}
-.sc:hover::after,.sc.sco::after{transform:scaleX(1)}
-.sctog{position:absolute;top:1.5rem;right:1.5rem;width:16px;height:16px;flex-shrink:0}
-.sctog::before,.sctog::after{content:'';position:absolute;top:50%;left:50%;background:var(--gold);transform:translate(-50%,-50%);transition:transform .3s ease,opacity .3s ease}
-.sctog::before{width:10px;height:1px}
-.sctog::after{width:1px;height:10px}
-.sc.sco .sctog::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0}
-.scd{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ease)}
-.scd>div{overflow:hidden}
-.sc.sco .scd{grid-template-rows:1fr}
-.sdl{list-style:none;padding:.9rem 0 .3rem}
-.sdl li{font-size:.78rem;color:var(--ink-50);font-weight:300;padding:.22rem 0 .22rem 1rem;position:relative;line-height:1.5}
-.sdl li::before{content:'';position:absolute;left:0;top:.62em;width:3px;height:3px;border-radius:50%;background:var(--gold);opacity:.7}
+.sc:hover{background:var(--card)}
+.sc:hover::after{transform:scaleX(1)}
 .sci{font-family:var(--serif);font-size:1.6rem;color:var(--gold);margin-bottom:1.1rem;line-height:1;opacity:.7}
-.sct{font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--ink);margin-bottom:.7rem;line-height:1.2}
-.scp{font-size:.82rem;color:var(--ink-50);line-height:1.78;font-weight:300}
-
-/* STATS */
-#stats{padding:0;background:var(--bg2);border-bottom:1px solid var(--edge)}
+.sct{font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--cream);margin-bottom:.7rem;line-height:1.2}
+.scp{font-size:.8rem;color:var(--cream-50);line-height:1.75;font-weight:300}
+#stats{padding:0;background:var(--mid);border-bottom:1px solid var(--edge)}
 .strow{display:grid;grid-template-columns:repeat(4,1fr)}
-.st{padding:2.8rem 1.8rem;border-right:1px solid var(--edge);text-align:center}
+.st{padding:2.4rem 1.8rem;border-right:1px solid var(--edge);text-align:center}
 .st:last-child{border-right:none}
-.stn{font-family:var(--serif);font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--gold);display:block;margin-bottom:.4rem;line-height:1}
-.stl{font-size:.68rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-50)}
-
-/* PHILOSOPHY */
-#philosophy{background:var(--bg)}
+.stn{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.7rem);font-weight:300;color:var(--gold);display:block;margin-bottom:.4rem;line-height:1}
+.stl{font-size:.65rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-50)}
+#philosophy{background:var(--dark)}
 .pg{display:grid;grid-template-columns:1fr 1fr;gap:5.5rem;align-items:start}
 .pg .pl h2{font-size:clamp(2.2rem,3.8vw,3.6rem);margin-bottom:1.8rem;max-width:14em}
-.pg .pl p{font-size:.95rem;color:var(--ink-50);line-height:1.88;margin-bottom:1.1rem}
+.pg .pl p{font-size:.95rem;color:var(--cream-50);line-height:1.88;margin-bottom:1.1rem}
 .dg{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--edge);border:1px solid var(--edge);margin-top:5rem}
-.dc{background:var(--bg);padding:1.5rem 1.7rem;position:relative;overflow:hidden;transition:background .3s}
+.dc{background:var(--dark);padding:1.5rem 1.7rem;position:relative;overflow:hidden;transition:background .3s}
 .dc::before{content:'';position:absolute;bottom:0;left:0;right:0;height:1.5px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
-.dc:hover{background:var(--bg3)}
+.dc:hover{background:var(--card)}
 .dc:hover::before{transform:scaleX(1)}
 .dn{font-size:.58rem;font-weight:500;letter-spacing:.14em;color:var(--gold);margin-bottom:.5rem}
-.dt{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--ink);margin-bottom:.35rem;line-height:1.2}
-.ds{font-size:.7rem;font-weight:300;color:var(--ink-50);line-height:1.5}
-
-/* METAPHOR */
-#metaphor{background:var(--bg2);overflow:hidden;position:relative}
+.dt{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--cream);margin-bottom:.35rem;line-height:1.2}
+.ds{font-size:.68rem;font-weight:300;color:var(--cream-50);line-height:1.5}
+#metaphor{background:var(--mid);overflow:hidden;position:relative}
 .comp{position:absolute;right:-80px;top:50%;transform:translateY(-50%);width:480px;height:480px;opacity:.045;pointer-events:none}
-html.day .comp{opacity:.06}
-.mhl{font-family:var(--serif);font-size:clamp(2rem,3.8vw,3.4rem);font-style:italic;font-weight:300;max-width:17em;margin-bottom:2.8rem;color:var(--ink)}
-.mq{font-family:var(--serif);font-size:clamp(.95rem,1.7vw,1.2rem);font-weight:300;font-style:italic;color:var(--ink-50);border-left:2px solid var(--gold);padding:1.4rem 0 1.4rem 2rem;margin:2.8rem 0;max-width:44em;line-height:1.82}
+.mhl{font-family:var(--serif);font-size:clamp(2rem,3.8vw,3.4rem);font-style:italic;font-weight:300;max-width:17em;margin-bottom:2.8rem;color:var(--cream)}
+.mq{font-family:var(--serif);font-size:clamp(.95rem,1.7vw,1.2rem);font-weight:300;font-style:italic;color:var(--cream-50);border-left:2px solid var(--gold);padding:1.4rem 0 1.4rem 2rem;margin:2.8rem 0;max-width:44em;line-height:1.82}
 .mc{font-family:var(--sans);font-size:.67rem;font-weight:400;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);display:block;margin-top:.8rem}
-.mn{font-size:.9rem;color:var(--ink-50);font-style:italic;margin-bottom:3.5rem;max-width:50em}
+.mn{font-size:.9rem;color:var(--cream-50);font-style:italic;margin-bottom:3.5rem;max-width:50em}
 .at{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--edge);overflow:hidden;margin-top:2.8rem}
 .ah{padding:.9rem 1.6rem;background:var(--gold-lo);font-family:var(--sans);font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--edge)}
 .ah:first-child{border-right:1px solid var(--edge)}
-.ac{padding:1rem 1.6rem;font-size:.82rem;color:var(--ink-50);border-bottom:1px solid var(--edge);line-height:1.55;transition:background .22s,color .22s}
+.ac{padding:1rem 1.6rem;font-size:.8rem;color:var(--cream-50);border-bottom:1px solid var(--edge);line-height:1.55;transition:background .22s,color .22s}
 .ac:nth-child(odd){border-right:1px solid var(--edge)}
 .ac:nth-last-child(-n+2){border-bottom:none}
-.ac:hover{background:var(--green-lo);color:var(--ink)}
-.ac strong{display:block;color:var(--ink);font-weight:400;font-family:var(--serif);font-size:.92rem;margin-bottom:.12rem}
-
-/* METHOD */
-#method{background:var(--bg)}
+.ac:hover{background:var(--green-lo);color:var(--cream)}
+.ac strong{display:block;color:var(--cream);font-weight:400;font-family:var(--serif);font-size:.92rem;margin-bottom:.12rem}
+#method{background:var(--dark)}
 .ml{max-width:35em;margin-bottom:4.5rem}
 .ml h2{font-size:clamp(2.2rem,3.8vw,3.6rem);margin-bottom:1.5rem}
-.ml p{font-size:.95rem;color:var(--ink-50);line-height:1.88}
+.ml p{font-size:.95rem;color:var(--cream-50);line-height:1.88}
 .ms{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--edge);border:1px solid var(--edge)}
-.mstep{background:var(--bg);padding:2.4rem 1.9rem;position:relative;overflow:hidden;transition:background .3s}
+.mstep{background:var(--dark);padding:2.4rem 1.9rem;position:relative;overflow:hidden;transition:background .3s}
 .mstep::after{content:'';position:absolute;top:0;left:0;right:0;height:1.5px;background:linear-gradient(to right,var(--gold),transparent);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
-.mstep:hover{background:var(--bg3)}
+.mstep:hover{background:var(--card)}
 .mstep:hover::after{transform:scaleX(1)}
 .msn{font-family:var(--serif);font-size:2.8rem;font-weight:300;color:rgba(196,154,48,.14);line-height:1;margin-bottom:1.1rem}
 .mstag{display:inline-block;font-size:.56rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--green);border:1px solid var(--green);padding:.18rem .55rem;margin-bottom:.9rem}
-.mst{font-family:var(--serif);font-size:1.25rem;font-weight:400;color:var(--ink);margin-bottom:.7rem;line-height:1.2}
-.msp{font-size:.8rem;color:var(--ink-50);line-height:1.72;font-weight:300}
-
-/* ABOUT */
-#about{background:var(--bg2);overflow:hidden}
+.mst{font-family:var(--serif);font-size:1.25rem;font-weight:400;color:var(--cream);margin-bottom:.7rem;line-height:1.2}
+.msp{font-size:.78rem;color:var(--cream-50);line-height:1.72;font-weight:300}
+#about{background:var(--mid);overflow:hidden}
 .ag{display:grid;grid-template-columns:400px 1fr;gap:5.5rem;align-items:start}
 .pw{position:relative}
 .pw::before{content:'';position:absolute;top:-10px;left:-10px;width:52px;height:52px;border-top:1px solid var(--gold);border-left:1px solid var(--gold);z-index:1}
 .pw::after{content:'';position:absolute;bottom:-10px;right:-10px;width:52px;height:52px;border-bottom:1px solid var(--gold);border-right:1px solid var(--gold);z-index:1}
 .pc{position:absolute;bottom:0;left:0;right:0;padding:1.4rem;background:linear-gradient(to top,rgba(9,14,12,.88) 0%,transparent 100%)}
-html.day .pc{background:linear-gradient(to top,rgba(237,232,220,.92) 0%,transparent 100%)}
-.pc p{font-family:var(--serif);font-size:1.05rem;font-weight:400;color:var(--ink)}
+.pc p{font-family:var(--serif);font-size:1.05rem;font-weight:400;color:var(--cream)}
 .pc span{font-size:.62rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-top:.18rem;display:block}
 .ab h2{font-size:clamp(2rem,3.4vw,3.1rem);margin-bottom:.4rem}
 .abs{font-size:.7rem;font-weight:400;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:2.4rem}
-.abp{font-size:.95rem;color:var(--ink-50);line-height:1.88;margin-bottom:1.1rem}
-.abq{font-family:var(--serif);font-size:1.02rem;font-style:italic;color:var(--ink-50);border-top:1px solid var(--edge);border-bottom:1px solid var(--edge);padding:1.7rem 0;margin:2.4rem 0;line-height:1.72}
+.abp{font-size:.95rem;color:var(--cream-50);line-height:1.88;margin-bottom:1.1rem}
+.abq{font-family:var(--serif);font-size:1.02rem;font-style:italic;color:var(--cream-50);border-top:1px solid var(--edge);border-bottom:1px solid var(--edge);padding:1.7rem 0;margin:2.4rem 0;line-height:1.72}
 .abq cite{display:block;font-style:normal;font-family:var(--sans);font-size:.65rem;font-weight:400;letter-spacing:.1em;color:var(--gold);margin-top:.7rem}
 .cr{margin-top:1.8rem;border-top:1px solid var(--edge)}
 .ci{display:grid;grid-template-columns:1.4rem 1fr auto;gap:.9rem;align-items:start;padding:1rem 0;border-bottom:1px solid var(--edge)}
 .cn{font-size:.58rem;font-weight:500;letter-spacing:.1em;color:var(--gold);padding-top:.1rem}
-.ct{font-size:.86rem;color:var(--ink);font-weight:400;line-height:1.35}
-.ct small{display:block;font-size:.7rem;color:var(--ink-50);font-weight:300;margin-top:.12rem}
-.cy{font-size:.62rem;font-weight:300;color:var(--ink-50);white-space:nowrap;padding-top:.1rem}
-
-/* CONTACT */
-#contact{background:var(--bg);text-align:center;position:relative;overflow:hidden}
+.ct{font-size:.84rem;color:var(--cream);font-weight:400;line-height:1.35}
+.ct small{display:block;font-size:.7rem;color:var(--cream-50);font-weight:300;margin-top:.12rem}
+.cy{font-size:.62rem;font-weight:300;color:var(--cream-50);white-space:nowrap;padding-top:.1rem}
+#contact{background:var(--dark);text-align:center;position:relative;overflow:hidden}
 #contact::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 55% 55% at 50% 50%,rgba(42,112,96,.09) 0%,transparent 65%)}
-html.day #contact::before{background:radial-gradient(ellipse 55% 55% at 50% 50%,rgba(30,84,72,.06) 0%,transparent 65%)}
 .cb{position:relative;z-index:1;max-width:680px;margin:0 auto}
-#contact h2{font-size:clamp(2.5rem,5vw,5rem);margin-bottom:1.4rem}
-#contact p{font-size:.95rem;color:var(--ink-50);line-height:1.88;margin-bottom:2.4rem}
-.cem{font-family:var(--serif);font-size:.92rem;font-weight:300;color:var(--ink-50);display:block;margin-top:2.8rem;letter-spacing:.04em;transition:color .2s}
+#contact h2{font-size:clamp(2.5rem,5vw,5rem);margin-bottom:1.4rem;color:var(--cream)}
+#contact p{font-size:.95rem;color:var(--cream-50);line-height:1.88;margin-bottom:2.4rem}
+.cem{font-family:var(--serif);font-size:.92rem;font-weight:300;color:var(--cream-50);display:block;margin-top:2.8rem;letter-spacing:.04em;transition:color .2s}
 .cem:hover{color:var(--gold)}
-.cloc{font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-50);margin-top:.7rem;opacity:.5}
-.portal-cta{display:inline-block;margin-top:2rem;font-size:.65rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:1px solid var(--edge-gold);padding:.55rem 1.4rem;transition:border-color .2s,opacity .2s}
-.portal-cta:hover{border-color:var(--gold);opacity:.75}
-
-/* FOOTER */
-footer{background:var(--bg2);padding:2.8rem 0;border-top:1px solid var(--edge)}
+.cloc{font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cream-50);margin-top:.7rem;opacity:.5}
+footer{background:var(--mid);padding:2.8rem 0;border-top:1px solid var(--edge)}
 .fr{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.2rem}
-.flogo{font-family:var(--serif);font-size:.95rem;font-weight:400;letter-spacing:.07em;color:var(--ink-50)}
+.flogo{font-family:var(--serif);font-size:.95rem;font-weight:400;letter-spacing:.07em;color:var(--cream-50)}
 .flogo em{font-style:normal;color:var(--gold)}
 .flinks{display:flex;gap:1.8rem;list-style:none}
-.flinks a,.ib{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-50);transition:opacity .2s;opacity:.55}
-.flinks a:hover,.ib:hover{opacity:1}
-.ib{background:none;border:none}
+.flinks a{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cream-50);opacity:.55;transition:opacity .2s}
+.flinks a:hover{opacity:1}
+.ib{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cream-50);background:none;border:none;opacity:.45;transition:opacity .2s;cursor:pointer}
+.ib:hover{opacity:1}
 .id{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
 .id.open{max-height:220px;border-top:1px solid var(--edge);margin-top:1.4rem;padding-top:1.4rem}
-.id p{font-size:.72rem;color:var(--ink-50);opacity:.45;line-height:1.8}
-
-/* ANIMATIONS */
-.rv{opacity:0;transform:translateY(28px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.id p{font-size:.72rem;color:var(--cream-50);opacity:.45;line-height:1.8}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .75s var(--ease),transform .75s var(--ease)}.no-js .rv{opacity:1;transform:none}
 .rv.in{opacity:1;transform:none}
 .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
 @keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
 @keyframes fd{from{opacity:0}to{opacity:1}}
 @keyframes pl{0%,100%{opacity:1}50%{opacity:.4}}
-
-/* RTL */
+html.day{
+  --dark:#f7f4ef;--mid:#ede8dc;--card:#ffffff;
+  --cream:#0D0C0A;--cream-50:rgba(13,12,10,0.55);--cream-20:rgba(13,12,10,0.10);
+  --edge:rgba(13,12,10,0.09);--edge-gold:rgba(196,154,48,0.30);
+  --green-lo:rgba(30,84,72,0.10);
+}
+html.day nav.stuck{background:rgba(247,244,239,0.97)}
+html.day .nm.open{background:rgba(247,244,239,0.97)}
+html.day .pc{background:linear-gradient(to top,rgba(247,244,239,0.88) 0%,transparent 100%)}
+html.day .pc p,html.day .pc span{color:var(--cream)}
+html.day h1,html.day h2,html.day h3{color:var(--cream)}
+html.day .abq{color:var(--cream-50)}
 [dir="rtl"] .nl2{flex-direction:row-reverse}
 [dir="rtl"] .lb{margin-left:0;margin-right:.8rem}
 [dir="rtl"] .mq{border-left:none;border-right:2px solid var(--gold);padding:1.4rem 2rem 1.4rem 0}
@@ -258,8 +192,6 @@ footer{background:var(--bg2);padding:2.8rem 0;border-top:1px solid var(--edge)}
 [dir="rtl"] .pw::after{right:auto;left:-10px;border-right:none;border-left:1px solid var(--gold)}
 [dir="rtl"] .ah:first-child{border-right:none;border-left:1px solid var(--edge)}
 [dir="rtl"] .ac:nth-child(odd){border-right:none;border-left:1px solid var(--edge)}
-
-/* RESPONSIVE */
 @media(max-width:1060px){.ag{grid-template-columns:320px 1fr;gap:3.5rem}}
 @media(max-width:880px){
   section{padding:5rem 0}
@@ -271,18 +203,16 @@ footer{background:var(--bg2);padding:2.8rem 0;border-top:1px solid var(--edge)}
   .st:nth-child(3){border-top:1px solid var(--edge)}
   .ag{grid-template-columns:1fr;gap:3rem}
   .pw{max-width:340px}
-  .nportal{display:none}
 }
 @media(max-width:640px){
-  .nl2,.nm>.nportal,.nm>.nc{display:none}
+  .nl2,.nm{display:none}
   .hb{display:flex}
-  .nm.open{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--panel-bg);align-items:center;justify-content:center;gap:2rem;backdrop-filter:blur(16px);z-index:799}
+  .nm.open{display:flex;flex-direction:column;position:fixed;inset:0;background:rgba(9,14,12,.96);align-items:center;justify-content:center;gap:2rem;backdrop-filter:blur(16px);z-index:799}
   .nm.open .nl2{display:flex;flex-direction:column;text-align:center;gap:1.6rem}
-  .nm.open .nl2 a{font-size:1.35rem;letter-spacing:.08em;color:var(--ink)}
-  .nm.open .nc{display:inline-block}
-  .nm.open .nportal{display:inline-block}
+  .nm.open .nl2 a{font-size:1.35rem;letter-spacing:.08em}
   .nm.open .lb{margin:0}
   .h1{font-size:clamp(3rem,12vw,5rem)}
+  .pw img{height:300px;width:100%;object-fit:cover;object-position:50% 15%}
   .sg{grid-template-columns:1fr}
   .ms{grid-template-columns:1fr}
   .dg{grid-template-columns:1fr}
@@ -290,133 +220,208 @@ footer{background:var(--bg2);padding:2.8rem 0;border-top:1px solid var(--edge)}
   .at{grid-template-columns:1fr 1fr}
   .ah,.ac{padding:.75rem .9rem;font-size:.72rem}
   .ac strong{font-size:.84rem}
-  .hs{font-size:1rem}
-  .slead h2{font-size:clamp(1.9rem,7vw,3rem)}
 }
 @media(max-width:380px){
   .strow{grid-template-columns:1fr}
   .st{border-right:none;border-bottom:1px solid var(--edge)}
 }
-/* SYSTEM */
-#system{background:var(--bg2);padding:8rem 0}
-.sys-lead{font-family:var(--serif);font-size:clamp(1.4rem,3vw,2.4rem);font-weight:300;max-width:18em;margin:0 auto 5rem;line-height:1.3;color:var(--ink)}
-.sys-nums{display:flex;justify-content:center;gap:clamp(3rem,10vw,9rem);flex-wrap:wrap}
-.sn{display:flex;flex-direction:column;align-items:center;gap:.6rem}
-.snn{font-family:var(--serif);font-size:clamp(3.5rem,8vw,6rem);font-weight:300;color:var(--gold);line-height:1}
-.snl{font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-50)}
-
-/* DIMENSIONS */
-#dimensions{padding:6rem 0}
-.dlist{display:grid;grid-template-columns:1fr 1fr;margin-top:2.5rem;border-top:1px solid var(--edge)}
-.di{display:flex;align-items:center;gap:1.4rem;padding:1.2rem 0;border-bottom:1px solid var(--edge)}
-.di:nth-child(odd){padding-right:2.5rem}
-.di:nth-child(even){padding-left:2.5rem;border-left:1px solid var(--edge)}
-.dinum{font-family:var(--serif);font-size:.85rem;color:var(--gold);font-weight:300;min-width:1.8em;flex-shrink:0}
-.diname{font-size:.82rem;font-weight:300;letter-spacing:.02em;color:var(--ink)}
-@media(max-width:640px){.dlist{grid-template-columns:1fr}.di:nth-child(even){padding-left:0;border-left:none}}
-
-/* FOUNDER */
-#founder{background:var(--bg2);padding:7rem 0}
-.fo{display:grid;grid-template-columns:1fr 1.5fr;gap:clamp(2rem,6vw,6rem);align-items:center;max-width:960px;margin:0 auto}
-.fo-img{width:100%;aspect-ratio:3/4;object-fit:cover}
-.fo-text h2{font-size:clamp(1.8rem,4vw,3rem);font-weight:300;margin-bottom:.4rem}
-.fo-role{font-size:.72rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-50);margin-bottom:1.8rem}
-.fo-bio{font-size:.92rem;line-height:1.9;color:var(--ink-50);margin-bottom:2rem}
-.fo-tags{display:flex;flex-wrap:wrap;gap:.5rem}
-.fo-tags span{font-size:.6rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--edge-gold);color:var(--gold);padding:.3rem .9rem}
-@media(max-width:640px){.fo{grid-template-columns:1fr}.fo-img{aspect-ratio:4/3;max-height:320px;object-position:top}}
-
 </style>
+<script>
+(function(){
+  var light=window.matchMedia('(prefers-color-scheme:light)').matches;
+  var dark=window.matchMedia('(prefers-color-scheme:dark)').matches;
+  var h=new Date().getHours();
+  if(light||(h>=7&&h<21&&!dark))document.documentElement.classList.add('day');
+})();
+</script>
 <noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
 
 <nav id="nav">
   <div class="nr">
-    <a href="#hero" class="nl">Achtgrad <em>oo°</em></a>
+    <a href="#" class="nl">Achtgrad <em>&#9675;&#9675;&deg;</em></a>
     <button class="hb" id="hbg" aria-label="Menu"><span></span><span></span><span></span></button>
     <div class="nm" id="panel">
       <ul class="nl2">
-        <li><a href="leistungen.html" data-t="nsv">Leistungen</a></li>
-        <li><a href="#founder" data-t="nab">Über mich</a></li>
+        <li><a href="#services" data-t="nsv">Leistungen</a></li>
+        <li><a href="#philosophy" data-t="nph">Philosophie</a></li>
+        <li><a href="#method" data-t="nme">Methode</a></li>
+        <li><a href="#about" data-t="nab">&#220;ber mich</a></li>
+        <li><a href="https://portal.achtgrad.at">Klientenportal</a></li>
       </ul>
       <div class="lb">
-        <button class="lbtn on" data-l="de" onclick="setLang('de')">DE</button>
-        <span class="lsep">|</span>
-        <button class="lbtn" data-l="en" onclick="setLang('en')">EN</button>
-        <span class="lsep">|</span>
-        <button class="lbtn" data-l="ar" onclick="setLang('ar')">ع</button>
+        <button class="lbtn on" data-l="de">DE</button>
+        <span class="ld">&middot;</span>
+        <button class="lbtn" data-l="en">EN</button>
+        <span class="ld">&middot;</span>
+        <button class="lbtn" data-l="ar">&#1593;&#1585;</button>
       </div>
-      <a href="https://portal.achtgrad.at" class="nportal">Klientenportal</a>
-      <a href="#contact" class="nc" data-t="nct">Gespräch anfragen</a>
+      <a href="#contact" class="nc" data-t="nct">Gespr&#228;ch anfragen</a>
     </div>
   </div>
 </nav>
 
 <section id="hero" style="position:relative">
   <div class="hbg"></div>
+  <div class="hm">&deg;</div>
   <div class="w">
     <div class="hi">
-      <div class="hbrand">
-        <div class="ool ool1"><div class="ooi"></div></div>
-        <div class="ool ool2"><div class="ooi"></div><span class="oodg"></span></div>
+      <p class="ho" data-t="hov">Pr&#228;vention &middot; Physiotherapie &middot; Gesundheitsmanagement</p>
+      <h1 class="h1">
+        <span class="ln" data-t="hl1">Ihr K&#246;rper.</span>
+        <span class="ln" data-t="hl2">Ihr Kapital.</span>
+        <span class="ln"><em data-t="hl3">Gepflegt.</em></span>
+      </h1>
+      <p class="hs" data-t="hsu">Ich begleite Menschen, die bei ihrer Gesundheit keine Kompromisse machen wollen.</p>
+      <div class="hc">
+        <a href="#contact" class="btn bg" data-t="hct">Kurs aufnehmen</a>
+        <a href="#services" class="btn bo" data-t="hsv">Leistungen entdecken</a>
       </div>
-      <div class="hitext">
-        <h1 class="h1">
-          <span class="ln" data-t="hl1">Ihr Körper.</span>
-          <span class="ln" data-t="hl2">Ihr Kapital.</span>
-          <span class="ln"><em data-t="hl3">Gepflegt.</em></span>
-        </h1>
-        <div class="hc">
-          <a href="#contact" class="btn bg" data-t="hct">Kurs aufnehmen</a>
-          <a href="leistungen.html" class="btn bo" data-t="hsv">Leistungen entdecken</a>
+    </div>
+  </div>
+  <div class="sh"><div class="sl"></div><span data-t="scr">Scroll</span></div>
+</section>
+
+<section id="services">
+  <div class="w">
+    <div class="slead">
+      <span class="ey rv" data-t="sey">Was Sie von mir bekommen</span>
+      <h2 class="rv d1" data-t="shl">Jemand der den Überblick behält.<br>Für Sie.</h2>
+      <div class="rule rv d2"></div>
+      <p class="rv d2" data-t="stx">Ich halte das ganze Bild im Blick. Was ich tue, geht weit &#252;ber Physiotherapie hinaus. Es ist die Arbeit, die sonst niemand &#252;bernimmt.</p>
+    </div>
+    <div class="sg">
+      <div class="sc rv"><div class="sci">&#8853;</div><div class="sct" data-t="s1t">Physiotherapie auf h&#246;chstem Niveau</div><p class="scp" data-t="s1p">Manuelle Therapie, Bewegungsanalyse, funktionelles Training. Aufgebaut auf &#252;ber zehn Jahren Praxis in den exklusivsten medizinischen Umgebungen Europas.</p></div>
+      <div class="sc rv d1"><div class="sci">&#9678;</div><div class="sct" data-t="s2t">Medizinische Koordination</div><p class="scp" data-t="s2p">Ich organisiere Termine bei Spezialisten, f&#252;hre medizinische Unterlagen zusammen und &#252;bernehme die Kommunikation mit &#196;rzten. Sie m&#252;ssen sich um nichts k&#252;mmern.</p></div>
+      <div class="sc rv d2"><div class="sci">&#9672;</div><div class="sct" data-t="s3t">Wearable Auswertung und Tagesroutinen</div><p class="scp" data-t="s3p">Ihre Daten erz&#228;hlen eine Geschichte. Ich lese sie. Schlaf, HRV, Aktivit&#228;t, Erholung. Daraus entsteht ein Rhythmus, der zu Ihrem Leben passt und nicht umgekehrt.</p></div>
+      <div class="sc rv"><div class="sci">&#9671;</div><div class="sct" data-t="s4t">Medizinische Datenaufbereitung</div><p class="scp" data-t="s4p">Befunde, Laborwerte, Arztberichte. Ich &#252;bersetze komplexe Informationen in klare Handlungsempfehlungen und halte Ihre gesamte Gesundheitshistorie strukturiert aufbereitet.</p></div>
+      <div class="sc rv d1"><div class="sci">&#9675;</div><div class="sct" data-t="s5t">Biomarker Tracking</div><p class="scp" data-t="s5p">Regelm&#228;&#223;ige Auswertung von Laborwerten, Vitalzeichen und Leistungsparametern. Kein Jahreslabor ohne Konsequenz. Jeder Wert wird eingeordnet und beantwortet.</p></div>
+      <div class="sc rv d2"><div class="sci">&#9685;</div><div class="sct" data-t="s6t">Diskretion und Verf&#252;gbarkeit</div><p class="scp" data-t="s6p">Ich arbeite mit einem kleinen, ausgew&#228;hlten Klientenkreis. Das bedeutet echte Verf&#252;gbarkeit, echtes Engagement und eine Zusammenarbeit, die &#252;ber Jahrzehnte tr&#228;gt.</p></div>
+    </div>
+  </div>
+</section>
+
+<div id="stats">
+  <div class="strow">
+    <div class="st rv"><span class="stn" data-c="8" data-s="">8</span><span class="stl" data-t="st1">Dimensionen</span></div>
+    <div class="st rv d1"><span class="stn" data-c="10" data-s="+">10+</span><span class="stl" data-t="st2">Jahre Praxis</span></div>
+    <div class="st rv d2"><span class="stn" data-c="24" data-s="/7">24/7</span><span class="stl" data-t="st3">Monitoring</span></div>
+    <div class="st rv d3"><span class="stn">1</span><span class="stl" data-t="st4">Ihr K&#246;rper. Einzigartig.</span></div>
+  </div>
+</div>
+
+<section id="philosophy">
+  <div class="w">
+    <div class="pg">
+      <div class="pl rv">
+        <span class="ey" data-t="pey">Die Grundidee</span>
+        <h2 data-t="phl">Ihr K&#246;rper ist Ihr wertvollstes Kapital.</h2>
+        <div class="rule"></div>
+        <p data-t="pp1">Jedes gut gef&#252;hrte Unternehmen kennt seine Kennzahlen und handelt wenn etwas aus dem Takt ger&#228;t. Die meisten tun das f&#252;r ihre Gesundheit nicht.</p>
+        <p data-t="pp2">Achtgrad bringt diese Klarheit. Durch das pr&#228;zise Abstimmen von acht Dimensionen. Kontinuierlich. Diskret.</p>
+      </div>
+      <div class="rv d1"><span class="ey" data-t="pdim">08 Dimensionen</span></div>
+    </div>
+    <div class="dg">
+      <div class="dc rv"><div class="dn">01</div><div class="dt" data-t="d1t">Kardiovaskul&#228;re Kapazit&#228;t</div><div class="ds" data-t="d1s">VO&#8322;max, Herzfrequenz, Ausdauer.</div></div>
+      <div class="dc rv d1"><div class="dn">02</div><div class="dt" data-t="d2t">Kraft &amp; Stabilit&#228;t</div><div class="ds" data-t="d2s">Muskulatur, Belastbarkeit, Gleichgewicht.</div></div>
+      <div class="dc rv d2"><div class="dn">03</div><div class="dt" data-t="d3t">Beweglichkeit &amp; Gewebsqualit&#228;t</div><div class="ds" data-t="d3s">Faszien, Mobilit&#228;t, Schmerzfreiheit.</div></div>
+      <div class="dc rv d3"><div class="dn">04</div><div class="dt" data-t="d4t">Atemkapazit&#228;t</div><div class="ds" data-t="d4s">Atemmuskulatur, Lungenvolumen, Effizienz.</div></div>
+      <div class="dc rv"><div class="dn">05</div><div class="dt" data-t="d5t">Haltung &amp; K&#246;rpermechanik</div><div class="ds" data-t="d5s">Gangbild, posturale Kontrolle, Ausrichtung.</div></div>
+      <div class="dc rv d1"><div class="dn">06</div><div class="dt" data-t="d6t">Regeneration &amp; Schlaf</div><div class="ds" data-t="d6s">HRV, Schlaftiefe, Ruhepuls.</div></div>
+      <div class="dc rv d2"><div class="dn">07</div><div class="dt" data-t="d7t">Stressresilienz &amp; mentale Sch&#228;rfe</div><div class="ds" data-t="d7s">Kognitive Klarheit, emotionale Steuerung.</div></div>
+      <div class="dc rv d3"><div class="dn">08</div><div class="dt" data-t="d8t">Systemische Balance</div><div class="ds" data-t="d8s">Entz&#252;ndungsmarker, Biometrie, Mikron&#228;hrstoffe.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="metaphor">
+  <svg class="comp" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="95" stroke="white" stroke-width=".5"/>
+    <circle cx="100" cy="100" r="70" stroke="white" stroke-width=".3"/>
+    <circle cx="100" cy="100" r="45" stroke="white" stroke-width=".3"/>
+    <line x1="100" y1="5" x2="100" y2="195" stroke="white" stroke-width=".5"/>
+    <line x1="5" y1="100" x2="195" y2="100" stroke="white" stroke-width=".5"/>
+    <line x1="32" y1="32" x2="168" y2="168" stroke="white" stroke-width=".3"/>
+    <line x1="168" y1="32" x2="32" y2="168" stroke="white" stroke-width=".3"/>
+    <polygon points="100,5 95,30 100,25 105,30" fill="white"/>
+    <polygon points="100,195 95,170 100,175 105,170" fill="white"/>
+    <text x="95" y="18" fill="white" font-size="10" font-family="serif">N</text>
+    <text x="95" y="190" fill="white" font-size="10" font-family="serif">S</text>
+    <text x="8" y="104" fill="white" font-size="10" font-family="serif">W</text>
+    <text x="182" y="104" fill="white" font-size="10" font-family="serif">E</text>
+  </svg>
+  <div class="w">
+    <div style="max-width:800px">
+      <span class="ey rv" data-t="mey">Die Metapher</span>
+      <h2 class="mhl rv d1" data-t="mhl">Acht Grad h&#246;her am Wind. Der Unterschied zwischen ankommen und gewinnen.</h2>
+      <blockquote class="mq rv d2">
+        <p data-t="mqt">Im Segeln bedeutet acht Grad h&#246;her am Wind: n&#228;her an die Quelle der Kraft, pr&#228;ziser, effizienter und schneller am Ziel. Im K&#246;rper bedeutet es dasselbe. Nicht mehr Aufwand. Der richtige Kurs.</p>
+        <cite class="mc" data-t="mci">Das Prinzip von Achtgrad</cite>
+      </blockquote>
+      <p class="mn rv" data-t="mnt">Wer seinen K&#246;rper so behandelt wie sein bestes Schiff, beweist sich nicht nur bei Idealwind. Sondern in der Flaute und im Sturm.</p>
+    </div>
+    <div class="at rv">
+      <div class="ah" data-t="ac1">DER K&#214;RPER</div><div class="ah" data-t="ac2">DIE ENERGIE</div>
+      <div class="ac"><strong data-t="r1k">Rumpf &amp; Rigg</strong><span data-t="r1kd">K&#246;rper, Organe, Biometrie</span></div>
+      <div class="ac"><strong data-t="r1e">Fahrtwind</strong><span data-t="r1ed">Vitalit&#228;t, Antrieb, Lebensfreude</span></div>
+      <div class="ac"><strong data-t="r2k">Trimm</strong><span data-t="r2kd">Ern&#228;hrung, Schlaf, Regeneration</span></div>
+      <div class="ac"><strong data-t="r2e">B&#246;en</strong><span data-t="r2ed">Stress, Krisen, Belastungsspitzen</span></div>
+      <div class="ac"><strong data-t="r3k">Kielgewicht</strong><span data-t="r3kd">Muskulatur, Stabilit&#228;t</span></div>
+      <div class="ac"><strong data-t="r3e">Flaute</strong><span data-t="r3ed">Ersch&#246;pfung, Stagnation, Burnout</span></div>
+      <div class="ac"><strong data-t="r4k">Segel</strong><span data-t="r4kd">Lunge, Atem, kardiale Leistung</span></div>
+      <div class="ac"><strong data-t="r4e">Kurs</strong><span data-t="r4ed">Strategie, Richtung, Priorit&#228;ten</span></div>
+      <div class="ac"><strong data-t="r5k">Instrumente</strong><span data-t="r5kd">Wearables, Biomarker, Daten</span></div>
+      <div class="ac"><strong data-t="r5e">Regatta</strong><span data-t="r5ed">Business, Familie, das volle Leben</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="method">
+  <div class="w">
+    <div class="ml">
+      <span class="ey rv" data-t="mey2">Die Methode</span>
+      <h2 class="rv d1" data-t="mhl2">Vitalit&#228;t.<br>Im Alltag verankert.</h2>
+      <div class="rule rv d2"></div>
+      <p class="rv d2" data-t="mtx">Retreats &#246;ffnen den Blick. Achtgrad verankert ihn im Alltag. Die gewonnene Klarheit in einen nachhaltigen Rhythmus &#252;bersetzen. Vital. Balanciert. Dauerhaft.</p>
+    </div>
+    <div class="ms">
+      <div class="mstep rv"><div class="msn">01</div><div class="mstag" data-t="sg1">DeepMap</div><div class="mst" data-t="st1t">Bestandsaufnahme</div><p class="msp" data-t="st1p">Vollst&#228;ndige Kalibrierung. Biomarker, Belastbarkeit, Muster. Ihr pers&#246;nlicher Ausgangspunkt in klaren Zahlen.</p></div>
+      <div class="mstep rv d1"><div class="msn">02</div><div class="mstag" data-t="sg2">PrecisionPlan</div><div class="mst" data-t="st2t">Kursbeschreibung</div><p class="msp" data-t="st2p">Ihr individueller Jahresplan. Klare Ziele, konkrete Hebel. Kein Generikurs, kein Standard.</p></div>
+      <div class="mstep rv d2"><div class="msn">03</div><div class="mstag" data-t="sg3">Implement</div><div class="mst" data-t="st3t">Kontinuierlicher Trimm</div><p class="msp" data-t="st3p">W&#246;chentliches Monitoring. Wearable Auswertung, Anpassung in Echtzeit. Das Programm endet nicht mit der Abreise.</p></div>
+      <div class="mstep rv d3"><div class="msn">04</div><div class="mstag" data-t="sg4">Sustain &amp; Adapt</div><div class="mst" data-t="st4t">Delta &amp; neuer Kurs</div><p class="msp" data-t="st4p">Was hat sich messbar ver&#228;ndert? Wo liegt der n&#228;chste Hebel? Kurs neu setzen f&#252;r das n&#228;chste Jahr.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="w">
+    <div class="ag">
+      <div class="pw rv">
+        <img src="portrait.jpg" alt="Alexander Ataii MBA, Physiotherapeut Innsbruck" style="width:100%;display:block">
+        <div class="pc">
+          <p>Alexander Ataii MBA</p>
+          <span data-t="acap">Physiotherapeut &middot; Gesundheitsarchitekt</span>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="system">
-  <div class="w" style="text-align:center">
-    <p class="sys-lead" data-t="syshl">Das Achtgrad-System führt Ihre Gesundheit mit derselben Präzision wie Ihr bestes Unternehmen.</p>
-    <div class="sys-nums">
-      <div class="sn"><span class="snn">8</span><span class="snl" data-t="st1">Dimensionen</span></div>
-      <div class="sn"><span class="snn">10+</span><span class="snl" data-t="st2">Jahre Praxis</span></div>
-      <div class="sn"><span class="snn">24/7</span><span class="snl" data-t="st3">Monitoring</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="dimensions">
-  <div class="w">
-    <span class="ey" data-t="pdim">08 Dimensionen</span>
-    <div class="dlist">
-      <div class="di"><span class="dinum">01</span><span class="diname" data-t="d1t">Kardiovaskuläre Kapazität</span></div>
-      <div class="di"><span class="dinum">02</span><span class="diname" data-t="d2t">Kraft und Stabilität</span></div>
-      <div class="di"><span class="dinum">03</span><span class="diname" data-t="d3t">Beweglichkeit und Gewebsqualität</span></div>
-      <div class="di"><span class="dinum">04</span><span class="diname" data-t="d4t">Atemkapazität</span></div>
-      <div class="di"><span class="dinum">05</span><span class="diname" data-t="d5t">Haltung und Körpermechanik</span></div>
-      <div class="di"><span class="dinum">06</span><span class="diname" data-t="d6t">Regeneration und Schlaf</span></div>
-      <div class="di"><span class="dinum">07</span><span class="diname" data-t="d7t">Stressresilienz und mentale Schärfe</span></div>
-      <div class="di"><span class="dinum">08</span><span class="diname" data-t="d8t">Systemische Balance</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="founder">
-  <div class="w">
-    <div class="fo">
-      <img src="portrait.jpg" alt="Alexander Ataii MBA, Physiotherapeut Innsbruck" class="fo-img">
-      <div class="fo-text">
-        <span class="ey" data-t="aey">Der Gründer</span>
+      <div class="ab rv d1">
+        <span class="ey" data-t="aey">Der Steuermann</span>
         <h2 data-t="anm">Alexander Ataii MBA</h2>
-        <p class="fo-role" data-t="asu">Physiotherapeut, Innsbruck</p>
-        <p class="fo-bio" data-t="ap1">Über ein Jahrzehnt in den exklusivsten medizinischen Umgebungen Europas. Lanserhof Lans, Park Igls, UHNW Privatdienst. Das Achtgrad-System entstand aus dieser Erfahrung.</p>
-        <div class="fo-tags">
-          <span>Lanserhof Lans</span>
-          <span>Park Igls</span>
-          <span>MBA Healthcare</span>
-          <span>UHNW Service</span>
+        <p class="abs" data-t="asu">Physiotherapeut &middot; Gesundheitsarchitekt &middot; Innsbruck</p>
+        <p class="abp" data-t="ap1">Ich habe &#252;ber ein Jahrzehnt in den exklusivsten medizinischen Umgebungen Europas gearbeitet. Von f&#252;hrenden Kliniken Tirols bis hin zur direkten Betreuung von Pers&#246;nlichkeiten, f&#252;r die Gesundheit kein Zufall sein darf.</p>
+        <p class="abp" data-t="ap2">Was ich gelernt habe: Exzellente Einzelbehandlungen reichen nicht. Es braucht jemanden, der die Gesamtheit im Blick hat. Jeden Tag. Und der bereit ist, Verantwortung zu &#252;bernehmen.</p>
+        <blockquote class="abq">
+          <p data-t="aqt">&#8222;Es ist nicht genug zu wissen, man muss auch anwenden; es ist nicht genug zu wollen, man muss auch tun.&#8220;</p>
+          <cite>Johann Wolfgang von Goethe</cite>
+        </blockquote>
+        <div class="cr">
+          <div class="ci rv"><span class="cn">01</span><div><div class="ct" data-t="c1t">Bewegungsmedizin &amp; Rehabilitation</div><small class="ct" data-t="c1s">Staatl. gepr. Physiotherapeut &middot; Praxisinhaber seit 2014</small></div><span class="cy">10+ J.</span></div>
+          <div class="ci rv d1"><span class="cn">02</span><div><div class="ct" data-t="c2t">Gesundheits&#246;konomie &amp; Strategie</div><small class="ct" data-t="c2s">MBA Healthcare &middot; FHG Tirol</small></div><span class="cy">2025</span></div>
+          <div class="ci rv d2"><span class="cn">03</span><div><div class="ct" data-t="c3t">FX Mayr Medizin</div><small class="ct" data-t="c3s">Park Igls &middot; Lanserhof Lans</small></div><span class="cy">2015&#8211;18</span></div>
+          <div class="ci rv d3"><span class="cn">04</span><div><div class="ct" data-t="c4t">Privater UHNW Dienst</div><small class="ct" data-t="c4s">Physiotherapeut &amp; PA &middot; &#214;sterreich &amp; Deutschland</small></div><span class="cy" data-t="csince">Seit 2018</span></div>
+          <div class="ci rv"><span class="cn">05</span><div><div class="ct" data-t="c5t">KI &amp; Digitale Gesundheit</div><small class="ct" data-t="c5s">KI Lizenz WIFI Tirol &middot; aktiver Anwender</small></div><span class="cy" data-t="cact">Aktiv</span></div>
+          <div class="ci rv d1"><span class="cn">06</span><div><div class="ct" data-t="c6t">Sprachen</div><small class="ct">Deutsch &middot; Englisch &middot; Arabisch / Farsi (Grundkenntnisse)</small></div><span class="cy">DE · EN</span></div>
         </div>
       </div>
     </div>
@@ -426,15 +431,12 @@ footer{background:var(--bg2);padding:2.8rem 0;border-top:1px solid var(--edge)}
 <section id="contact">
   <div class="w">
     <div class="cb">
-      <span class="ey" data-t="cey">Kontakt</span>
-      <h2 data-t="chl">Neugierig geworden?</h2>
-      <p data-t="ctx">Ich freue mich auf ein persönliches Gespräch.</p>
-      <div>
-        <a href="#" onclick="window.location.href='mail'+'to:kontakt@'+'achtgrad.at';return false;" class="btn bg" data-t="cbt">Gespräch anfragen</a>
-      </div>
-      <a href="#" onclick="window.location.href='mail'+'to:kontakt@'+'achtgrad.at';return false;" class="cem">kontakt@achtgrad.at</a>
-      <div class="cloc">Goethestrasse 9, 6020 Innsbruck</div>
-      <a href="https://portal.achtgrad.at" class="portal-cta">Klientenportal</a>
+      <span class="ey rv" data-t="cey">Bereit f&#252;r den Kurs?</span>
+      <h2 class="rv d1" data-t="chl">Das erste Gespr&#228;ch ist frei.</h2>
+      <p class="rv d2" data-t="ctx">Kein Standardprogramm. Keine Broschüre. Ein Gespräch. Über Sie, Ihre Ziele, Ihren Weg.</p>
+      <a href="#" onclick="window.location.href='mail'+('to:kontakt@')+('achtgrad.at');return false;" class="btn bg rv d3" data-t="cbt">Gespr&#228;ch anfragen</a>
+      <a href="#" onclick="window.location.href='mail'+('to:kontakt@')+('achtgrad.at');return false;" class="cem rv d4">kontakt&#64;achtgrad.at</a>
+      <p class="cloc rv">Alexander Ataii MBA &middot; Achtgrad &middot; Innsbruck, Tirol</p>
     </div>
   </div>
 </section>
@@ -442,21 +444,30 @@ footer{background:var(--bg2);padding:2.8rem 0;border-top:1px solid var(--edge)}
 <footer>
   <div class="w">
     <div class="fr">
-      <span class="flogo">Achtgrad <em>oo°</em></span>
+      <div class="flogo">Achtgrad <em>&#9675;&#9675;&deg;</em></div>
       <ul class="flinks">
-        <li><a href="leistungen.html">Leistungen</a></li>
-        <li><a href="impressum.html">Impressum</a></li>
-        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="#services" data-t="nsv">Leistungen</a></li>
+        <li><a href="#philosophy" data-t="nph">Philosophie</a></li>
+        <li><a href="#method" data-t="nme">Methode</a></li>
+        <li><a href="#" onclick="window.location.href='mail'+('to:kontakt@')+('achtgrad.at');return false;">E-Mail</a></li>
       </ul>
+      <button class="ib" id="ibt" data-t="impr">Impressum</button>
+    </div>
+    <div class="id" id="ibd">
+      <p>Alexander Ataii MBA &middot; Physiotherapeut &middot; Einzelunternehmen<br>
+      Goethestra&#223;e 9, 6020 Innsbruck, &#214;sterreich<br>
+      E-Mail: kontakt&#64;achtgrad.at<br>
+      Berufsbezeichnung: Physiotherapeut (verliehen in &#214;sterreich)<br>
+      Aufsichtsbeh&#246;rde: Bezirkshauptmannschaft Innsbruck-Land</p>
     </div>
   </div>
 </footer>
 
 <script>
 const T={
-de:{nsv:"Leistungen",nab:"Über mich",nct:"Gespräch anfragen",hov:"Prävention, Physiotherapie, Longevity",hl1:"Ihr Körper.",hl2:"Ihr Kapital.",hl3:"Gepflegt.",hsu:"Das System für Menschen, die bei ihrer Gesundheit keine Kompromisse machen.",syshl:"Das Achtgrad-System führt Ihre Gesundheit mit derselben Präzision wie Ihr bestes Unternehmen.",hct:"Kurs aufnehmen",hsv:"Leistungen entdecken",scr:"Scroll",sey:"Was Achtgrad leistet",shl:"Ein System das den Überblick behält.\nKontinuierlich.",stx:"Das Achtgrad-System begleitet Ihre Gesundheit mit derselben Präzision, die Sie in Ihrem besten Unternehmen erwarten. Klare Kennzahlen. Ein persönlicher Jahresplan. Wöchentliches Monitoring. Acht Dimensionen. Ein Ansprechpartner.",s1t:"Physiotherapie auf höchstem Niveau",s1p:"Manuelle Therapie, Bewegungsanalyse, funktionelles Training. Aufgebaut auf über zehn Jahren Praxis in den exklusivsten medizinischen Umgebungen Europas.",s2t:"Gesundheitskoordination",s2p:"Ich organisiere Termine bei Spezialisten, führe Unterlagen zusammen und übernehme die Kommunikation mit Ärzten. Sie müssen sich um nichts kümmern.",s3t:"Wearable Auswertung und Tagesroutinen",s3p:"Ihre Daten erzählen eine Geschichte. Ich lese sie. Schlaf, HRV, Aktivität, Erholung. Daraus entsteht ein Rhythmus, der zu Ihrem Leben passt.",s4t:"Datenaufbereitung und Befundstruktur",s4p:"Befunde, Laborwerte, Arztberichte. Ich übersetze komplexe Informationen in klare Handlungsempfehlungen und halte Ihre Gesundheitshistorie strukturiert aufbereitet.",s5t:"Biomarker Tracking",s5p:"Regelmässige Auswertung von Laborwerten, Vitalzeichen und Leistungsparametern. Kein Jahreslabor ohne Konsequenz. Jeder Wert wird eingeordnet und beantwortet.",s6t:"Diskretion und Verfügbarkeit",s6p:"Ich arbeite mit einem kleinen, ausgewählten Klientenkreis. Das bedeutet echte Verfügbarkeit, echtes Engagement und eine Zusammenarbeit, die über Jahrzehnte trägt.",st1:"Dimensionen",st2:"Jahre Praxis",st3:"Monitoring",st4:"Ihr Körper. Einzigartig.",pey:"Die Grundidee",phl:"Ihr Körper ist Ihr wertvollstes Kapital.",pp1:"Jedes gut geführte Unternehmen kennt seine Kennzahlen und handelt wenn etwas aus dem Takt gerät. Die meisten tun das für ihre Gesundheit nicht.",pp2:"Achtgrad bringt diese Klarheit. Durch das präzise Abstimmen von acht Dimensionen. Kontinuierlich. Diskret.",pdim:"08 Dimensionen",d1t:"Kardiovaskuläre Kapazität",d1s:"VO₂max, Herzfrequenz, Ausdauer.",d2t:"Kraft und Stabilität",d2s:"Muskulatur, Belastbarkeit, Gleichgewicht.",d3t:"Beweglichkeit und Gewebsqualität",d3s:"Faszien, Mobilität, Schmerzfreiheit.",d4t:"Atemkapazität",d4s:"Atemmuskulatur, Lungenvolumen, Effizienz.",d5t:"Haltung und Körpermechanik",d5s:"Gangbild, posturale Kontrolle, Ausrichtung.",d6t:"Regeneration und Schlaf",d6s:"HRV, Schlaftiefe, Ruhepuls.",d7t:"Stressresilienz und mentale Schärfe",d7s:"Kognitive Klarheit, emotionale Steuerung.",d8t:"Systemische Balance",d8s:"Entzündungsmarker, Biometrie, Mikronährstoffe.",mey:"Die Metapher",mhl:"Acht Grad höher am Wind. Der Unterschied zwischen ankommen und gewinnen.",mqt:"Im Segeln bedeutet acht Grad höher am Wind: näher an die Quelle der Kraft, präziser, effizienter und schneller am Ziel. Im Körper bedeutet es dasselbe. Nicht mehr Aufwand. Der richtige Kurs.",mci:"Das Prinzip von Achtgrad",mnt:"Wer seinen Körper so behandelt wie sein bestes Schiff, beweist sich nicht nur bei Idealwind. Sondern in der Flaute und im Sturm.",ac1:"DER KÖRPER",ac2:"DIE ENERGIE",r1k:"Rumpf und Rigg",r1kd:"Körper, Organe, Biometrie",r1e:"Fahrtwind",r1ed:"Vitalität, Antrieb, Lebensfreude",r2k:"Trimm",r2kd:"Ernährung, Schlaf, Regeneration",r2e:"Böen",r2ed:"Stress, Krisen, Belastungsspitzen",r3k:"Kielgewicht",r3kd:"Muskulatur, Stabilität",r3e:"Flaute",r3ed:"Erschöpfung, Stagnation, Burnout",r4k:"Segel",r4kd:"Lunge, Atem, kardiale Leistung",r4e:"Kurs",r4ed:"Strategie, Richtung, Prioritäten",r5k:"Instrumente",r5kd:"Wearables, Biomarker, Daten",r5e:"Regatta",r5ed:"Business, Familie, das volle Leben",mey2:"Die Methode",mhl2:"Vitalität.\nIm Alltag verankert.",mtx:"Eigene Auswertungs- und Dokumentationswerkzeuge. Kontinuierliches Monitoring. Ein persönliches Gesundheitsportal. Das Achtgrad-System macht Ihre Gesundheit messbar und begleitet sie dauerhaft.",sg1:"DeepMap",st1t:"Bestandsaufnahme",st1p:"Strukturierte Leistungserfassung für Biomarker, kardiovaskuläre Kapazität, Bewegungsqualität und Metabolismus. Ihr persönlicher Ausgangspunkt in klaren Zahlen. Dokumentiert und gesichert.",sg2:"PrecisionPlan",st2t:"Kursbeschreibung",st2p:"Auf Basis der Leistungserfassung entsteht Ihr individueller Jahresplan. Klare Ziele. Konkrete Hebel. Messbare Meilensteine.",sg3:"Implement",st3t:"Kontinuierlicher Trimm",st3p:"Wöchentliches Monitoring via Wearables und CGM-Auswertung. Jede Sitzung erzeugt einen strukturierten Bericht, direkt in Ihrem persönlichen Portal.",sg4:"Sustain & Adapt",st4t:"Delta und neuer Kurs",st4p:"Biomarker, Vitalität, Leistung als Kurve über Zeit. Ihr gesamtes Gesundheitsprotokoll jederzeit abrufbar. Der nächste Hebel ist immer sichtbar.",aey:"Der Gründer",anm:"Alexander Ataii MBA",asu:"Physiotherapeut, Innsbruck",acap:"Physiotherapeut, Innsbruck",ap1:"Über ein Jahrzehnt in den exklusivsten medizinischen Umgebungen Europas. Lanserhof Lans, Park Igls, UHNW Privatdienst. Das Achtgrad-System entstand aus dieser Erfahrung.",ap2:"Was ich gelernt habe: Exzellente Einzelbehandlungen reichen nicht. Es braucht jemanden, der die Gesamtheit im Blick hat. Jeden Tag. Und der bereit ist, Verantwortung zu übernehmen.",aqt:'„Es ist nicht genug zu wissen, man muss auch anwenden; es ist nicht genug zu wollen, man muss auch tun.”',c1t:"Bewegungsmedizin und Rehabilitation",c1s:"Staatl. gepr. Physiotherapeut, Praxisinhaber seit 2014",c2t:"Gesundheitsökonomie und Strategie",c2s:"MBA Healthcare, FHG Tirol",c3t:"FX Mayr Medizin",c3s:"Park Igls, Lanserhof Lans",c4t:"Privater UHNW Dienst",c4s:"Physiotherapeut, Österreich und Deutschland",c5t:"KI und Digitale Gesundheit",c5s:"KI Lizenz WIFI Tirol, aktiver Anwender",c6t:"Sprachen",csince:"Seit 2018",cact:"Aktiv",cey:"Kontakt",chl:"Neugierig geworden?",ctx:"Ich freue mich auf ein persönliches Gespräch.",cbt:"Gespräch anfragen",impr:"Impressum"},
-en:{nsv:"Services",nab:"About",nct:"Request Consultation",hov:"Prevention, Physiotherapy, Health Management",hl1:"Your Body.",hl2:"Your Capital.",hl3:"Cared For.",hsu:"I work with people who refuse to compromise when it comes to their health.",hct:"Start the Course",hsv:"Discover Services",scr:"Scroll",sey:"What You Get From Me",shl:"Someone who keeps the overview.\nFor you.",stx:"Doctors diagnose. Therapists treat. Coaches motivate. What is missing is someone who holds it all together, coordinates and accompanies the client in daily life. Not as a replacement for specialists, but as the connection between them.",s1t:"Physiotherapy at the Highest Level",s1p:"Manual therapy, movement analysis, functional training. Built on over ten years of practice in the most exclusive medical environments in Europe.",s2t:"Health Coordination",s2p:"I organise specialist appointments, consolidate records and handle all communication with physicians. You focus on what matters.",s3t:"Wearable Analysis and Daily Routines",s3p:"Your data tells a story. I read it. Sleep, HRV, activity, recovery. From that, a rhythm emerges that fits your life.",s4t:"Data Processing and Record Structure",s4p:"Test results, lab values, medical reports. I translate complex information into clear recommendations and keep your health history structured and accessible.",s5t:"Biomarker Tracking",s5p:"Regular analysis of lab values, vital signs and performance parameters. No annual test without consequence. Every value is interpreted and addressed.",s6t:"Discretion and Availability",s6p:"I work with a small, selected group of clients. That means real availability, real commitment and a partnership that holds over decades.",st1:"Dimensions",st2:"Years Practice",st3:"Monitoring",st4:"Your Body. Unique.",pey:"The Core Idea",phl:"Your body is your most valuable asset.",pp1:"Every well-run company knows its metrics and acts when something falls out of rhythm. Most people do not apply this to their health.",pp2:"Achtgrad brings this clarity. Through the precise calibration of eight dimensions. Continuously. Discreetly.",pdim:"08 Dimensions",d1t:"Cardiovascular Capacity",d1s:"VO₂max, heart rate, endurance.",d2t:"Strength and Stability",d2s:"Musculature, resilience, balance.",d3t:"Mobility and Tissue Quality",d3s:"Fascia, mobility, pain-free movement.",d4t:"Respiratory Capacity",d4s:"Breathing muscles, lung volume, efficiency.",d5t:"Posture and Body Mechanics",d5s:"Gait, postural control, alignment.",d6t:"Recovery and Sleep",d6s:"HRV, sleep depth, resting heart rate.",d7t:"Stress Resilience and Mental Clarity",d7s:"Cognitive clarity, emotional regulation.",d8t:"Systemic Balance",d8s:"Inflammation markers, biometrics, micronutrients.",mey:"The Metaphor",mhl:"Eight degrees higher into the wind. The difference between arriving and winning.",mqt:"In sailing, eight degrees higher into the wind means closer to the source of power, more precise, more efficient and faster to the goal. In the body, it means the same. Not more effort. The right course.",mci:"The Achtgrad Principle",mnt:"Those who treat their body like their finest vessel prove themselves not only in perfect conditions. But in the doldrums and the storm.",ac1:"THE BODY",ac2:"THE ENERGY",r1k:"Hull and Rigging",r1kd:"Body, organs, biometrics",r1e:"Fair Wind",r1ed:"Vitality, drive, joie de vivre",r2k:"Trim",r2kd:"Nutrition, sleep, recovery",r2e:"Gusts",r2ed:"Stress, crises, peak loads",r3k:"Keel Weight",r3kd:"Musculature, stability",r3e:"Doldrums",r3ed:"Exhaustion, stagnation, burnout",r4k:"Sails",r4kd:"Lungs, breath, cardiac output",r4e:"Course",r4ed:"Strategy, direction, priorities",r5k:"Instruments",r5kd:"Wearables, biomarkers, data",r5e:"Regatta",r5ed:"Business, family, full life",mey2:"The Method",mhl2:"Vitality.\nAnchored in daily life.",mtx:"Retreats open the mind. Achtgrad anchors it in daily life. Translating clarity into a sustainable rhythm.",sg1:"DeepMap",st1t:"Assessment",st1p:"Complete calibration. Biomarkers, resilience, patterns. Your personal baseline in clear numbers.",sg2:"PrecisionPlan",st2t:"Course Description",st2p:"Your individual annual plan. Clear goals, concrete levers. No generic program, no standard.",sg3:"Implement",st3t:"Continuous Trim",st3p:"Weekly monitoring. Wearable analysis, real-time adjustment. The program does not end when you leave.",sg4:"Sustain & Adapt",st4t:"Delta and New Course",st4p:"What has measurably changed? Where is the next lever? Set a new course for the coming year.",aey:"The Helmsman",anm:"Alexander Ataii MBA",asu:"Physiotherapist, Innsbruck",acap:"Physiotherapist, Innsbruck",ap1:"I have spent over a decade in Europe's most exclusive healthcare environments. From leading clinics in Tyrol to direct care of individuals for whom health cannot be left to chance.",ap2:"What I have learned: excellent individual treatments are not enough. It requires someone who keeps the full picture in view. Every day. Someone willing to take responsibility.",aqt:'"It is not enough to know, one must also apply; it is not enough to wish, one must also act."',c1t:"Movement Medicine and Rehabilitation",c1s:"State-certified physiotherapist, Practice owner since 2014",c2t:"Health Economics and Strategy",c2s:"MBA Healthcare, FHG Tyrol",c3t:"FX Mayr Medicine",c3s:"Park Igls, Lanserhof Lans",c4t:"Private UHNW Service",c4s:"Physiotherapist, Austria and Germany",c5t:"AI and Digital Health",c5s:"AI License WIFI Tyrol, active practitioner",c6t:"Languages",csince:"Since 2018",cact:"Active",cey:"Contact",chl:"Curious?",ctx:"I look forward to a personal conversation.",cbt:"Request Consultation",impr:"Legal Notice"},
-ar:{nsv:"الخدمات",nab:"عن الطبيب",nct:"طلب استشارة",hov:"الوقاية، العلاج الطبيعي، إدارة الصحة",hl1:"جسدك.",hl2:"رأس مالك.",hl3:"في أفضل حال.",hsu:"أرافق أشخاصاً لا يقبلون التنازل في ما يخص صحتهم.",hct:"ابدأ المسار",hsv:"اكتشف الخدمات",scr:"تمرير",sey:"ما ستحصل عليه",shl:"كثير من النتائج. كثير من المعلومات.\nلكن لا أحد يتابع الصورة كاملة.",stx:"الأطباء يشخصون. المعالجون يعالجون. ما ينقصه شخص يجمع كل ذلك وينسقه ويرافق العميل يومياً.",s1t:"علاج طبيعي بأعلى المستويات",s1p:"علاج يدوي، تحليل الحركة، تدريب وظيفي.",s2t:"تنسيق صحي",s2p:"أنظم المواعيد وأجمع السجلات وأتولى التواصل مع الأطباء.",s3t:"تحليل الأجهزة والروتين",s3p:"بياناتك تحكي قصة. أنا أقرأها.",s4t:"معالجة البيانات",s4p:"نتائج الفحوصات وقيم المختبر.",s5t:"تتبع المؤشرات",s5p:"تحليل منتظم لقيم المختبر.",s6t:"السرية والتوافر",s6p:"أعمل مع دائرة صغيرة من العملاء.",st1:"أبعاد",st2:"سنوات خبرة",st3:"مراقبة",st4:"جسدك. فريد.",pey:"الفكرة الأساسية",phl:"جسدك هو أثمن رأس مالك.",pp1:"كل شركة ناجحة تعرف مؤشراتها.",pp2:"Achtgrad يجلب هذا الوضوح.",pdim:"٠٨ أبعاد",d1t:"القدرة القلبية",d1s:"VO₂max",d2t:"القوة والاستقرار",d2s:"العضلات، التوازن",d3t:"المرونة وجودة الأنسجة",d3s:"اللفافة، الحركة",d4t:"القدرة التنفسية",d4s:"حجم الرئة",d5t:"الوضعية والحركة",d5s:"نمط المشي",d6t:"التعافي والنوم",d6s:"HRV",d7t:"المرونة والحدة",d7s:"الوضوح الذهني",d8t:"التوازن الجهازي",d8s:"مؤشرات الالتهاب",mey:"المجاز",mhl:"ثماني درجات نحو الريح.",mqt:"في الإبحار، ثماني درجات نحو الريح تعني الاقتراب من مصدر القوة.",mci:"مبدأ Achtgrad",mnt:"من يعامل جسده كأفضل سفنه.",ac1:"الجسد",ac2:"الطاقة",r1k:"الهيكل",r1kd:"الجسد، الأعضاء",r1e:"ريح مواتية",r1ed:"الحيوية",r2k:"الضبط",r2kd:"التغذية، النوم",r2e:"عواصف",r2ed:"الضغط",r3k:"ثقل العارضة",r3kd:"العضلات",r3e:"ركود",r3ed:"الإرهاق",r4k:"الأشرعة",r4kd:"الرئتان",r4e:"المسار",r4ed:"الاستراتيجية",r5k:"الأجهزة",r5kd:"البيانات",r5e:"سباق",r5ed:"العمل، الأسرة",mey2:"المنهجية",mhl2:"الحيوية.\nراسخة في الحياة.",mtx:"Achtgrad يرسخ الوضوح في الحياة.",sg1:"DeepMap",st1t:"تقييم",st1p:"معايرة كاملة.",sg2:"PrecisionPlan",st2t:"تحديد المسار",st2p:"خطتك السنوية.",sg3:"تطبيق",st3t:"ضبط مستمر",st3p:"متابعة أسبوعية.",sg4:"استدامة",st4t:"مسار جديد",st4p:"ما الذي تغير?",aey:"الربان",anm:"ألكسندر عطائي MBA",asu:"معالج فيزيائي، مهندس صحي، إنسبروك",acap:"معالج فيزيائي، مهندس صحي",ap1:"عملت لأكثر من عقد في أرقى البيئات الطبية في أوروبا.",ap2:"العلاجات الفردية الممتازة لا تكفي.",aqt:"«لا يكفي أن تعرف، بل يجب أن تطبّق.»",c1t:"طب الحركة",c1s:"معالج معتمد، صاحب عيادة منذ 2014",c2t:"اقتصاديات الصحة",c2s:"MBA Healthcare، FHG تيرول",c3t:"طب FX ماير",c3s:"Park Igls، Lanserhof",c4t:"خدمة UHNW",c4s:"معالج فيزيائي، النمسا وألمانيا",c5t:"الذكاء الاصطناعي",c5s:"رخصة AI، ممارس نشط",c6t:"اللغات",csince:"منذ 2018",cact:"نشط",cey:"مستعد؟",chl:"المحادثة الأولى مجانية.",ctx:"محادثة. عنك وعن أهدافك.",cbt:"طلب استشارة",impr:"بيانات قانونية"}
+de:{nsv:"Leistungen",nph:"Philosophie",nme:"Methode",nab:"\u00dcber mich",nct:"Gespr\u00e4ch anfragen",hov:"Pr\u00e4vention \u00b7 Physiotherapie \u00b7 Gesundheitsmanagement",hl1:"Ihr K\u00f6rper.",hl2:"Ihr Kapital.",hl3:"Gepflegt.",hsu:"Ich begleite Menschen, die bei ihrer Gesundheit keine Kompromisse machen wollen.",hct:"Kurs aufnehmen",hsv:"Leistungen entdecken",scr:"Scroll",sey:"Was Sie von mir bekommen",shl:"Jemand der den Überblick behält.\nFür Sie.",stx:"Ärzte diagnostizieren. Therapeuten behandeln. Coaches motivieren. Was fehlt, ist jemand der all das zusammenhält, koordiniert und im Alltag begleitet. Nicht als Ersatz für Fachleute, sondern als die Verbindung zwischen ihnen.",s1t:"Physiotherapie auf h\u00f6chstem Niveau",s1p:"Manuelle Therapie, Bewegungsanalyse, funktionelles Training. Aufgebaut auf \u00fcber zehn Jahren Praxis in den exklusivsten medizinischen Umgebungen Europas.",s2t:"Medizinische Koordination",s2p:"Ich organisiere Termine bei Spezialisten, f\u00fchre medizinische Unterlagen zusammen und \u00fcbernehme die Kommunikation mit \u00c4rzten. Sie m\u00fcssen sich um nichts k\u00fcmmern.",s3t:"Wearable Auswertung und Tagesroutinen",s3p:"Ihre Daten erz\u00e4hlen eine Geschichte. Ich lese sie. Schlaf, HRV, Aktivit\u00e4t, Erholung. Daraus entsteht ein Rhythmus, der zu Ihrem Leben passt und nicht umgekehrt.",s4t:"Medizinische Datenaufbereitung",s4p:"Befunde, Laborwerte, Arztberichte. Ich \u00fcbersetze komplexe Informationen in klare Handlungsempfehlungen und halte Ihre gesamte Gesundheitshistorie strukturiert aufbereitet.",s5t:"Biomarker Tracking",s5p:"Regelm\u00e4\u00dfige Auswertung von Laborwerten, Vitalzeichen und Leistungsparametern. Kein Jahreslabor ohne Konsequenz. Jeder Wert wird eingeordnet und beantwortet.",s6t:"Diskretion und Verf\u00fcgbarkeit",s6p:"Ich arbeite mit einem kleinen, ausgew\u00e4hlten Klientenkreis. Das bedeutet echte Verf\u00fcgbarkeit, echtes Engagement und eine Zusammenarbeit, die \u00fcber Jahrzehnte tr\u00e4gt.",st1:"Dimensionen",st2:"Jahre Praxis",st3:"Monitoring",st4:"Ihr K\u00f6rper. Einzigartig.",pey:"Die Grundidee",phl:"Ihr K\u00f6rper ist Ihr wertvollstes Kapital.",pp1:"Jedes gut gef\u00fchrte Unternehmen kennt seine Kennzahlen und handelt wenn etwas aus dem Takt ger\u00e4t. Die meisten tun das f\u00fcr ihre Gesundheit nicht.",pp2:"Achtgrad bringt diese Klarheit. Durch das pr\u00e4zise Abstimmen von acht Dimensionen. Kontinuierlich. Diskret.",pdim:"08 Dimensionen",d1t:"Kardiovaskul\u00e4re Kapazit\u00e4t",d1s:"VO\u2082max, Herzfrequenz, Ausdauer.",d2t:"Kraft & Stabilit\u00e4t",d2s:"Muskulatur, Belastbarkeit, Gleichgewicht.",d3t:"Beweglichkeit & Gewebsqualit\u00e4t",d3s:"Faszien, Mobilit\u00e4t, Schmerzfreiheit.",d4t:"Atemkapazit\u00e4t",d4s:"Atemmuskulatur, Lungenvolumen, Effizienz.",d5t:"Haltung & K\u00f6rpermechanik",d5s:"Gangbild, posturale Kontrolle, Ausrichtung.",d6t:"Regeneration & Schlaf",d6s:"HRV, Schlaftiefe, Ruhepuls.",d7t:"Stressresilienz & mentale Sch\u00e4rfe",d7s:"Kognitive Klarheit, emotionale Steuerung.",d8t:"Systemische Balance",d8s:"Entz\u00fcndungsmarker, Biometrie, Mikron\u00e4hrstoffe.",mey:"Die Metapher",mhl:"Acht Grad h\u00f6her am Wind. Der Unterschied zwischen ankommen und gewinnen.",mqt:"Im Segeln bedeutet acht Grad h\u00f6her am Wind: n\u00e4her an die Quelle der Kraft, pr\u00e4ziser, effizienter und schneller am Ziel. Im K\u00f6rper bedeutet es dasselbe. Nicht mehr Aufwand. Der richtige Kurs.",mci:"Das Prinzip von Achtgrad",mnt:"Wer seinen K\u00f6rper so behandelt wie sein bestes Schiff, beweist sich nicht nur bei Idealwind. Sondern in der Flaute und im Sturm.",ac1:"DER K\u00d6RPER",ac2:"DIE ENERGIE",r1k:"Rumpf & Rigg",r1kd:"K\u00f6rper, Organe, Biometrie",r1e:"Fahrtwind",r1ed:"Vitalit\u00e4t, Antrieb, Lebensfreude",r2k:"Trimm",r2kd:"Ern\u00e4hrung, Schlaf, Regeneration",r2e:"B\u00f6en",r2ed:"Stress, Krisen, Belastungsspitzen",r3k:"Kielgewicht",r3kd:"Muskulatur, Stabilit\u00e4t",r3e:"Flaute",r3ed:"Ersch\u00f6pfung, Stagnation, Burnout",r4k:"Segel",r4kd:"Lunge, Atem, kardiale Leistung",r4e:"Kurs",r4ed:"Strategie, Richtung, Priorit\u00e4ten",r5k:"Instrumente",r5kd:"Wearables, Biomarker, Daten",r5e:"Regatta",r5ed:"Business, Familie, das volle Leben",mey2:"Die Methode",mhl2:"Vitalit\u00e4t.\nIm Alltag verankert.",mtx:"Retreats \u00f6ffnen den Blick. Achtgrad verankert ihn im Alltag. Die gewonnene Klarheit in einen nachhaltigen Rhythmus \u00fcbersetzen. Vital. Balanciert. Dauerhaft.",sg1:"DeepMap",st1t:"Bestandsaufnahme",st1p:"Vollst\u00e4ndige Kalibrierung. Biomarker, Belastbarkeit, Muster. Ihr pers\u00f6nlicher Ausgangspunkt in klaren Zahlen.",sg2:"PrecisionPlan",st2t:"Kursbeschreibung",st2p:"Ihr individueller Jahresplan. Klare Ziele, konkrete Hebel. Kein Generikurs, kein Standard.",sg3:"Implement",st3t:"Kontinuierlicher Trimm",st3p:"W\u00f6chentliches Monitoring. Wearable Auswertung, Anpassung in Echtzeit. Das Programm endet nicht mit der Abreise.",sg4:"Sustain & Adapt",st4t:"Delta & neuer Kurs",st4p:"Was hat sich messbar ver\u00e4ndert? Wo liegt der n\u00e4chste Hebel? Kurs neu setzen f\u00fcr das n\u00e4chste Jahr.",aey:"Der Steuermann",anm:"Alexander Ataii MBA",asu:"Physiotherapeut \u00b7 Gesundheitsarchitekt \u00b7 Innsbruck",acap:"Physiotherapeut \u00b7 Gesundheitsarchitekt",ap1:"Ich habe \u00fcber ein Jahrzehnt in den exklusivsten medizinischen Umgebungen Europas gearbeitet. Von f\u00fchrenden Kliniken Tirols bis hin zur direkten Betreuung von Pers\u00f6nlichkeiten, f\u00fcr die Gesundheit kein Zufall sein darf.",ap2:"Was ich gelernt habe: Exzellente Einzelbehandlungen reichen nicht. Es braucht jemanden, der die Gesamtheit im Blick hat. Jeden Tag. Und der bereit ist, Verantwortung zu \u00fcbernehmen.",aqt:"\u201eEs ist nicht genug zu wissen, man muss auch anwenden; es ist nicht genug zu wollen, man muss auch tun.\u201c",c1t:"Bewegungsmedizin & Rehabilitation",c1s:"Staatl. gepr. Physiotherapeut \u00b7 Praxisinhaber seit 2014",c2t:"Gesundheits\u00f6konomie & Strategie",c2s:"MBA Healthcare \u00b7 FHG Tirol",c3t:"FX Mayr Medizin",c3s:"Park Igls \u00b7 Lanserhof Lans",c4t:"Privater UHNW Dienst",c4s:"Physiotherapeut & PA \u00b7 \u00d6sterreich & Deutschland",c5t:"KI & Digitale Gesundheit",c5s:"KI Lizenz WIFI Tirol \u00b7 aktiver Anwender",c6t:"Sprachen",csince:"Seit 2018",cact:"Aktiv",cey:"Bereit f\u00fcr den Kurs?",chl:"Das erste Gespr\u00e4ch ist frei.",ctx:"Kein Standardprogramm. Keine Brosch\u00fcre. Ein Gespr\u00e4ch. \u00dcber Sie, Ihre Ziele, Ihren Weg.",cbt:"Gespr\u00e4ch anfragen",impr:"Impressum"},
+en:{nsv:"Services",nph:"Philosophy",nme:"Method",nab:"About",nct:"Request Consultation",hov:"Prevention \u00b7 Physiotherapy \u00b7 Health Management",hl1:"Your Body.",hl2:"Your Capital.",hl3:"Cared For.",hsu:"I work with people who refuse to compromise when it comes to their health.",hct:"Start the Course",hsv:"Discover Services",scr:"Scroll",sey:"What You Get From Me",shl:"Someone who keeps the overview.\nFor you.",stx:"Doctors diagnose. Therapists treat. Coaches motivate. What is missing is someone who holds it all together, coordinates it and accompanies the client in daily life. Not as a replacement for specialists, but as the connection between them.",s1t:"Physiotherapy at the Highest Level",s1p:"Manual therapy, movement analysis, functional training. Built on over ten years of practice in the most exclusive medical environments in Europe.",s2t:"Medical Coordination",s2p:"I organise specialist appointments, consolidate medical records and handle all communication with physicians. You focus on what matters.",s3t:"Wearable Analysis and Daily Routines",s3p:"Your data tells a story. I read it. Sleep, HRV, activity, recovery. From that, a rhythm emerges that fits your life. Not the other way around.",s4t:"Medical Data Processing",s4p:"Test results, lab values, medical reports. I translate complex information into clear recommendations and keep your entire health history structured and accessible.",s5t:"Biomarker Tracking",s5p:"Regular analysis of lab values, vital signs and performance parameters. No annual test without consequence. Every value is interpreted and addressed.",s6t:"Discretion and Availability",s6p:"I work with a small, selected group of clients. That means real availability, real commitment and a partnership that holds over decades.",st1:"Dimensions",st2:"Years Practice",st3:"Monitoring",st4:"Your Body. Unique.",pey:"The Core Idea",phl:"Your body is your most valuable asset.",pp1:"Every well-run company knows its metrics and acts when something falls out of rhythm. Most people do not apply this to their health.",pp2:"Achtgrad brings this clarity. Through the precise calibration of eight dimensions. Continuously. Discreetly.",pdim:"08 Dimensions",d1t:"Cardiovascular Capacity",d1s:"VO\u2082max, heart rate, endurance.",d2t:"Strength & Stability",d2s:"Musculature, resilience, balance.",d3t:"Mobility & Tissue Quality",d3s:"Fascia, mobility, pain-free movement.",d4t:"Respiratory Capacity",d4s:"Breathing muscles, lung volume, efficiency.",d5t:"Posture & Body Mechanics",d5s:"Gait, postural control, alignment.",d6t:"Recovery & Sleep",d6s:"HRV, sleep depth, resting heart rate.",d7t:"Stress Resilience & Mental Clarity",d7s:"Cognitive clarity, emotional regulation.",d8t:"Systemic Balance",d8s:"Inflammation markers, biometrics, micronutrients.",mey:"The Metaphor",mhl:"Eight degrees higher into the wind. The difference between arriving and winning.",mqt:"In sailing, eight degrees higher into the wind means closer to the source of power, more precise, more efficient and faster to the goal. In the body, it means the same. Not more effort. The right course.",mci:"The Achtgrad Principle",mnt:"Those who treat their body like their finest vessel prove themselves not only in perfect conditions. But in the doldrums and the storm.",ac1:"THE BODY",ac2:"THE ENERGY",r1k:"Hull & Rigging",r1kd:"Body, organs, biometrics",r1e:"Fair Wind",r1ed:"Vitality, drive, joie de vivre",r2k:"Trim",r2kd:"Nutrition, sleep, recovery",r2e:"Gusts",r2ed:"Stress, crises, peak loads",r3k:"Keel Weight",r3kd:"Musculature, stability",r3e:"Doldrums",r3ed:"Exhaustion, stagnation, burnout",r4k:"Sails",r4kd:"Lungs, breath, cardiac output",r4e:"Course",r4ed:"Strategy, direction, priorities",r5k:"Instruments",r5kd:"Wearables, biomarkers, data",r5e:"Regatta",r5ed:"Business, family, full life",mey2:"The Method",mhl2:"Vitality.\nAnchored in daily life.",mtx:"Retreats open the mind. Achtgrad anchors it in daily life. Translating clarity into a sustainable rhythm. Vital. Balanced. Lasting.",sg1:"DeepMap",st1t:"Assessment",st1p:"Complete calibration. Biomarkers, resilience, patterns. Your personal baseline in clear numbers.",sg2:"PrecisionPlan",st2t:"Course Description",st2p:"Your individual annual plan. Clear goals, concrete levers. No generic program, no standard.",sg3:"Implement",st3t:"Continuous Trim",st3p:"Weekly monitoring. Wearable analysis, real-time adjustment. The program does not end when you leave.",sg4:"Sustain & Adapt",st4t:"Delta & New Course",st4p:"What has measurably changed? Where is the next lever? Set a new course for the coming year.",aey:"The Helmsman",anm:"Alexander Ataii MBA",asu:"Physiotherapist \u00b7 Health Architect \u00b7 Innsbruck",acap:"Physiotherapist \u00b7 Health Architect",ap1:"I have spent over a decade in Europe's most exclusive healthcare environments. From leading clinics in Tyrol to direct care of individuals for whom health cannot be left to chance.",ap2:"What I have learned: excellent individual treatments are not enough. It requires someone who keeps the full picture in view. Every day. Someone willing to take responsibility.",aqt:'"It is not enough to know, one must also apply; it is not enough to wish, one must also act."',c1t:"Movement Medicine & Rehabilitation",c1s:"State-certified physiotherapist \u00b7 Practice owner since 2014",c2t:"Health Economics & Strategy",c2s:"MBA Healthcare \u00b7 FHG Tyrol",c3t:"FX Mayr Medicine",c3s:"Park Igls \u00b7 Lanserhof Lans",c4t:"Private UHNW Service",c4s:"Physiotherapist & PA \u00b7 Austria & Germany",c5t:"AI & Digital Health",c5s:"AI License WIFI Tyrol \u00b7 active practitioner",c6t:"Languages",csince:"Since 2018",cact:"Active",cey:"Ready for the Course?",chl:"The first conversation is free.",ctx:"No standard program. No brochure. A conversation. About you, your goals, your path.",cbt:"Request Consultation",impr:"Legal Notice"},
+ar:{nsv:"\u0627\u0644\u062e\u062f\u0645\u0627\u062a",nph:"\u0627\u0644\u0641\u0644\u0633\u0641\u0629",nme:"\u0627\u0644\u0645\u0646\u0647\u062c\u064a\u0629",nab:"\u0639\u0646 \u0627\u0644\u0637\u0628\u064a\u0628",nct:"\u0637\u0644\u0628 \u0627\u0633\u062a\u0634\u0627\u0631\u0629",hov:"\u0627\u0644\u0648\u0642\u0627\u064a\u0629 \u00b7 \u0627\u0644\u0639\u0644\u0627\u062c \u0627\u0644\u0637\u0628\u064a\u0639\u064a \u00b7 \u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0635\u062d\u0629",hl1:"\u062c\u0633\u062f\u0643.",hl2:"\u0631\u0623\u0633 \u0645\u0627\u0644\u0643.",hl3:"\u0641\u064a \u0623\u0641\u0636\u0644 \u062d\u0627\u0644.",hsu:"\u0623\u0631\u0627\u0641\u0642 \u0623\u0634\u062e\u0627\u0635\u0627\u064b \u0644\u0627 \u064a\u0642\u0628\u0644\u0648\u0646 \u0627\u0644\u062a\u0646\u0627\u0632\u0644 \u0641\u064a \u0645\u0627 \u064a\u062e\u0635 \u0635\u062d\u062a\u0647\u0645.",hct:"\u0627\u0628\u062f\u0623 \u0627\u0644\u0645\u0633\u0627\u0631",hsv:"\u0627\u0643\u062a\u0634\u0641 \u0627\u0644\u062e\u062f\u0645\u0627\u062a",scr:"\u062a\u0645\u0631\u064a\u0631",sey:"\u0645\u0627 \u0633\u062a\u062d\u0635\u0644 \u0639\u0644\u064a\u0647",shl:"\u0643\u062b\u064a\u0631 \u0645\u0646 \u0627\u0644\u0646\u062a\u0627\u0626\u062c. \u0643\u062b\u064a\u0631 \u0645\u0646 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a.\n\u0644\u0643\u0646 \u0644\u0627 \u0623\u062d\u062f \u064a\u062a\u0627\u0628\u0639 \u0627\u0644\u0635\u0648\u0631\u0629 \u0643\u0627\u0645\u0644\u0629.",stx:"\u0627\u0644\u0623\u0637\u0628\u0627\u0621 \u064a\u0634\u062e\u0635\u0648\u0646. \u0627\u0644\u0645\u0639\u0627\u0644\u062c\u0648\u0646 \u064a\u0639\u0627\u0644\u062c\u0648\u0646. \u0645\u0627 \u064a\u0646\u0642\u0635\u0647\u0648 \u0634\u062e\u0635 \u064a\u062c\u0645\u0639 \u0643\u0644 \u0630\u0644\u0643 \u0648\u064a\u0646\u0633\u0642\u0647 \u0648\u064a\u0631\u0627\u0641\u0642 \u0627\u0644\u0639\u0645\u064a\u0644 \u064a\u0648\u0645\u064a\u0627\u064b.",s1t:"\u0639\u0644\u0627\u062c \u0637\u0628\u064a\u0639\u064a \u0628\u0623\u0639\u0644\u0649 \u0627\u0644\u0645\u0633\u062a\u0648\u064a\u0627\u062a",s1p:"\u0639\u0644\u0627\u062c \u064a\u062f\u0648\u064a\u060c \u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u062d\u0631\u0643\u0629\u060c \u062a\u062f\u0631\u064a\u0628 \u0648\u0638\u064a\u0641\u064a.",s2t:"\u0627\u0644\u062a\u0646\u0633\u064a\u0642 \u0627\u0644\u0637\u0628\u064a",s2p:"\u0623\u0646\u0638\u0645 \u0627\u0644\u0645\u0648\u0627\u0639\u064a\u062f \u0648\u0623\u062c\u0645\u0639 \u0627\u0644\u0633\u062c\u0644\u0627\u062a \u0648\u0623\u062a\u0648\u0644\u0649 \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0645\u0639 \u0627\u0644\u0623\u0637\u0628\u0627\u0621.",s3t:"\u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0623\u062c\u0647\u0632\u0629 \u0648\u0627\u0644\u0631\u0648\u062a\u064a\u0646",s3p:"\u0628\u064a\u0627\u0646\u0627\u062a\u0643 \u062a\u062d\u0643\u064a \u0642\u0635\u0629. \u0623\u0646\u0627 \u0623\u0642\u0631\u0624\u0647\u0627.",s4t:"\u0645\u0639\u0627\u0644\u062c\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a",s4p:"\u0646\u062a\u0627\u0626\u062c \u0627\u0644\u0641\u062d\u0648\u0635\u0627\u062a \u0648\u0642\u064a\u0645 \u0627\u0644\u0645\u062e\u062a\u0628\u0631.",s5t:"\u062a\u062a\u0628\u0639 \u0627\u0644\u0645\u0624\u0634\u0631\u0627\u062a",s5p:"\u062a\u062d\u0644\u064a\u0644 \u0645\u0646\u062a\u0638\u0645 \u0644\u0642\u064a\u0645 \u0627\u0644\u0645\u062e\u062a\u0628\u0631.",s6t:"\u0627\u0644\u0633\u0631\u064a\u0629 \u0648\u0627\u0644\u062a\u0648\u0627\u0641\u0631",s6p:"\u0623\u0639\u0645\u0644 \u0645\u0639 \u062f\u0627\u0626\u0631\u0629 \u0635\u063a\u064a\u0631\u0629 \u0645\u0646 \u0627\u0644\u0639\u0645\u0644\u0627\u0621.",st1:"\u0623\u0628\u0639\u0627\u062f",st2:"\u0633\u0646\u0648\u0627\u062a \u062e\u0628\u0631\u0629",st3:"\u0645\u0631\u0627\u0642\u0628\u0629",st4:"\u062c\u0633\u062f\u0643. \u0641\u0631\u064a\u062f.",pey:"\u0627\u0644\u0641\u0643\u0631\u0629 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629",phl:"\u062c\u0633\u062f\u0643 \u0647\u0648 \u0623\u062b\u0645\u0646 \u0631\u0623\u0633 \u0645\u0627\u0644\u0643.",pp1:"\u0643\u0644 \u0634\u0631\u0643\u0629 \u0646\u0627\u062c\u062d\u0629 \u062a\u0639\u0631\u0641 \u0645\u0624\u0634\u0631\u0627\u062a\u0647\u0627.",pp2:"Achtgrad \u064a\u062c\u0644\u0628 \u0647\u0630\u0627 \u0627\u0644\u0648\u0636\u0648\u062d.",pdim:"\u06f0\u06f8 \u0623\u0628\u0639\u0627\u062f",d1t:"\u0627\u0644\u0642\u062f\u0631\u0629 \u0627\u0644\u0642\u0644\u0628\u064a\u0629",d1s:"VO\u2082max",d2t:"\u0627\u0644\u0642\u0648\u0629 \u0648\u0627\u0644\u0627\u0633\u062a\u0642\u0631\u0627\u0631",d2s:"\u0627\u0644\u0639\u0636\u0644\u0627\u062a\u060c \u0627\u0644\u062a\u0648\u0627\u0632\u0646",d3t:"\u0627\u0644\u0645\u0631\u0648\u0646\u0629 \u0648\u062c\u0648\u062f\u0629 \u0627\u0644\u0623\u0646\u0633\u062c\u0629",d3s:"\u0627\u0644\u0644\u0641\u0627\u0641\u0629\u060c \u0627\u0644\u062d\u0631\u0643\u0629",d4t:"\u0627\u0644\u0642\u062f\u0631\u0629 \u0627\u0644\u062a\u0646\u0641\u0633\u064a\u0629",d4s:"\u062d\u062c\u0645 \u0627\u0644\u0631\u0626\u0629",d5t:"\u0627\u0644\u0648\u0636\u0639\u064a\u0629 \u0648\u0627\u0644\u062d\u0631\u0643\u0629",d5s:"\u0646\u0645\u0637 \u0627\u0644\u0645\u0634\u064a",d6t:"\u0627\u0644\u062a\u0639\u0627\u0641\u064a \u0648\u0627\u0644\u0646\u0648\u0645",d6s:"HRV",d7t:"\u0627\u0644\u0645\u0631\u0648\u0646\u0629 \u0648\u0627\u0644\u062d\u062f\u0629",d7s:"\u0627\u0644\u0648\u0636\u0648\u062d \u0627\u0644\u0630\u0647\u0646\u064a",d8t:"\u0627\u0644\u062a\u0648\u0627\u0632\u0646 \u0627\u0644\u062c\u0647\u0627\u0632\u064a",d8s:"\u0645\u0624\u0634\u0631\u0627\u062a \u0627\u0644\u0627\u0644\u062a\u0647\u0627\u0628",mey:"\u0627\u0644\u0645\u062c\u0627\u0632",mhl:"\u062b\u0645\u0627\u0646\u064a \u062f\u0631\u062c\u0627\u062a \u0646\u062d\u0648 \u0627\u0644\u0631\u064a\u062d.",mqt:"\u0641\u064a \u0627\u0644\u0625\u0628\u062d\u0627\u0631\u060c \u062b\u0645\u0627\u0646\u064a \u062f\u0631\u062c\u0627\u062a \u0646\u062d\u0648 \u0627\u0644\u0631\u064a\u062d \u062a\u0639\u0646\u064a \u0627\u0644\u0627\u0642\u062a\u0631\u0627\u0628 \u0645\u0646 \u0645\u0635\u062f\u0631 \u0627\u0644\u0642\u0648\u0629.",mci:"\u0645\u0628\u062f\u0623 Achtgrad",mnt:"\u0645\u0646 \u064a\u0639\u0627\u0645\u0644 \u062c\u0633\u062f\u0647 \u0643\u0623\u0641\u0636\u0644 \u0633\u0641\u0646\u0647.",ac1:"\u0627\u0644\u062c\u0633\u062f",ac2:"\u0627\u0644\u0637\u0627\u0642\u0629",r1k:"\u0627\u0644\u0647\u064a\u0643\u0644",r1kd:"\u0627\u0644\u062c\u0633\u062f\u060c \u0627\u0644\u0623\u0639\u0636\u0627\u0621",r1e:"\u0631\u064a\u062d \u0645\u0648\u0627\u062a\u064a\u0629",r1ed:"\u0627\u0644\u062d\u064a\u0648\u064a\u0629",r2k:"\u0627\u0644\u0636\u0628\u0637",r2kd:"\u0627\u0644\u062a\u063a\u0630\u064a\u0629\u060c \u0627\u0644\u0646\u0648\u0645",r2e:"\u0639\u0648\u0627\u0635\u0641",r2ed:"\u0627\u0644\u0636\u063a\u0637",r3k:"\u062b\u0642\u0644 \u0627\u0644\u0639\u0627\u0631\u0636\u0629",r3kd:"\u0627\u0644\u0639\u0636\u0644\u0627\u062a",r3e:"\u0631\u0643\u0648\u062f",r3ed:"\u0627\u0644\u0625\u0631\u0647\u0627\u0642",r4k:"\u0627\u0644\u0623\u0634\u0631\u0639\u0629",r4kd:"\u0627\u0644\u0631\u0626\u062a\u0627\u0646",r4e:"\u0627\u0644\u0645\u0633\u0627\u0631",r4ed:"\u0627\u0644\u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u0629",r5k:"\u0627\u0644\u0623\u062c\u0647\u0632\u0629",r5kd:"\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a",r5e:"\u0633\u0628\u0627\u0642",r5ed:"\u0627\u0644\u0639\u0645\u0644\u060c \u0627\u0644\u0623\u0633\u0631\u0629",mey2:"\u0627\u0644\u0645\u0646\u0647\u062c\u064a\u0629",mhl2:"\u0627\u0644\u062d\u064a\u0648\u064a\u0629.\n\u0631\u0627\u0633\u062e\u0629 \u0641\u064a \u0627\u0644\u062d\u064a\u0627\u0629.",mtx:"Achtgrad \u064a\u0631\u0633\u062e \u0627\u0644\u0648\u0636\u0648\u062d \u0641\u064a \u0627\u0644\u062d\u064a\u0627\u0629.",sg1:"DeepMap",st1t:"\u062a\u0642\u064a\u064a\u0645",st1p:"\u0645\u0639\u0627\u064a\u0631\u0629 \u0643\u0627\u0645\u0644\u0629.",sg2:"PrecisionPlan",st2t:"\u062a\u062d\u062f\u064a\u062f \u0627\u0644\u0645\u0633\u0627\u0631",st2p:"\u062e\u0637\u062a\u0643 \u0627\u0644\u0633\u0646\u0648\u064a\u0629.",sg3:"\u062a\u0637\u0628\u064a\u0642",st3t:"\u0636\u0628\u0637 \u0645\u0633\u062a\u0645\u0631",st3p:"\u0645\u062a\u0627\u0628\u0639\u0629 \u0623\u0633\u0628\u0648\u0639\u064a\u0629.",sg4:"\u0627\u0633\u062a\u062f\u0627\u0645\u0629",st4t:"\u0645\u0633\u0627\u0631 \u062c\u062f\u064a\u062f",st4p:"\u0645\u0627 \u0627\u0644\u0630\u064a \u062a\u063a\u064a\u0631?",aey:"\u0627\u0644\u0631\u0628\u0627\u0646",anm:"\u0623\u0644\u0643\u0633\u0646\u062f\u0631 \u0639\u0637\u0627\u0626\u064a MBA",asu:"\u0645\u0639\u0627\u0644\u062c \u0641\u064a\u0632\u064a\u0627\u0626\u064a \u00b7 \u0645\u0647\u0646\u062f\u0633 \u0635\u062d\u064a \u00b7 \u0625\u0646\u0633\u0628\u0631\u0648\u0643",acap:"\u0645\u0639\u0627\u0644\u062c \u0641\u064a\u0632\u064a\u0627\u0626\u064a \u00b7 \u0645\u0647\u0646\u062f\u0633 \u0635\u062d\u064a",ap1:"\u0639\u0645\u0644\u062a \u0644\u0623\u0643\u062b\u0631 \u0645\u0646 \u0639\u0642\u062f \u0641\u064a \u0623\u0631\u0642\u0649 \u0627\u0644\u0628\u064a\u0626\u0627\u062a \u0627\u0644\u0637\u0628\u064a\u0629 \u0641\u064a \u0623\u0648\u0631\u0648\u0628\u0627.",ap2:"\u0627\u0644\u0639\u0644\u0627\u062c\u0627\u062a \u0627\u0644\u0641\u0631\u062f\u064a\u0629 \u0644\u0627 \u062a\u0643\u0641\u064a.",aqt:"\u00ab\u0644\u0627 \u064a\u0643\u0641\u064a \u0623\u0646 \u062a\u0639\u0631\u0641\u060c \u0628\u0644 \u064a\u062c\u0628 \u0623\u0646 \u062a\u0637\u0628\u0651\u0642.\u00bb",c1t:"\u0637\u0628 \u0627\u0644\u062d\u0631\u0643\u0629",c1s:"\u0645\u0639\u0627\u0644\u062c \u0645\u0639\u062a\u0645\u062f \u00b7 \u0635\u0627\u062d\u0628 \u0639\u064a\u0627\u062f\u0629 \u0645\u0646\u0630 2014",c2t:"\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0627\u062a \u0627\u0644\u0635\u062d\u0629",c2s:"MBA Healthcare \u00b7 FHG \u062a\u064a\u0631\u0648\u0644",c3t:"\u0637\u0628 FX \u0645\u0627\u064a\u0631",c3s:"Park Igls \u00b7 Lanserhof",c4t:"\u062e\u062f\u0645\u0629 UHNW",c4s:"\u0645\u0639\u0627\u0644\u062c \u0641\u064a\u0632\u064a\u0627\u0626\u064a \u00b7 \u0627\u0644\u0646\u0645\u0633\u0627 \u0648\u0623\u0644\u0645\u0627\u0646\u064a\u0627",c5t:"\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",c5s:"\u0631\u062e\u0635\u0629 AI \u00b7 \u0645\u0645\u0627\u0631\u0633 \u0646\u0634\u0637",c6t:"\u0627\u0644\u0644\u063a\u0627\u062a",csince:"\u0645\u0646\u0630 2018",cact:"\u0646\u0634\u0637",cey:"\u0645\u0633\u062a\u0639\u062f\u061f",chl:"\u0627\u0644\u0645\u062d\u0627\u062f\u062b\u0629 \u0627\u0644\u0623\u0648\u0644\u0649 \u0645\u062c\u0627\u0646\u064a\u0629.",ctx:"\u0645\u062d\u0627\u062f\u062b\u0629. \u0639\u0646\u0643 \u0648\u0639\u0646 \u0623\u0647\u062f\u0627\u0641\u0643.",cbt:"\u0637\u0644\u0628 \u0627\u0633\u062a\u0634\u0627\u0631\u0629",impr:"\u0628\u064a\u0627\u0646\u0627\u062a \u0642\u0627\u0646\u0648\u0646\u064a\u0629"}
 };
 
 let lang='de';
@@ -467,7 +478,7 @@ function setLang(l){
   document.querySelectorAll('[data-t]').forEach(el=>{
     const v=T[l][el.dataset.t];
     if(v===undefined)return;
-    if((el.tagName==='H2'||el.tagName==='H1'||el.tagName==='P')&&v.includes('\n'))
+    if((el.tagName==='H2'||el.tagName==='H1')&&v.includes('\n'))
       el.innerHTML=v.split('\n').join('<br>');
     else el.textContent=v;
   });
@@ -496,10 +507,12 @@ const co=new IntersectionObserver(entries=>entries.forEach(e=>{
 }),{threshold:.5});
 document.querySelectorAll('[data-c]').forEach(el=>co.observe(el));
 
+document.getElementById('ibt').addEventListener('click',()=>document.getElementById('ibd').classList.toggle('open'));
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
   const t=document.querySelector(a.getAttribute('href'));
   if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+scrollY-75,behavior:'smooth'})}
 }));
+// Fallback: make all reveal elements visible after 300ms in case observer fails
 setTimeout(()=>{document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'))},300);
 </script>
 </body>

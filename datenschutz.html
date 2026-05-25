@@ -8,21 +8,27 @@
 <link rel="stylesheet" href="/fonts/fonts.css">
 <style>
 :root{
-  --gold:#c49a30;--ink:#0D0C0A;--cream:#f7f4ef;--mid:#ede8dc;
-  --muted:rgba(28,28,28,.5);--muted-2:rgba(28,28,28,.3);
-  --edge:rgba(28,28,28,.1);--edge-gold:rgba(196,154,48,.3);
+  --gold:#c49a30;
+  --ink:#ede8dc;--mid:#0d1410;--cream:#090e0c;
+  --muted:rgba(237,232,220,.55);--muted-2:rgba(237,232,220,.3);
+  --edge:rgba(237,232,220,.08);--edge-gold:rgba(196,154,48,.20);
   --serif:'Cormorant Garamond',Georgia,serif;
   --sans:'DM Sans',system-ui,sans-serif;
 }
+html.day{
+  --ink:#0D0C0A;--mid:#ede8dc;--cream:#f7f4ef;
+  --muted:rgba(28,28,28,.5);--muted-2:rgba(28,28,28,.3);
+  --edge:rgba(28,28,28,.1);--edge-gold:rgba(196,154,48,.3);
+}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{background:var(--cream);color:var(--ink);font-size:18px}
+html{background:var(--cream);color:var(--ink);font-size:18px;transition:background .35s,color .35s}
 body{font-family:var(--sans);font-weight:300;line-height:1.72}
 a{color:var(--gold);text-decoration:none}
 a:hover{text-decoration:underline}
 
 nav{
   position:sticky;top:0;
-  background:rgba(247,244,239,.97);
+  background:var(--cream);
   backdrop-filter:blur(14px);
   border-bottom:1px solid var(--edge);
   padding:.9rem 0;
@@ -51,8 +57,17 @@ ul li{margin-bottom:.35rem;line-height:1.72}
 .ftr-logo{font-family:var(--serif);font-size:1.3rem;color:var(--ink)}
 .ftr-logo em{color:var(--gold);font-style:normal}
 
+html.day nav{background:rgba(247,244,239,.97)}
 @media(max-width:480px){.nr,.wrap{padding-left:1.25rem;padding-right:1.25rem}.nl{font-size:1.3rem}}
 </style>
+<script>
+(function(){
+  var light=window.matchMedia('(prefers-color-scheme:light)').matches;
+  var dark=window.matchMedia('(prefers-color-scheme:dark)').matches;
+  var h=new Date().getHours();
+  if(light||(h>=7&&h<21&&!dark))document.documentElement.classList.add('day');
+})();
+</script>
 </head>
 <body>
 
