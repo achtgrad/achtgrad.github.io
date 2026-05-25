@@ -3,659 +3,329 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leistungen · Achtgrad Physiotherapie und Gesundheitsmanagement Innsbruck</title>
-<meta name="description" content="Alle Leistungen von Achtgrad: Physiotherapie, medizinische Koordination, Wearable-Auswertung, Biomarker-Tracking, Datenaufbereitung. Alexander Ataii MBA, Innsbruck.">
+<title>Leistungen · Achtgrad Physiotherapie Innsbruck</title>
+<meta name="description" content="Physiotherapie, Vitalitätsprotokoll, Biomarker-Auswertung, CGM, Wearable-Analyse, medizinische Koordination. Alexander Ataii MBA, Innsbruck.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://achtgrad.at/leistungen.html">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://achtgrad.at/leistungen.html">
-<meta property="og:title" content="Leistungen · Achtgrad Innsbruck">
-<meta property="og:description" content="Physiotherapie, medizinische Koordination, Biomarker-Tracking und mehr. Persönliches Gesundheitsmanagement von Alexander Ataii MBA.">
-<meta property="og:locale" content="de_AT">
 <script>
-  /* Theme detection — runs before render to avoid flash */
-  (function(){
-    var mql = window.matchMedia('(prefers-color-scheme: light)');
-    var mqd = window.matchMedia('(prefers-color-scheme: dark)');
-    var h   = new Date().getHours();
-    var day = mql.matches || (!mqd.matches && h >= 7 && h < 21);
-    if(day) document.documentElement.classList.add('day');
-  })();
+(function(){
+  var light=window.matchMedia('(prefers-color-scheme:light)').matches;
+  var dark=window.matchMedia('(prefers-color-scheme:dark)').matches;
+  var h=new Date().getHours();
+  if(light||(h>=7&&h<21&&!dark))document.documentElement.classList.add('day');
+})();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="/fonts/fonts.css">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
-  /* ── Shared ───────────────────────────────────────────── */
-  :root {
-    --gold:      #c49a30;
-    --gold-hi:   #d4aa50;
-    --gold-lo:   rgba(196,154,48,0.14);
-    --green:     #2a7060;
-    --teal-dark: #1e5448;
-    --serif:     'Cormorant Garamond', Georgia, serif;
-    --sans:      'DM Sans', system-ui, sans-serif;
-    --ease:      cubic-bezier(0.16,1,0.3,1);
+:root{
+  --gold:#c49a30;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+  --ease:cubic-bezier(0.16,1,0.3,1);
+  --bg:#090e0c;
+  --bg2:#0d1410;
+  --ink:#ede8dc;
+  --ink-50:rgba(237,232,220,0.50);
+  --ink-20:rgba(237,232,220,0.10);
+  --edge:rgba(237,232,220,0.08);
+  --edge-gold:rgba(196,154,48,0.22);
+  --nav-bg:rgba(9,14,12,0.97);
+}
+html.day{
+  --bg:#f7f4ef;
+  --bg2:#ede8dc;
+  --ink:#0D0C0A;
+  --ink-50:rgba(13,12,10,0.55);
+  --ink-20:rgba(13,12,10,0.08);
+  --edge:rgba(13,12,10,0.09);
+  --edge-gold:rgba(196,154,48,0.30);
+  --nav-bg:rgba(247,244,239,0.97);
+}
 
-    /* Dark theme (default) */
-    --bg:         #090e0c;
-    --bg-mid:     #0d1410;
-    --bg-card:    #090e0c;
-    --bg-hover:   #101812;
-    --bg-panel:   #0d1410;
-    --text:       #ede8dc;
-    --text-mid:   rgba(237,232,220,0.50);
-    --edge:       rgba(237,232,220,0.08);
-    --edge-gold:  rgba(196,154,48,0.20);
-    --nav-bg:     rgba(9,14,12,0.97);
-    --logo-color: #ede8dc;
-    --head-color: #ede8dc;
-    --cta-text:   #090e0c;
-  }
+html{background:var(--bg);color:var(--ink);scroll-behavior:smooth}
+body{font-family:var(--sans);font-weight:300;line-height:1.7;background:var(--bg);transition:background .35s,color .35s}
+a{color:inherit;text-decoration:none}
 
-  /* Light / day theme */
-  html.day {
-    --bg:         #f7f4ef;
-    --bg-mid:     #ede8dc;
-    --bg-card:    #ffffff;
-    --bg-hover:   #f0ece3;
-    --bg-panel:   #1e5448;
-    --text:       #1c1c1c;
-    --text-mid:   rgba(28,28,28,0.55);
-    --edge:       rgba(28,28,28,0.10);
-    --edge-gold:  rgba(196,154,48,0.40);
-    --nav-bg:     rgba(247,244,239,0.97);
-    --logo-color: #1e5448;
-    --head-color: #1e5448;
-    --cta-text:   #f7f4ef;
-    --gold-lo:    rgba(196,154,48,0.08);
-  }
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:800;
+  background:var(--nav-bg);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--edge);
+  padding:.9rem 0;
+  transition:background .35s,border-color .35s;
+}
+.nr{display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto;padding:0 1.75rem}
+.nl{font-family:var(--serif);font-size:1.2rem;font-weight:400;letter-spacing:.07em;color:var(--ink);transition:color .35s}
+.nl em{font-style:normal;color:var(--gold)}
+.nav-back{font-size:.7rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-50);transition:color .2s}
+.nav-back:hover{color:var(--ink)}
 
-  html { scroll-behavior: smooth; background: var(--bg); }
+.hero{padding:9rem 1.75rem 5rem;max-width:1100px;margin:0 auto}
+.hero-label{font-size:.65rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:1.2rem}
+.hero h1{font-family:var(--serif);font-size:clamp(2.6rem,5.5vw,4.8rem);font-weight:300;line-height:1.04;color:var(--ink);margin-bottom:1.2rem;transition:color .35s}
+.hero p{font-size:.95rem;color:var(--ink-50);max-width:480px;line-height:1.88}
 
-  body {
-    font-family: var(--sans);
-    background: var(--bg);
-    color: var(--text);
-    font-weight: 300;
-    line-height: 1.7;
-    overflow-x: hidden;
-    transition: background 0.4s, color 0.4s;
-  }
+.list{max-width:1100px;margin:0 auto;padding:0 1.75rem 8rem}
 
-  a { color: inherit; text-decoration: none; }
-  button { cursor: pointer; font-family: var(--sans); }
+.item{
+  display:grid;
+  grid-template-columns:3.5rem 1fr;
+  gap:0 2.5rem;
+  padding:3rem 0;
+  border-top:1px solid var(--edge);
+  transition:border-color .35s;
+}
+.item:last-child{border-bottom:1px solid var(--edge)}
 
-  /* NAV */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 800;
-    background: var(--nav-bg);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--edge);
-    padding: 0.85rem 0;
-    transition: background 0.4s, border-color 0.4s;
-  }
-  .nr {
-    display: flex; align-items: center; justify-content: space-between;
-    max-width: 1200px; margin: 0 auto; padding: 0 1.75rem;
-  }
-  .nl {
-    font-family: var(--serif);
-    font-size: 1.2rem; font-weight: 400; letter-spacing: 0.07em;
-    color: var(--logo-color);
-    transition: color 0.4s;
-  }
-  .nl em { font-style: normal; color: var(--gold); font-size: 0.9rem; margin-left: 0.15em; }
-  .nav-back {
-    font-size: 0.72rem; font-weight: 400; letter-spacing: 0.12em;
-    text-transform: uppercase; color: var(--text-mid);
-    transition: color 0.2s;
-  }
-  .nav-back:hover { color: var(--text); }
+.num{
+  font-family:var(--serif);
+  font-size:.75rem;
+  font-weight:300;
+  color:var(--gold);
+  letter-spacing:.08em;
+  padding-top:.35rem;
+  opacity:.8;
+}
+.body{}
+.title{
+  font-family:var(--serif);
+  font-size:clamp(1.35rem,2.5vw,1.9rem);
+  font-weight:300;
+  color:var(--ink);
+  margin-bottom:.9rem;
+  line-height:1.12;
+  transition:color .35s;
+}
+.desc{font-size:.9rem;color:var(--ink-50);line-height:1.88;max-width:60ch;margin-bottom:1.2rem}
+.points{list-style:none;display:flex;flex-direction:column;gap:.4rem}
+.points li{
+  font-size:.8rem;
+  color:var(--ink-50);
+  line-height:1.6;
+  padding-left:1.1rem;
+  position:relative;
+}
+.points li::before{
+  content:'';
+  position:absolute;left:0;top:.6rem;
+  width:4px;height:4px;border-radius:50%;
+  background:var(--gold);opacity:.7;
+}
 
-  /* HERO */
-  .hero {
-    padding: 130px 1.75rem 72px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .hero-label {
-    font-size: 0.68rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase;
-    color: var(--gold); display: block; margin-bottom: 1.1rem;
-  }
-  .hero h1 {
-    font-family: var(--serif);
-    font-size: clamp(2.8rem, 6vw, 5.5rem);
-    font-weight: 300; line-height: 1.04;
-    color: var(--head-color);
-    margin-bottom: 1.4rem;
-    transition: color 0.4s;
-  }
-  .hero p {
-    font-size: 0.96rem; color: var(--text-mid);
-    max-width: 520px; line-height: 1.88;
-  }
+.tag{
+  display:inline-block;
+  font-size:.58rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold);border:1px solid var(--edge-gold);
+  padding:.22rem .65rem;margin-bottom:1rem;
+}
 
-  /* GRID */
-  .services-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.75rem 8rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1px;
-    background: var(--edge);
-    border: 1px solid var(--edge);
-    transition: background 0.4s, border-color 0.4s;
-  }
+.cta-block{
+  background:var(--bg2);
+  border-top:1px solid var(--edge);
+  padding:6rem 1.75rem;
+  text-align:center;
+  transition:background .35s,border-color .35s;
+}
+.cta-block h2{
+  font-family:var(--serif);
+  font-size:clamp(1.8rem,4vw,3.2rem);
+  font-weight:300;color:var(--ink);
+  margin-bottom:2rem;line-height:1.2;
+  transition:color .35s;
+}
+.btn{
+  display:inline-block;
+  font-family:var(--sans);font-size:.7rem;font-weight:500;letter-spacing:.17em;text-transform:uppercase;
+  padding:.95rem 2.2rem;
+  background:var(--gold);color:#090e0c;
+  transition:opacity .2s,transform .2s;
+}
+.btn:hover{opacity:.85;transform:translateY(-2px)}
 
-  /* CARD */
-  .card {
-    background: var(--bg-card);
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: background 0.3s;
-  }
-  .card::after {
-    content: '';
-    position: absolute; top: 0; left: 0; right: 0;
-    height: 1.5px;
-    background: linear-gradient(to right, var(--gold), transparent);
-    transform: scaleX(0); transform-origin: left;
-    transition: transform 0.5s var(--ease);
-  }
-  .card:hover { background: var(--bg-hover); }
-  .card:hover::after { transform: scaleX(1); }
-  .card.active { background: var(--green); }
-  .card.active::after { transform: scaleX(1); }
+footer{
+  background:var(--bg2);
+  border-top:1px solid var(--edge);
+  padding:2rem 1.75rem;
+  transition:background .35s,border-color .35s;
+}
+.fr{display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto;flex-wrap:wrap;gap:1rem}
+.flogo{font-family:var(--serif);font-size:.95rem;color:var(--ink-50)}
+.flogo em{font-style:normal;color:var(--gold)}
+.flinks{display:flex;gap:1.8rem;list-style:none}
+.flinks a{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-50);opacity:.5;transition:opacity .2s}
+.flinks a:hover{opacity:1}
 
-  .card-header {
-    padding: 2.8rem 2.4rem 2.4rem;
-    display: flex; flex-direction: column; gap: 1.1rem;
-  }
-
-  .card-symbol {
-    font-size: 1.6rem; color: var(--gold); opacity: 0.7;
-    transition: opacity 0.3s; line-height: 1;
-  }
-  .card.active .card-symbol { opacity: 0.9; }
-
-  .card-title {
-    font-family: var(--serif);
-    font-size: 1.2rem; font-weight: 400; line-height: 1.2;
-    color: var(--head-color);
-    transition: color 0.4s;
-  }
-  .card.active .card-title { color: #ede8dc; }
-
-  .card-teaser {
-    font-size: 0.8rem; line-height: 1.75;
-    color: var(--text-mid);
-  }
-  .card.active .card-teaser { color: rgba(237,232,220,0.75); }
-
-  .card-cta {
-    display: flex; align-items: center; gap: 8px;
-    font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase;
-    color: var(--gold); margin-top: 0.4rem;
-  }
-  .card-cta .arrow { display: inline-block; transition: transform 0.3s; }
-  .card.active .card-cta .arrow { transform: rotate(90deg); }
-
-  /* DETAIL PANEL — always dark regardless of page theme */
-  .detail-panel {
-    grid-column: 1 / -1;
-    background: var(--bg-panel);
-    border-top: 1px solid var(--edge-gold);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.6s cubic-bezier(0.4,0,0.2,1);
-  }
-  .detail-panel.open { max-height: 1400px; }
-  .detail-inner {
-    padding: 4rem 5rem 4.5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    opacity: 0;
-    transform: translateY(16px);
-    transition: opacity 0.4s 0.15s, transform 0.4s 0.15s;
-  }
-  .detail-panel.open .detail-inner { opacity: 1; transform: translateY(0); }
-
-  .detail-left h2 {
-    font-family: var(--serif);
-    font-size: 2rem; font-weight: 300;
-    color: #ede8dc;
-    margin-bottom: 1.4rem; line-height: 1.15;
-  }
-  .detail-left p {
-    font-size: 0.9rem; line-height: 1.88;
-    color: rgba(237,232,220,0.65); margin-bottom: 1rem;
-  }
-
-  .detail-right { display: flex; flex-direction: column; gap: 2rem; padding-top: 0.5rem; }
-
-  .detail-block-label {
-    font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase;
-    color: var(--gold); margin-bottom: 0.75rem;
-  }
-  .detail-list { list-style: none; }
-  .detail-list li {
-    font-size: 0.82rem; line-height: 1.7;
-    color: rgba(237,232,220,0.70);
-    padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(237,232,220,0.08);
-    display: flex; align-items: flex-start; gap: 10px;
-  }
-  .detail-list li::before {
-    content: ''; display: inline-block;
-    width: 4px; height: 4px; border-radius: 50%;
-    background: var(--gold); opacity: .8;
-    flex-shrink: 0; margin-top: 0.6rem;
-  }
-  .detail-list li:last-child { border-bottom: none; }
-
-  .detail-note {
-    background: rgba(196,154,48,0.10);
-    border-left: 2px solid var(--gold);
-    padding: 1rem 1.25rem;
-    font-size: 0.78rem; color: rgba(237,232,220,0.55);
-    font-style: italic; line-height: 1.7; margin-top: 1rem;
-  }
-
-  .close-btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    margin-top: 2rem;
-    font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase;
-    color: var(--gold); cursor: pointer;
-    background: none; border: none; padding: 0;
-    transition: opacity 0.2s;
-  }
-  .close-btn:hover { opacity: 0.6; }
-
-  /* DIVIDER */
-  .section-divider {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.75rem 4rem;
-    display: flex; align-items: center; gap: 1.5rem;
-  }
-  .section-divider span {
-    font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase;
-    color: var(--text-mid); white-space: nowrap; opacity: 0.6;
-  }
-  .section-divider::after {
-    content: ''; flex: 1; height: 1px; background: var(--edge);
-  }
-
-  /* BOTTOM CTA */
-  .bottom-cta {
-    background: var(--bg-mid);
-    border-top: 1px solid var(--edge);
-    padding: 5rem 1.75rem;
-    text-align: center;
-    transition: background 0.4s;
-  }
-  .bottom-cta p {
-    font-family: var(--serif);
-    font-size: 1.8rem; font-weight: 300;
-    color: var(--head-color);
-    margin-bottom: 2rem; line-height: 1.4;
-    transition: color 0.4s;
-  }
-  .bottom-cta a {
-    display: inline-block;
-    font-size: 0.68rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--cta-text); background: var(--gold);
-    padding: 0.95rem 2.1rem;
-    text-decoration: none;
-    transition: background 0.2s, transform 0.2s;
-  }
-  .bottom-cta a:hover { background: var(--gold-hi); transform: translateY(-2px); }
-
-  @media (max-width: 768px) {
-    .hero { padding-left: 1.25rem; padding-right: 1.25rem; }
-    .services-grid { padding-left: 1.25rem; padding-right: 1.25rem; grid-template-columns: 1fr; }
-    .detail-inner { grid-template-columns: 1fr; padding: 2.5rem 1.75rem 3rem; gap: 2.5rem; }
-    .detail-panel { grid-column: 1; }
-    .section-divider { padding-left: 1.25rem; padding-right: 1.25rem; }
-  }
+@media(max-width:640px){
+  .item{grid-template-columns:2.2rem 1fr;gap:0 1.2rem;padding:2.2rem 0}
+  .hero{padding-top:7rem}
+  .cta-block{padding:4rem 1.25rem}
+  .list{padding-left:1.25rem;padding-right:1.25rem}
+}
 </style>
 </head>
 <body>
 
 <nav>
   <div class="nr">
-    <a href="https://achtgrad.at" class="nl">Achtgrad <em>&#9675;&#9675;&deg;</em></a>
-    <a href="https://achtgrad.at" class="nav-back">Zurück zur Übersicht</a>
+    <a href="index.html" class="nl">Achtgrad <em>oo°</em></a>
+    <a href="index.html" class="nav-back">Zurück zur Übersicht</a>
   </div>
 </nav>
 
 <div class="hero">
-  <div class="hero-label">Leistungen im Detail</div>
+  <span class="hero-label">Leistungen</span>
   <h1>Was Achtgrad<br>konkret bedeutet.</h1>
-  <p>Jede Leistung ist Teil eines integrierten Systems. Klicken Sie auf einen Bereich um zu verstehen was dahintersteckt.</p>
+  <p>Alle Leistungen werden persönlich durch Alexander Ataii erbracht. Kein Franchisesystem, keine Delegation.</p>
 </div>
 
-<div class="services-grid" id="grid">
+<div class="list">
 
-  <!-- 1: PHYSIOTHERAPIE -->
-  <div class="card" data-id="physio" onclick="toggleCard(this)">
-    <div class="card-header">
-      <div class="card-symbol">⊕</div>
-      <div class="card-title">Physiotherapie auf höchstem Niveau</div>
-      <div class="card-teaser">Manuelle Therapie, Bewegungsanalyse, funktionelles Training. Aufgebaut auf über zehn Jahren Praxis in den exklusivsten medizinischen Umgebungen Europas.</div>
-      <div class="card-cta">Mehr erfahren <span class="arrow">→</span></div>
+  <div class="item">
+    <span class="num">01</span>
+    <div class="body">
+      <div class="tag">Behandlung</div>
+      <h2 class="title">Physiotherapie</h2>
+      <p class="desc">Manuelle Therapie, Bewegungsanalyse und funktionelles Training auf Basis klinischer Praxis in Park Igls, Lanserhof Lans und privater Klientenbegleitung in Österreich und Deutschland.</p>
+      <ul class="points">
+        <li>Manuelle Therapie: Maitland, Mulligan, myofasziale Techniken</li>
+        <li>Dry Needling bei myofaszialen Schmerzsyndromen</li>
+        <li>Ganganalyse und funktionelle Bewegungsscreens</li>
+        <li>Kraft- und Stabilitätstraining individuell</li>
+        <li>Narbenbehandlung nach Operationen</li>
+      </ul>
     </div>
   </div>
 
-  <div class="detail-panel" id="panel-physio">
-    <div class="detail-inner">
-      <div class="detail-left">
-        <h2>Physiotherapie, die versteht wo Sie stehen.</h2>
-        <p>Achtgrad beginnt nicht bei Symptomen, sondern bei Mustern. Bewegungsanalyse, manuelle Therapie und funktionelles Training auf Basis klinischer Praxis in Park Igls, Lanserhof und privater Klientenbegleitung in Österreich und Deutschland. Alle Behandlungen persönlich durch Alexander Ataii.</p>
-        <button class="close-btn" onclick="closeCard(event)">✕ Schließen</button>
-      </div>
-      <div class="detail-right">
-        <ul class="detail-list">
-          <li>Manuelle Therapie: Maitland, Mulligan, myofasziale Techniken</li>
-          <li>Dry Needling: Triggerpunktbehandlung bei myofaszialen Schmerzsyndromen</li>
-          <li>Ganganalyse und funktionelle Bewegungsscreens</li>
-          <li>Individuelles Kraft- und Stabilitätstraining</li>
-          <li>Narbenbehandlung nach Operationen</li>
-          <li>Remote-Begleitung zwischen Terminen</li>
-        </ul>
-      </div>
+  <div class="item">
+    <span class="num">02</span>
+    <div class="body">
+      <div class="tag">Diagnostik</div>
+      <h2 class="title">Vitalitätsprotokoll</h2>
+      <p class="desc">Vollständige Leistungserfassung in acht Dimensionen. Ergebnis ist eine Vitalitätsprojektion auf das 90. Lebensjahr sowie ein konkretes 12-Wochen-Protokoll.</p>
+      <ul class="points">
+        <li>VO₂max via submaximales Laufbandprotokoll</li>
+        <li>Griffkraft, Dead Hang, Beinstreckerkraft</li>
+        <li>Spirometrie: FVC, FEV1, Atemreserve</li>
+        <li>HRV-Analyse: RMSSD, Schlafqualität, Regeneration</li>
+        <li>Vitalitätsprojektion mit individuellem Handlungsplan</li>
+      </ul>
     </div>
   </div>
 
-  <!-- 2: VITALITÄTSPROTOKOLL -->
-  <div class="card" data-id="vitality" onclick="toggleCard(this)">
-    <div class="card-header">
-      <div class="card-symbol">◎</div>
-      <div class="card-title">Vitalitätsprotokoll & 8 Dimensionen</div>
-      <div class="card-teaser">Wo stehen Sie heute. Wo werden Sie mit 90 stehen. Acht Dimensionen, messbare Marker, ein klares Bild.</div>
-      <div class="card-cta">Mehr erfahren <span class="arrow">→</span></div>
+  <div class="item">
+    <span class="num">03</span>
+    <div class="body">
+      <div class="tag">Diagnostik</div>
+      <h2 class="title">Biomarker-Auswertung</h2>
+      <p class="desc">Regelmäßige Laborauswertung mit Trendanalyse. Nicht nur ob ein Wert im Normalbereich liegt, sondern wohin sich der Trend entwickelt und was das bedeutet.</p>
+      <ul class="points">
+        <li>Kardiovaskulär: ApoB, LDL, HDL, Triglyceride, Fibrinogen</li>
+        <li>Stoffwechsel: HbA1c, Insulin, Glucose, IGF-1</li>
+        <li>Hormone: Testosteron, SHBG, Estradiol</li>
+        <li>Entzündung: CRP, Homocystein</li>
+        <li>Halbjährlicher Verlaufsvergleich mit Protokollanpassung</li>
+      </ul>
     </div>
   </div>
 
-  <div class="detail-panel" id="panel-vitality">
-    <div class="detail-inner">
-      <div class="detail-left">
-        <h2>Acht Grad Kurskorrektur. Messbar. Individuell.</h2>
-        <p>Das Achtgrad-Framework bewertet Ihre Gesundheit in acht Dimensionen: von kardiovaskulärer Kapazität über Kraft, Atemfunktion und Schlaf bis zu systemischer Balance. Das Ergebnis ist eine Vitalitätsprojektion auf Ihr 90. Lebensjahr und ein konkretes Protokoll für die nächsten 12 Wochen.</p>
-        <button class="close-btn" onclick="closeCard(event)">✕ Schließen</button>
-      </div>
-      <div class="detail-right">
-        <ul class="detail-list">
-          <li>VO₂max-Bestimmung via submaximales Laufbandprotokoll</li>
-          <li>Handgrip, Dead Hang, Beinstreckerkraft</li>
-          <li>Spirometrie: FVC, FEV1, Atemreserve</li>
-          <li>HRV-Analyse: RMSSD, Schlafqualität, Regeneration</li>
-          <li>Vitalitätsprojektion auf Alter 90 mit Handlungsplan</li>
-        </ul>
-      </div>
+  <div class="item">
+    <span class="num">04</span>
+    <div class="body">
+      <div class="tag">Monitoring</div>
+      <h2 class="title">CGM-Begleitung</h2>
+      <p class="desc">Vier Wochen kontinuierliche Glukosemessung. Alle Daten werden ausschließlich lokal verarbeitet, ohne Cloud-Übertragung.</p>
+      <ul class="points">
+        <li>Time in Range, Mean Glucose, Standardabweichung</li>
+        <li>Mahlzeiten-Response: kontrollierte Tests und Auswertung</li>
+        <li>Training-Glukose-Interaktion: vor, während und danach</li>
+        <li>Stress- und Schlaf-Korrelation via Wearable</li>
+      </ul>
     </div>
   </div>
 
-  <!-- 3: BIOMARKER -->
-  <div class="card" data-id="biomarker" onclick="toggleCard(this)">
-    <div class="card-header">
-      <div class="card-symbol">○</div>
-      <div class="card-title">Biomarker-Tracking</div>
-      <div class="card-teaser">Regelmäßige Auswertung von Laborwerten, Vitalzeichen und Leistungsparametern. Kein Jahreslabor ohne Konsequenz. Jeder Wert wird eingeordnet und beantwortet.</div>
-      <div class="card-cta">Mehr erfahren <span class="arrow">→</span></div>
+  <div class="item">
+    <span class="num">05</span>
+    <div class="body">
+      <div class="tag">Monitoring</div>
+      <h2 class="title">Wearable-Auswertung</h2>
+      <p class="desc">Wöchentliche Auswertung von HRV, Schlaf und Erholung. Das Ergebnis sind konkrete Anpassungen, keine Dashboards. Kompatibel mit Garmin, Apple Watch, Oura, Whoop, Polar, Withings.</p>
+      <ul class="points">
+        <li>HRV als Erholungsindikator: RMSSD-Trend</li>
+        <li>Schlafphasenanalyse: Tief-, Leicht- und REM-Schlaf</li>
+        <li>Trainingsplanung nach aktuellem Erholungsniveau</li>
+        <li>Reise- und Zeitzonenprotokolle</li>
+      </ul>
     </div>
   </div>
 
-  <div class="detail-panel" id="panel-biomarker">
-    <div class="detail-inner">
-      <div class="detail-left">
-        <h2>Laborwerte sind Entscheidungsgrundlagen. Keine Beruhigungspillen.</h2>
-        <p>Achtgrad fragt nicht nur ob Sie im Normalbereich liegen, sondern wohin sich der Trend entwickelt. Jeder Wert wird in den Kontext von Bewegung, Schlaf und Erholung eingeordnet. Laborpartner: InoHealth mit erweitertem Biomarker-Panel.</p>
-        <button class="close-btn" onclick="closeCard(event)">✕ Schließen</button>
-      </div>
-      <div class="detail-right">
-        <ul class="detail-list">
-          <li>Kardiovaskulär: ApoB, LDL, HDL, Triglyceride, Fibrinogen</li>
-          <li>Stoffwechsel: HbA1c, Insulin, Glucose, IGF-1</li>
-          <li>Hormone: Testosteron, SHBG, Estradiol</li>
-          <li>Entzündung: CRP, Homocystein</li>
-          <li>Halbjährlicher Verlaufsvergleich mit Protokollanpassung</li>
-        </ul>
-      </div>
+  <div class="item">
+    <span class="num">06</span>
+    <div class="body">
+      <div class="tag">Koordination</div>
+      <h2 class="title">Medizinische Koordination</h2>
+      <p class="desc">Übernahme der gesamten medizinischen Koordination: Recherche geeigneter Spezialisten, Terminorganisation, Kommunikation mit Ärzten und Kliniken.</p>
+      <ul class="points">
+        <li>Auswahl und Kontaktaufnahme mit Spezialisten</li>
+        <li>Übernahme der Korrespondenz mit Ärzten und Kliniken</li>
+        <li>Begleitung zu Terminen auf Wunsch</li>
+        <li>Koordination zwischen mehreren behandelnden Ärzten</li>
+        <li>Netzwerk: Kardiologen, Endokrinologen, Privatkliniken DACH</li>
+      </ul>
     </div>
   </div>
 
-  <!-- 4: CGM -->
-  <div class="card" data-id="cgm" onclick="toggleCard(this)">
-    <div class="card-header">
-      <div class="card-symbol">◈</div>
-      <div class="card-title">CGM-Begleitung</div>
-      <div class="card-teaser">Vier Wochen kontinuierliche Glukosemessung. Was Ihr Körper auf Mahlzeiten, Training und Stress antwortet. Vollständig DSGVO-konform, ausschliesslich lokal verarbeitet.</div>
-      <div class="card-cta">Mehr erfahren <span class="arrow">→</span></div>
+  <div class="item">
+    <span class="num">07</span>
+    <div class="body">
+      <div class="tag">Dokumentation</div>
+      <h2 class="title">Gesundheitsdokumentation</h2>
+      <p class="desc">Strukturierte Aufbereitung der gesamten medizinischen Geschichte: Befunde, Laborberichte, Arztbriefe. Beim nächsten Spezialisten sofort einsatzbereit, auch international.</p>
+      <ul class="points">
+        <li>Laborberichte chronologisch und nach Kategorien geordnet</li>
+        <li>Arztbriefe mit Zusammenfassung</li>
+        <li>Executive Summary für schnellen Überblick</li>
+        <li>Laufende Aktualisierung bei neuen Befunden</li>
+      </ul>
     </div>
   </div>
 
-  <div class="detail-panel" id="panel-cgm">
-    <div class="detail-inner">
-      <div class="detail-left">
-        <h2>Ihr Stoffwechsel. In Echtzeit.</h2>
-        <p>Das CGM-Assessment läuft über vier Wochen. Sensor-Daten werden täglich in Achtgrad Dimension 08 eingeordnet: Time in Range, postprandiale Spikes, Stressreaktionen. Alle Daten werden ausschliesslich lokal auf dem Achtgrad-Server verarbeitet, ohne Cloud-Übertragung.</p>
-        <button class="close-btn" onclick="closeCard(event)">✕ Schließen</button>
-      </div>
-      <div class="detail-right">
-        <ul class="detail-list">
-          <li>Time in Range, Mean Glucose, Standardabweichung</li>
-          <li>Mahlzeiten-Response: kontrollierte Tests und Auswertung</li>
-          <li>Training-Glukose-Interaktion: vor, während und danach</li>
-          <li>Stress- und Schlaf-Korrelation via Wearable</li>
-          <li>DSGVO-konform: keine Cloud, vollständig lokal verarbeitet</li>
-        </ul>
-      </div>
+  <div class="item">
+    <span class="num">08</span>
+    <div class="body">
+      <div class="tag">Retainer</div>
+      <h2 class="title">Kontinuierliche Begleitung</h2>
+      <p class="desc">Für Klienten, die eine dauerhafte Betreuungsstruktur wünschen. Feste Verfügbarkeit, regelmäßige Sitzungen, laufendes Monitoring.</p>
+      <ul class="points">
+        <li>Retainer Basis: 2 Sitzungen monatlich, Check-in</li>
+        <li>Retainer Vitalitätsprotokoll: 4 Sitzungen, Wearable, Koordination</li>
+        <li>Retainer Concierge: auf Anfrage</li>
+        <li>Akuttermine bei medizinischen Ereignissen</li>
+        <li>Verschlüsselte Kommunikation, DSGVO-konform</li>
+      </ul>
     </div>
   </div>
-
-</div>
-
-  <!-- 5: WEARABLE -->
-  <div class="card" data-id="wearable" onclick="toggleCard(this)">
-    <div class="card-header">
-      <div class="card-symbol">◈</div>
-      <div class="card-title">Wearable-Auswertung und Tagesroutinen</div>
-      <div class="card-teaser">Ihre Daten erzählen eine Geschichte. Ich lese sie. Schlaf, HRV, Aktivität, Erholung. Daraus entsteht ein Rhythmus, der zu Ihrem Leben passt.</div>
-      <div class="card-cta">Mehr erfahren <span class="arrow">→</span></div>
-    </div>
-  </div>
-
-  <div class="detail-panel" id="panel-wearable">
-    <div class="detail-inner">
-      <div class="detail-left">
-        <h2>Daten sind nur so gut wie die Interpretation dahinter.</h2>
-        <p>Ihre Wearable-Daten werden wöchentlich ausgewertet. HRV, Schlafarchitektur, Erholungsbalance, Aktivitätsmuster. Das Ergebnis sind konkrete Anpassungen für die nächste Woche. Kompatibel mit Garmin, Apple Watch, Oura, Whoop, Polar, Withings.</p>
-        <button class="close-btn" onclick="closeCard(event)">✕ Schließen</button>
-      </div>
-      <div class="detail-right">
-        <ul class="detail-list">
-          <li>HRV als wichtigster Erholungsindikator</li>
-          <li>Schlafphasenanalyse: Tief-, Leicht- und REM-Schlaf</li>
-          <li>Trainingsplanung nach aktuellem Erholungsniveau</li>
-          <li>Reise- und Zeitzonenprotokolle</li>
-          <li>Wöchentliche Anpassungen, keine App, kein Dashboard</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- 6: KOORDINATION -->
-  <div class="card" data-id="koordination" onclick="toggleCard(this)">
-    <div class="card-header">
-      <div class="card-symbol">◎</div>
-      <div class="card-title">Medizinische Koordination</div>
-      <div class="card-teaser">Ich organisiere Termine bei Spezialisten, führe medizinische Unterlagen zusammen und übernehme die Kommunikation mit Ärzten. Sie müssen sich um nichts kümmern.</div>
-      <div class="card-cta">Mehr erfahren <span class="arrow">→</span></div>
-    </div>
-  </div>
-
-  <div class="detail-panel" id="panel-koordination">
-    <div class="detail-inner">
-      <div class="detail-left">
-        <h2>Jemand der das System versteht. Und für Sie navigiert.</h2>
-        <p>Das medizinische System ist fragmentiert und zeitintensiv. Achtgrad übernimmt die Koordination vollständig: Recherche, Terminorganisation, Kommunikation mit Spezialisten und Befundübergabe. Ein Ansprechpartner, der das Gesamtbild kennt.</p>
-        <button class="close-btn" onclick="closeCard(event)">✕ Schließen</button>
-      </div>
-      <div class="detail-right">
-        <ul class="detail-list">
-          <li>Recherche und Auswahl geeigneter Spezialisten</li>
-          <li>Übernahme der Korrespondenz mit Ärzten und Kliniken</li>
-          <li>Begleitung zu Terminen auf Wunsch</li>
-          <li>Koordination zwischen mehreren behandelnden Ärzten</li>
-          <li>Netzwerk: Kardiologen, Endokrinologen, Longevity-Spezialisten, Privatkliniken DACH</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- 7: DATEN -->
-  <div class="card" data-id="daten" onclick="toggleCard(this)">
-    <div class="card-header">
-      <div class="card-symbol">◇</div>
-      <div class="card-title">Medizinische Datenaufbereitung</div>
-      <div class="card-teaser">Befunde, Laborwerte, Arztberichte. Ich übersetze komplexe Informationen in klare Handlungsempfehlungen und halte Ihre gesamte Gesundheitshistorie strukturiert aufbereitet.</div>
-      <div class="card-cta">Mehr erfahren <span class="arrow">→</span></div>
-    </div>
-  </div>
-
-  <div class="detail-panel" id="panel-daten">
-    <div class="detail-inner">
-      <div class="detail-left">
-        <h2>Ihre gesamte Gesundheitsgeschichte. Strukturiert. Lesbar.</h2>
-        <p>Befunde, Laborberichte, Arztbriefe: Achtgrad strukturiert Ihre gesamte medizinische Dokumentation und hält sie laufend aktuell. Beim nächsten Spezialisten sofort einsatzbereit, auch international. DSGVO-konform.</p>
-        <button class="close-btn" onclick="closeCard(event)">✕ Schließen</button>
-      </div>
-      <div class="detail-right">
-        <ul class="detail-list">
-          <li>Laborberichte chronologisch und nach Kategorien geordnet</li>
-          <li>Arztbriefe und Bildgebung mit Zusammenfassung</li>
-          <li>Executive Summary für schnellen Überblick</li>
-          <li>Laufende Aktualisierung bei neuen Befunden</li>
-          <li>Immer verfügbar, auch auf Reisen</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- 8: DISKRETION -->
-  <div class="card" data-id="diskretion" onclick="toggleCard(this)">
-    <div class="card-header">
-      <div class="card-symbol">◕</div>
-      <div class="card-title">Diskretion und Verfügbarkeit</div>
-      <div class="card-teaser">Ich arbeite mit einem kleinen, ausgewählten Klientenkreis. Das bedeutet echte Verfügbarkeit, echtes Engagement und eine Zusammenarbeit, die über Jahrzehnte trägt.</div>
-      <div class="card-cta">Mehr erfahren <span class="arrow">→</span></div>
-    </div>
-  </div>
-
-  <div class="detail-panel" id="panel-diskretion">
-    <div class="detail-inner">
-      <div class="detail-left">
-        <h2>Verfügbarkeit ist kein Feature. Sie ist das Fundament.</h2>
-        <p>Achtgrad begleitet eine bewusst kleine Anzahl von Klienten. Wenn Sie schreiben, antwortete ich. Wenn Sie drei Monate nach Dubai reisen, ist Ihre Betreuung lückenlos. Neue Klienten werden nach persönlichem Erstgespräch aufgenommen.</p>
-        <button class="close-btn" onclick="closeCard(event)">✕ Schließen</button>
-      </div>
-      <div class="detail-right">
-        <ul class="detail-list">
-          <li>E-Mail-Antwort innerhalb 24 Stunden</li>
-          <li>Akuttermine bei medizinischen Ereignissen</li>
-          <li>Begleitung auf Reisen, physisch oder remote</li>
-          <li>Verschlüsselte Kommunikation, DSGVO-konform</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-
 
 </div>
 
-<div class="section-divider"><span>Kontakt</span></div>
-
-<div class="bottom-cta">
-  <p>Bereit für ein erstes Gespräch?<br>Ohne Verpflichtung, ohne Formular.</p>
-  <a href="mailto:kontakt@achtgrad.at">kontakt@achtgrad.at</a>
+<div class="cta-block">
+  <h2>Neugierig geworden?<br>Nehmen Sie direkt Kontakt auf.</h2>
+  <a href="mailto:kontakt@achtgrad.at" class="btn">kontakt@achtgrad.at</a>
 </div>
 
-<script>
-  let currentOpen = null;
+<footer>
+  <div class="fr">
+    <span class="flogo">Achtgrad <em>oo°</em></span>
+    <ul class="flinks">
+      <li><a href="impressum.html">Impressum</a></li>
+      <li><a href="datenschutz.html">Datenschutz</a></li>
+    </ul>
+  </div>
+</footer>
 
-  // On load: move all panels to end of grid and hide them.
-  // Panels interleaved between cards break the 2-column layout even at max-height:0
-  // because they are grid-column:1/-1 full-width items.
-  document.addEventListener('DOMContentLoaded', () => {
-    const grid = document.getElementById('grid');
-    Array.from(grid.querySelectorAll('.detail-panel')).forEach(p => {
-      p.style.display = 'none';
-      grid.appendChild(p);
-    });
-    const hash = location.hash.replace('#', '');
-    if (hash) {
-      const card = document.querySelector('[data-id="' + hash + '"]');
-      if (card) openPanel(card, hash);
-    }
-  });
-
-  function toggleCard(card) {
-    const id = card.dataset.id;
-    if (currentOpen === id) { closeAll(); return; }
-    closeAll();
-    openPanel(card, id);
-  }
-
-  function openPanel(card, id) {
-    const grid   = document.getElementById('grid');
-    const panel  = document.getElementById('panel-' + id);
-    const cards  = Array.from(grid.querySelectorAll('.card'));
-    const idx    = cards.indexOf(card);
-
-    // Last card in this row (pairs: 0+1, 2+3, 4+5 …)
-    const rowEndIdx  = idx % 2 === 0 ? idx + 1 : idx;
-    const rowEndCard = cards[rowEndIdx] || card;
-
-    // Insert panel immediately after the row's last card
-    rowEndCard.after(panel);
-
-    // Show then animate
-    panel.style.display = 'block';
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      panel.classList.add('open');
-    }));
-
-    card.classList.add('active');
-    currentOpen = id;
-
-    setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 150);
-  }
-
-  function closeAll() {
-    if (!currentOpen) return;
-    const panel = document.getElementById('panel-' + currentOpen);
-    const card  = document.querySelector('[data-id="' + currentOpen + '"]');
-    panel.classList.remove('open');
-    panel.addEventListener('transitionend', () => {
-      panel.style.display = 'none';
-      document.getElementById('grid').appendChild(panel); // park at end
-    }, { once: true });
-    if (card) card.classList.remove('active');
-    currentOpen = null;
-  }
-
-  function closeCard(event) {
-    event.stopPropagation();
-    closeAll();
-  }
-</script>
 </body>
 </html>
