@@ -297,6 +297,35 @@ footer{background:var(--bg2);padding:2.8rem 0;border-top:1px solid var(--edge)}
   .strow{grid-template-columns:1fr}
   .st{border-right:none;border-bottom:1px solid var(--edge)}
 }
+/* SYSTEM */
+#system{background:var(--bg2);padding:8rem 0}
+.sys-lead{font-family:var(--serif);font-size:clamp(1.4rem,3vw,2.4rem);font-weight:300;max-width:18em;margin:0 auto 5rem;line-height:1.3;color:var(--ink)}
+.sys-nums{display:flex;justify-content:center;gap:clamp(3rem,10vw,9rem);flex-wrap:wrap}
+.sn{display:flex;flex-direction:column;align-items:center;gap:.6rem}
+.snn{font-family:var(--serif);font-size:clamp(3.5rem,8vw,6rem);font-weight:300;color:var(--gold);line-height:1}
+.snl{font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-50)}
+
+/* DIMENSIONS */
+#dimensions{padding:6rem 0}
+.dlist{display:grid;grid-template-columns:1fr 1fr;margin-top:2.5rem;border-top:1px solid var(--edge)}
+.di{display:flex;align-items:center;gap:1.4rem;padding:1.2rem 0;border-bottom:1px solid var(--edge)}
+.di:nth-child(odd){padding-right:2.5rem}
+.di:nth-child(even){padding-left:2.5rem;border-left:1px solid var(--edge)}
+.dinum{font-family:var(--serif);font-size:.85rem;color:var(--gold);font-weight:300;min-width:1.8em;flex-shrink:0}
+.diname{font-size:.82rem;font-weight:300;letter-spacing:.02em;color:var(--ink)}
+@media(max-width:640px){.dlist{grid-template-columns:1fr}.di:nth-child(even){padding-left:0;border-left:none}}
+
+/* FOUNDER */
+#founder{background:var(--bg2);padding:7rem 0}
+.fo{display:grid;grid-template-columns:1fr 1.5fr;gap:clamp(2rem,6vw,6rem);align-items:center;max-width:960px;margin:0 auto}
+.fo-img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.fo-text h2{font-size:clamp(1.8rem,4vw,3rem);font-weight:300;margin-bottom:.4rem}
+.fo-role{font-size:.72rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-50);margin-bottom:1.8rem}
+.fo-bio{font-size:.92rem;line-height:1.9;color:var(--ink-50);margin-bottom:2rem}
+.fo-tags{display:flex;flex-wrap:wrap;gap:.5rem}
+.fo-tags span{font-size:.6rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--edge-gold);color:var(--gold);padding:.3rem .9rem}
+@media(max-width:640px){.fo{grid-template-columns:1fr}.fo-img{aspect-ratio:4/3;max-height:320px;object-position:top}}
+
 </style>
 <noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
 </head>
@@ -308,10 +337,8 @@ footer{background:var(--bg2);padding:2.8rem 0;border-top:1px solid var(--edge)}
     <button class="hb" id="hbg" aria-label="Menu"><span></span><span></span><span></span></button>
     <div class="nm" id="panel">
       <ul class="nl2">
-        <li><a href="#services" data-t="nsv">Leistungen</a></li>
-        <li><a href="#philosophy" data-t="nph">Philosophie</a></li>
-        <li><a href="#method" data-t="nme">Methode</a></li>
-        <li><a href="#about" data-t="nab">Über mich</a></li>
+        <li><a href="leistungen.html" data-t="nsv">Leistungen</a></li>
+        <li><a href="#founder" data-t="nab">Über mich</a></li>
       </ul>
       <div class="lb">
         <button class="lbtn on" data-l="de" onclick="setLang('de')">DE</button>
@@ -335,246 +362,61 @@ footer{background:var(--bg2);padding:2.8rem 0;border-top:1px solid var(--edge)}
         <div class="ool ool2"><div class="ooi"></div><span class="oodg"></span></div>
       </div>
       <div class="hitext">
-        <p class="ho" data-t="hov">Prävention, Physiotherapie, Longevity</p>
         <h1 class="h1">
           <span class="ln" data-t="hl1">Ihr Körper.</span>
           <span class="ln" data-t="hl2">Ihr Kapital.</span>
           <span class="ln"><em data-t="hl3">Gepflegt.</em></span>
         </h1>
-        <p class="hs" data-t="hsu">Das System für Menschen, die bei ihrer Gesundheit keine Kompromisse machen.</p>
         <div class="hc">
           <a href="#contact" class="btn bg" data-t="hct">Kurs aufnehmen</a>
-          <a href="#services" class="btn bo" data-t="hsv">Leistungen entdecken</a>
+          <a href="leistungen.html" class="btn bo" data-t="hsv">Leistungen entdecken</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="services">
-  <div class="w">
-    <div class="slead">      <span class="ey" data-t="sey">Was Achtgrad leistet</span>
-      <h2 data-t="shl">Ein System das den Überblick behält.<br>Kontinuierlich.</h2>
-      <div class="rule"></div>
-      <p data-t="stx">Das Achtgrad-System begleitet Ihre Gesundheit mit derselben Präzision, die Sie in Ihrem besten Unternehmen erwarten. Klare Kennzahlen. Ein persönlicher Jahresplan. Wöchentliches Monitoring. Acht Dimensionen. Ein Ansprechpartner.</p>
-    </div>
-    <div class="sg">
-      <div class="sc" onclick="this.classList.toggle('sco')">
-        <span class="sctog"></span>
-        <div class="sci">01</div>
-        <h3 class="sct" data-t="s1t">Physiotherapie auf höchstem Niveau</h3>
-        <p class="scp" data-t="s1p">Manuelle Therapie, Bewegungsanalyse, funktionelles Training. Aufgebaut auf über zehn Jahren Praxis in den exklusivsten medizinischen Umgebungen Europas.</p>
-        <div class="scd"><div><ul class="sdl"><li>Manuelle Therapie und Osteopathie</li><li>Funktionelle Bewegungsanalyse</li><li>Medizinisches Aufbautraining</li><li>Schmerzbehandlung, Prävention</li></ul></div></div>
-      </div>
-      <div class="sc" onclick="this.classList.toggle('sco')">
-        <span class="sctog"></span>
-        <div class="sci">02</div>
-        <h3 class="sct" data-t="s2t">Gesundheitskoordination</h3>
-        <p class="scp" data-t="s2p">Ich organisiere Termine bei Spezialisten, führe Unterlagen zusammen und übernehme die Kommunikation mit Ärzten. Sie müssen sich um nichts kümmern.</p>
-        <div class="scd"><div><ul class="sdl"><li>Facharzt-Terminmanagement</li><li>Befunde zusammenführen und erklären</li><li>Kommunikation mit behandelnden Ärzten</li><li>Vollständige Gesundheitshistorie</li></ul></div></div>
-      </div>
-      <div class="sc" onclick="this.classList.toggle('sco')">
-        <span class="sctog"></span>
-        <div class="sci">03</div>
-        <h3 class="sct" data-t="s3t">Wearable Auswertung und Tagesroutinen</h3>
-        <p class="scp" data-t="s3p">Ihre Daten erzählen eine Geschichte. Ich lese sie. Schlaf, HRV, Aktivität, Erholung. Daraus entsteht ein Rhythmus, der zu Ihrem Leben passt.</p>
-        <div class="scd"><div><ul class="sdl"><li>Schlaf, HRV, Ruhepuls wöchentlich ausgewertet</li><li>Aktivitäts- und Erholungsbalance</li><li>Individuelle Tagesroutine entwickeln</li><li>Anpassung bei Reisen und Stress</li></ul></div></div>
-      </div>
-      <div class="sc" onclick="this.classList.toggle('sco')">
-        <span class="sctog"></span>
-        <div class="sci">04</div>
-        <h3 class="sct" data-t="s4t">Datenaufbereitung und Befundstruktur</h3>
-        <p class="scp" data-t="s4p">Befunde, Laborwerte, Arztberichte. Ich übersetze komplexe Informationen in klare Handlungsempfehlungen und halte Ihre Gesundheitshistorie strukturiert aufbereitet.</p>
-        <div class="scd"><div><ul class="sdl"><li>Laborbefunde verständlich aufbereitet</li><li>Arztberichte strukturiert zusammengefasst</li><li>Verlaufsdokumentation und Trends</li><li>Klare Handlungsempfehlungen</li></ul></div></div>
-      </div>
-      <div class="sc" onclick="this.classList.toggle('sco')">
-        <span class="sctog"></span>
-        <div class="sci">05</div>
-        <h3 class="sct" data-t="s5t">Biomarker Tracking</h3>
-        <p class="scp" data-t="s5p">Regelmässige Auswertung von Laborwerten, Vitalzeichen und Leistungsparametern. Kein Jahreslabor ohne Konsequenz. Jeder Wert wird eingeordnet und beantwortet.</p>
-        <div class="scd"><div><ul class="sdl"><li>Blutbild, Hormone, Entzündungsmarker</li><li>Vitalzeichen und Leistungsparameter</li><li>Kontinuierliches Glukose-Monitoring (CGM)</li><li>Interpretation und Verlauf</li></ul></div></div>
-      </div>
-      <div class="sc" onclick="this.classList.toggle('sco')">
-        <span class="sctog"></span>
-        <div class="sci">06</div>
-        <h3 class="sct" data-t="s6t">Diskretion und Verfügbarkeit</h3>
-        <p class="scp" data-t="s6p">Ich arbeite mit einem kleinen, ausgewählten Klientenkreis. Das bedeutet echte Verfügbarkeit, echtes Engagement und eine Zusammenarbeit, die über Jahrzehnte trägt.</p>
-        <div class="scd"><div><ul class="sdl"><li>Kleiner, ausgewählter Klientenkreis</li><li>Persönliche Erreichbarkeit</li><li>Sicheres Klientenportal für Dokumente</li><li>Langfristige Partnerschaft</li></ul></div></div>
-      </div>
+<section id="system">
+  <div class="w" style="text-align:center">
+    <p class="sys-lead" data-t="syshl">Das Achtgrad-System führt Ihre Gesundheit mit derselben Präzision wie Ihr bestes Unternehmen.</p>
+    <div class="sys-nums">
+      <div class="sn"><span class="snn">8</span><span class="snl" data-t="st1">Dimensionen</span></div>
+      <div class="sn"><span class="snn">10+</span><span class="snl" data-t="st2">Jahre Praxis</span></div>
+      <div class="sn"><span class="snn">24/7</span><span class="snl" data-t="st3">Monitoring</span></div>
     </div>
   </div>
 </section>
 
-<div id="stats">
+<section id="dimensions">
   <div class="w">
-    <div class="strow">
-      <div class="st">
-        <span class="stn" data-c="8" data-s="">8</span>
-        <span class="stl" data-t="st1">Dimensionen</span>
-      </div>
-      <div class="st">
-        <span class="stn" data-c="10" data-s="+">10+</span>
-        <span class="stl" data-t="st2">Jahre Praxis</span>
-      </div>
-      <div class="st">
-        <span class="stn" data-c="7" data-s="×24">7×24</span>
-        <span class="stl" data-t="st3">Monitoring</span>
-      </div>
-      <div class="st">
-        <span class="stn" style="font-size:1.1rem;padding-top:.6rem" data-t="st4">Ihr Körper. Einzigartig.</span>
-        <span class="stl" style="opacity:0">.</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<section id="philosophy">
-  <div class="w">
-    <div class="pg">
-      <div class="pl">
-        <span class="ey" data-t="pey">Die Grundidee</span>
-        <h2 data-t="phl">Ihr Körper ist Ihr wertvollstes Kapital.</h2>
-        <div class="rule"></div>
-        <p data-t="pp1">Jedes gut geführte Unternehmen kennt seine Kennzahlen und handelt wenn etwas aus dem Takt gerät. Die meisten tun das für ihre Gesundheit nicht.</p>
-        <p data-t="pp2">Achtgrad bringt diese Klarheit. Durch das präzise Abstimmen von acht Dimensionen. Kontinuierlich. Diskret.</p>
-      </div>
-      <div>
-        <p class="ey" data-t="pdim">08 Dimensionen</p>
-        <div class="dg">
-          <div class="dc"><span class="dn">01</span><p class="dt" data-t="d1t">Kardiovaskuläre Kapazität</p><p class="ds" data-t="d1s">VO₂max, Herzfrequenz, Ausdauer.</p></div>
-          <div class="dc"><span class="dn">02</span><p class="dt" data-t="d2t">Kraft und Stabilität</p><p class="ds" data-t="d2s">Muskulatur, Belastbarkeit, Gleichgewicht.</p></div>
-          <div class="dc"><span class="dn">03</span><p class="dt" data-t="d3t">Beweglichkeit und Gewebsqualität</p><p class="ds" data-t="d3s">Faszien, Mobilität, Schmerzfreiheit.</p></div>
-          <div class="dc"><span class="dn">04</span><p class="dt" data-t="d4t">Atemkapazität</p><p class="ds" data-t="d4s">Atemmuskulatur, Lungenvolumen, Effizienz.</p></div>
-          <div class="dc"><span class="dn">05</span><p class="dt" data-t="d5t">Haltung und Körpermechanik</p><p class="ds" data-t="d5s">Gangbild, posturale Kontrolle, Ausrichtung.</p></div>
-          <div class="dc"><span class="dn">06</span><p class="dt" data-t="d6t">Regeneration und Schlaf</p><p class="ds" data-t="d6s">HRV, Schlaftiefe, Ruhepuls.</p></div>
-          <div class="dc"><span class="dn">07</span><p class="dt" data-t="d7t">Stressresilienz und mentale Schärfe</p><p class="ds" data-t="d7s">Kognitive Klarheit, emotionale Steuerung.</p></div>
-          <div class="dc"><span class="dn">08</span><p class="dt" data-t="d8t">Systemische Balance</p><p class="ds" data-t="d8s">Entzündungsmarker, Biometrie, Mikronährstoffe.</p></div>
-        </div>
-      </div>
+    <span class="ey" data-t="pdim">08 Dimensionen</span>
+    <div class="dlist">
+      <div class="di"><span class="dinum">01</span><span class="diname" data-t="d1t">Kardiovaskuläre Kapazität</span></div>
+      <div class="di"><span class="dinum">02</span><span class="diname" data-t="d2t">Kraft und Stabilität</span></div>
+      <div class="di"><span class="dinum">03</span><span class="diname" data-t="d3t">Beweglichkeit und Gewebsqualität</span></div>
+      <div class="di"><span class="dinum">04</span><span class="diname" data-t="d4t">Atemkapazität</span></div>
+      <div class="di"><span class="dinum">05</span><span class="diname" data-t="d5t">Haltung und Körpermechanik</span></div>
+      <div class="di"><span class="dinum">06</span><span class="diname" data-t="d6t">Regeneration und Schlaf</span></div>
+      <div class="di"><span class="dinum">07</span><span class="diname" data-t="d7t">Stressresilienz und mentale Schärfe</span></div>
+      <div class="di"><span class="dinum">08</span><span class="diname" data-t="d8t">Systemische Balance</span></div>
     </div>
   </div>
 </section>
 
-<section id="metaphor">
-  <svg class="comp" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="100" cy="100" r="96" stroke="#c49a30" stroke-width=".8"/>
-    <circle cx="100" cy="100" r="72" stroke="#c49a30" stroke-width=".5"/>
-    <circle cx="100" cy="100" r="48" stroke="#c49a30" stroke-width=".4"/>
-    <circle cx="100" cy="100" r="24" stroke="#c49a30" stroke-width=".4"/>
-    <line x1="100" y1="4" x2="100" y2="196" stroke="#c49a30" stroke-width=".4"/>
-    <line x1="4" y1="100" x2="196" y2="100" stroke="#c49a30" stroke-width=".4"/>
-    <line x1="32" y1="32" x2="168" y2="168" stroke="#c49a30" stroke-width=".3"/>
-    <line x1="168" y1="32" x2="32" y2="168" stroke="#c49a30" stroke-width=".3"/>
-    <polygon points="100,8 104,20 100,18 96,20" fill="#c49a30"/>
-  </svg>
+<section id="founder">
   <div class="w">
-    <span class="ey" data-t="mey">Die Metapher</span>
-    <p class="mhl" data-t="mhl">Acht Grad höher am Wind. Der Unterschied zwischen ankommen und gewinnen.</p>
-    <blockquote class="mq">
-      <span data-t="mqt">Im Segeln bedeutet acht Grad höher am Wind: näher an die Quelle der Kraft, präziser, effizienter und schneller am Ziel. Im Körper bedeutet es dasselbe. Nicht mehr Aufwand. Der richtige Kurs.</span>
-      <cite class="mc" data-t="mci">Das Prinzip von Achtgrad</cite>
-    </blockquote>
-    <p class="mn" data-t="mnt">Wer seinen Körper so behandelt wie sein bestes Schiff, beweist sich nicht nur bei Idealwind. Sondern in der Flaute und im Sturm.</p>
-    <div class="at">
-      <div class="ah" data-t="ac1">DER KÖRPER</div>
-      <div class="ah" data-t="ac2">DIE ENERGIE</div>
-      <div class="ac"><strong data-t="r1k">Rumpf und Rigg</strong><span data-t="r1kd">Körper, Organe, Biometrie</span></div>
-      <div class="ac"><strong data-t="r1e">Fahrtwind</strong><span data-t="r1ed">Vitalität, Antrieb, Lebensfreude</span></div>
-      <div class="ac"><strong data-t="r2k">Trimm</strong><span data-t="r2kd">Ernährung, Schlaf, Regeneration</span></div>
-      <div class="ac"><strong data-t="r2e">Böen</strong><span data-t="r2ed">Stress, Krisen, Belastungsspitzen</span></div>
-      <div class="ac"><strong data-t="r3k">Kielgewicht</strong><span data-t="r3kd">Muskulatur, Stabilität</span></div>
-      <div class="ac"><strong data-t="r3e">Flaute</strong><span data-t="r3ed">Erschöpfung, Stagnation, Burnout</span></div>
-      <div class="ac"><strong data-t="r4k">Segel</strong><span data-t="r4kd">Lunge, Atem, kardiale Leistung</span></div>
-      <div class="ac"><strong data-t="r4e">Kurs</strong><span data-t="r4ed">Strategie, Richtung, Prioritäten</span></div>
-      <div class="ac"><strong data-t="r5k">Instrumente</strong><span data-t="r5kd">Wearables, Biomarker, Daten</span></div>
-      <div class="ac"><strong data-t="r5e">Regatta</strong><span data-t="r5ed">Business, Familie, das volle Leben</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="method">
-  <div class="w">
-    <div class="ml">
-      <span class="ey" data-t="mey2">Die Methode</span>
-      <h2 data-t="mhl2">Vitalität.<br>Im Alltag verankert.</h2>
-      <div class="rule"></div>
-      <p data-t="mtx">Eigene Auswertungs- und Dokumentationswerkzeuge. Kontinuierliches Monitoring. Ein persönliches Gesundheitsportal. Das Achtgrad-System macht Ihre Gesundheit messbar und begleitet sie dauerhaft.</p>
-    </div>
-    <div class="ms">
-      <div class="mstep">
-        <div class="msn">01</div>
-        <span class="mstag" data-t="sg1">DeepMap</span>
-        <h3 class="mst" data-t="st1t">Bestandsaufnahme</h3>
-        <p class="msp" data-t="st1p">Strukturierte Leistungserfassung für Biomarker, kardiovaskuläre Kapazität, Bewegungsqualität und Metabolismus. Ihr persönlicher Ausgangspunkt in klaren Zahlen. Dokumentiert und gesichert.</p>
-      </div>
-      <div class="mstep">
-        <div class="msn">02</div>
-        <span class="mstag" data-t="sg2">PrecisionPlan</span>
-        <h3 class="mst" data-t="st2t">Kursbeschreibung</h3>
-        <p class="msp" data-t="st2p">Auf Basis der Leistungserfassung entsteht Ihr individueller Jahresplan. Klare Ziele. Konkrete Hebel. Messbare Meilensteine.</p>
-      </div>
-      <div class="mstep">
-        <div class="msn">03</div>
-        <span class="mstag" data-t="sg3">Implement</span>
-        <h3 class="mst" data-t="st3t">Kontinuierlicher Trimm</h3>
-        <p class="msp" data-t="st3p">Wöchentliches Monitoring via Wearables und CGM-Auswertung. Jede Sitzung erzeugt einen strukturierten Bericht, direkt in Ihrem persönlichen Portal.</p>
-      </div>
-      <div class="mstep">
-        <div class="msn">04</div>
-        <span class="mstag" data-t="sg4">Sustain &amp; Adapt</span>
-        <h3 class="mst" data-t="st4t">Delta und neuer Kurs</h3>
-        <p class="msp" data-t="st4p">Biomarker, Vitalität, Leistung als Kurve über Zeit. Ihr gesamtes Gesundheitsprotokoll jederzeit abrufbar. Der nächste Hebel ist immer sichtbar.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="w">
-    <div class="ag">
-      <div class="pw">
-        <img src="portrait.jpg" alt="Alexander Ataii, Physiotherapeut Innsbruck">
-        <div class="pc">
-          <p data-t="acap">Physiotherapeut, Innsbruck</p>
-          <span>Innsbruck</span>
-        </div>
-      </div>
-      <div class="ab">
+    <div class="fo">
+      <img src="portrait.jpg" alt="Alexander Ataii MBA, Physiotherapeut Innsbruck" class="fo-img">
+      <div class="fo-text">
         <span class="ey" data-t="aey">Der Gründer</span>
         <h2 data-t="anm">Alexander Ataii MBA</h2>
-        <p class="abs" data-t="asu">Physiotherapeut, Innsbruck</p>
-        <p class="abp" data-t="ap1">Ich habe über ein Jahrzehnt in den exklusivsten medizinischen Umgebungen Europas gearbeitet. Von führenden Kliniken Tirols bis hin zur direkten Betreuung von Persönlichkeiten, für die Gesundheit kein Zufall sein darf.</p>
-        <p class="abp" data-t="ap2">Was ich gelernt habe: Exzellente Einzelbehandlungen reichen nicht. Es braucht jemanden, der die Gesamtheit im Blick hat. Jeden Tag. Und der bereit ist, Verantwortung zu übernehmen.</p>
-        <blockquote class="abq">
-          <span data-t="aqt">„Es ist nicht genug zu wissen, man muss auch anwenden; es ist nicht genug zu wollen, man muss auch tun."</span>
-          <cite>Johann Wolfgang von Goethe</cite>
-        </blockquote>
-        <div class="cr">
-          <div class="ci">
-            <span class="cn">01</span>
-            <div class="ct"><span data-t="c1t">Bewegungsmedizin und Rehabilitation</span><small data-t="c1s">Staatl. gepr. Physiotherapeut, Praxisinhaber seit 2014</small></div>
-            <span class="cy" data-t="csince">Seit 2018</span>
-          </div>
-          <div class="ci">
-            <span class="cn">02</span>
-            <div class="ct"><span data-t="c2t">Gesundheitsökonomie und Strategie</span><small data-t="c2s">MBA Healthcare, FHG Tirol</small></div>
-            <span class="cy"></span>
-          </div>
-          <div class="ci">
-            <span class="cn">03</span>
-            <div class="ct"><span data-t="c3t">FX Mayr Medizin</span><small data-t="c3s">Park Igls, Lanserhof Lans</small></div>
-            <span class="cy"></span>
-          </div>
-          <div class="ci">
-            <span class="cn">04</span>
-            <div class="ct"><span data-t="c4t">Privater UHNW Dienst</span><small data-t="c4s">Physiotherapeut, Österreich und Deutschland</small></div>
-            <span class="cy" data-t="cact">Aktiv</span>
-          </div>
-          <div class="ci">
-            <span class="cn">05</span>
-            <div class="ct"><span data-t="c5t">KI und Digitale Gesundheit</span><small data-t="c5s">KI Lizenz WIFI Tirol, aktiver Anwender</small></div>
-            <span class="cy"></span>
-          </div>
+        <p class="fo-role" data-t="asu">Physiotherapeut, Innsbruck</p>
+        <p class="fo-bio" data-t="ap1">Über ein Jahrzehnt in den exklusivsten medizinischen Umgebungen Europas. Lanserhof Lans, Park Igls, UHNW Privatdienst. Das Achtgrad-System entstand aus dieser Erfahrung.</p>
+        <div class="fo-tags">
+          <span>Lanserhof Lans</span>
+          <span>Park Igls</span>
+          <span>MBA Healthcare</span>
+          <span>UHNW Service</span>
         </div>
       </div>
     </div>
@@ -612,9 +454,9 @@ footer{background:var(--bg2);padding:2.8rem 0;border-top:1px solid var(--edge)}
 
 <script>
 const T={
-de:{nsv:"Leistungen",nph:"Philosophie",nme:"Methode",nab:"Über mich",nct:"Gespräch anfragen",hov:"Prävention, Physiotherapie, Longevity",hl1:"Ihr Körper.",hl2:"Ihr Kapital.",hl3:"Gepflegt.",hsu:"Das System für Menschen, die bei ihrer Gesundheit keine Kompromisse machen.",hct:"Kurs aufnehmen",hsv:"Leistungen entdecken",scr:"Scroll",sey:"Was Achtgrad leistet",shl:"Ein System das den Überblick behält.\nKontinuierlich.",stx:"Das Achtgrad-System begleitet Ihre Gesundheit mit derselben Präzision, die Sie in Ihrem besten Unternehmen erwarten. Klare Kennzahlen. Ein persönlicher Jahresplan. Wöchentliches Monitoring. Acht Dimensionen. Ein Ansprechpartner.",s1t:"Physiotherapie auf höchstem Niveau",s1p:"Manuelle Therapie, Bewegungsanalyse, funktionelles Training. Aufgebaut auf über zehn Jahren Praxis in den exklusivsten medizinischen Umgebungen Europas.",s2t:"Gesundheitskoordination",s2p:"Ich organisiere Termine bei Spezialisten, führe Unterlagen zusammen und übernehme die Kommunikation mit Ärzten. Sie müssen sich um nichts kümmern.",s3t:"Wearable Auswertung und Tagesroutinen",s3p:"Ihre Daten erzählen eine Geschichte. Ich lese sie. Schlaf, HRV, Aktivität, Erholung. Daraus entsteht ein Rhythmus, der zu Ihrem Leben passt.",s4t:"Datenaufbereitung und Befundstruktur",s4p:"Befunde, Laborwerte, Arztberichte. Ich übersetze komplexe Informationen in klare Handlungsempfehlungen und halte Ihre Gesundheitshistorie strukturiert aufbereitet.",s5t:"Biomarker Tracking",s5p:"Regelmässige Auswertung von Laborwerten, Vitalzeichen und Leistungsparametern. Kein Jahreslabor ohne Konsequenz. Jeder Wert wird eingeordnet und beantwortet.",s6t:"Diskretion und Verfügbarkeit",s6p:"Ich arbeite mit einem kleinen, ausgewählten Klientenkreis. Das bedeutet echte Verfügbarkeit, echtes Engagement und eine Zusammenarbeit, die über Jahrzehnte trägt.",st1:"Dimensionen",st2:"Jahre Praxis",st3:"Monitoring",st4:"Ihr Körper. Einzigartig.",pey:"Die Grundidee",phl:"Ihr Körper ist Ihr wertvollstes Kapital.",pp1:"Jedes gut geführte Unternehmen kennt seine Kennzahlen und handelt wenn etwas aus dem Takt gerät. Die meisten tun das für ihre Gesundheit nicht.",pp2:"Achtgrad bringt diese Klarheit. Durch das präzise Abstimmen von acht Dimensionen. Kontinuierlich. Diskret.",pdim:"08 Dimensionen",d1t:"Kardiovaskuläre Kapazität",d1s:"VO₂max, Herzfrequenz, Ausdauer.",d2t:"Kraft und Stabilität",d2s:"Muskulatur, Belastbarkeit, Gleichgewicht.",d3t:"Beweglichkeit und Gewebsqualität",d3s:"Faszien, Mobilität, Schmerzfreiheit.",d4t:"Atemkapazität",d4s:"Atemmuskulatur, Lungenvolumen, Effizienz.",d5t:"Haltung und Körpermechanik",d5s:"Gangbild, posturale Kontrolle, Ausrichtung.",d6t:"Regeneration und Schlaf",d6s:"HRV, Schlaftiefe, Ruhepuls.",d7t:"Stressresilienz und mentale Schärfe",d7s:"Kognitive Klarheit, emotionale Steuerung.",d8t:"Systemische Balance",d8s:"Entzündungsmarker, Biometrie, Mikronährstoffe.",mey:"Die Metapher",mhl:"Acht Grad höher am Wind. Der Unterschied zwischen ankommen und gewinnen.",mqt:"Im Segeln bedeutet acht Grad höher am Wind: näher an die Quelle der Kraft, präziser, effizienter und schneller am Ziel. Im Körper bedeutet es dasselbe. Nicht mehr Aufwand. Der richtige Kurs.",mci:"Das Prinzip von Achtgrad",mnt:"Wer seinen Körper so behandelt wie sein bestes Schiff, beweist sich nicht nur bei Idealwind. Sondern in der Flaute und im Sturm.",ac1:"DER KÖRPER",ac2:"DIE ENERGIE",r1k:"Rumpf und Rigg",r1kd:"Körper, Organe, Biometrie",r1e:"Fahrtwind",r1ed:"Vitalität, Antrieb, Lebensfreude",r2k:"Trimm",r2kd:"Ernährung, Schlaf, Regeneration",r2e:"Böen",r2ed:"Stress, Krisen, Belastungsspitzen",r3k:"Kielgewicht",r3kd:"Muskulatur, Stabilität",r3e:"Flaute",r3ed:"Erschöpfung, Stagnation, Burnout",r4k:"Segel",r4kd:"Lunge, Atem, kardiale Leistung",r4e:"Kurs",r4ed:"Strategie, Richtung, Prioritäten",r5k:"Instrumente",r5kd:"Wearables, Biomarker, Daten",r5e:"Regatta",r5ed:"Business, Familie, das volle Leben",mey2:"Die Methode",mhl2:"Vitalität.\nIm Alltag verankert.",mtx:"Eigene Auswertungs- und Dokumentationswerkzeuge. Kontinuierliches Monitoring. Ein persönliches Gesundheitsportal. Das Achtgrad-System macht Ihre Gesundheit messbar und begleitet sie dauerhaft.",sg1:"DeepMap",st1t:"Bestandsaufnahme",st1p:"Strukturierte Leistungserfassung für Biomarker, kardiovaskuläre Kapazität, Bewegungsqualität und Metabolismus. Ihr persönlicher Ausgangspunkt in klaren Zahlen. Dokumentiert und gesichert.",sg2:"PrecisionPlan",st2t:"Kursbeschreibung",st2p:"Auf Basis der Leistungserfassung entsteht Ihr individueller Jahresplan. Klare Ziele. Konkrete Hebel. Messbare Meilensteine.",sg3:"Implement",st3t:"Kontinuierlicher Trimm",st3p:"Wöchentliches Monitoring via Wearables und CGM-Auswertung. Jede Sitzung erzeugt einen strukturierten Bericht, direkt in Ihrem persönlichen Portal.",sg4:"Sustain & Adapt",st4t:"Delta und neuer Kurs",st4p:"Biomarker, Vitalität, Leistung als Kurve über Zeit. Ihr gesamtes Gesundheitsprotokoll jederzeit abrufbar. Der nächste Hebel ist immer sichtbar.",aey:"Der Gründer",anm:"Alexander Ataii MBA",asu:"Physiotherapeut, Innsbruck",acap:"Physiotherapeut, Innsbruck",ap1:"Ich habe über ein Jahrzehnt in den exklusivsten medizinischen Umgebungen Europas gearbeitet. Von führenden Kliniken Tirols bis hin zur direkten Betreuung von Persönlichkeiten, für die Gesundheit kein Zufall sein darf.",ap2:"Was ich gelernt habe: Exzellente Einzelbehandlungen reichen nicht. Es braucht jemanden, der die Gesamtheit im Blick hat. Jeden Tag. Und der bereit ist, Verantwortung zu übernehmen.",aqt:'„Es ist nicht genug zu wissen, man muss auch anwenden; es ist nicht genug zu wollen, man muss auch tun.”',c1t:"Bewegungsmedizin und Rehabilitation",c1s:"Staatl. gepr. Physiotherapeut, Praxisinhaber seit 2014",c2t:"Gesundheitsökonomie und Strategie",c2s:"MBA Healthcare, FHG Tirol",c3t:"FX Mayr Medizin",c3s:"Park Igls, Lanserhof Lans",c4t:"Privater UHNW Dienst",c4s:"Physiotherapeut, Österreich und Deutschland",c5t:"KI und Digitale Gesundheit",c5s:"KI Lizenz WIFI Tirol, aktiver Anwender",c6t:"Sprachen",csince:"Seit 2018",cact:"Aktiv",cey:"Kontakt",chl:"Neugierig geworden?",ctx:"Ich freue mich auf ein persönliches Gespräch.",cbt:"Gespräch anfragen",impr:"Impressum"},
-en:{nsv:"Services",nph:"Philosophy",nme:"Method",nab:"About",nct:"Request Consultation",hov:"Prevention, Physiotherapy, Health Management",hl1:"Your Body.",hl2:"Your Capital.",hl3:"Cared For.",hsu:"I work with people who refuse to compromise when it comes to their health.",hct:"Start the Course",hsv:"Discover Services",scr:"Scroll",sey:"What You Get From Me",shl:"Someone who keeps the overview.\nFor you.",stx:"Doctors diagnose. Therapists treat. Coaches motivate. What is missing is someone who holds it all together, coordinates and accompanies the client in daily life. Not as a replacement for specialists, but as the connection between them.",s1t:"Physiotherapy at the Highest Level",s1p:"Manual therapy, movement analysis, functional training. Built on over ten years of practice in the most exclusive medical environments in Europe.",s2t:"Health Coordination",s2p:"I organise specialist appointments, consolidate records and handle all communication with physicians. You focus on what matters.",s3t:"Wearable Analysis and Daily Routines",s3p:"Your data tells a story. I read it. Sleep, HRV, activity, recovery. From that, a rhythm emerges that fits your life.",s4t:"Data Processing and Record Structure",s4p:"Test results, lab values, medical reports. I translate complex information into clear recommendations and keep your health history structured and accessible.",s5t:"Biomarker Tracking",s5p:"Regular analysis of lab values, vital signs and performance parameters. No annual test without consequence. Every value is interpreted and addressed.",s6t:"Discretion and Availability",s6p:"I work with a small, selected group of clients. That means real availability, real commitment and a partnership that holds over decades.",st1:"Dimensions",st2:"Years Practice",st3:"Monitoring",st4:"Your Body. Unique.",pey:"The Core Idea",phl:"Your body is your most valuable asset.",pp1:"Every well-run company knows its metrics and acts when something falls out of rhythm. Most people do not apply this to their health.",pp2:"Achtgrad brings this clarity. Through the precise calibration of eight dimensions. Continuously. Discreetly.",pdim:"08 Dimensions",d1t:"Cardiovascular Capacity",d1s:"VO₂max, heart rate, endurance.",d2t:"Strength and Stability",d2s:"Musculature, resilience, balance.",d3t:"Mobility and Tissue Quality",d3s:"Fascia, mobility, pain-free movement.",d4t:"Respiratory Capacity",d4s:"Breathing muscles, lung volume, efficiency.",d5t:"Posture and Body Mechanics",d5s:"Gait, postural control, alignment.",d6t:"Recovery and Sleep",d6s:"HRV, sleep depth, resting heart rate.",d7t:"Stress Resilience and Mental Clarity",d7s:"Cognitive clarity, emotional regulation.",d8t:"Systemic Balance",d8s:"Inflammation markers, biometrics, micronutrients.",mey:"The Metaphor",mhl:"Eight degrees higher into the wind. The difference between arriving and winning.",mqt:"In sailing, eight degrees higher into the wind means closer to the source of power, more precise, more efficient and faster to the goal. In the body, it means the same. Not more effort. The right course.",mci:"The Achtgrad Principle",mnt:"Those who treat their body like their finest vessel prove themselves not only in perfect conditions. But in the doldrums and the storm.",ac1:"THE BODY",ac2:"THE ENERGY",r1k:"Hull and Rigging",r1kd:"Body, organs, biometrics",r1e:"Fair Wind",r1ed:"Vitality, drive, joie de vivre",r2k:"Trim",r2kd:"Nutrition, sleep, recovery",r2e:"Gusts",r2ed:"Stress, crises, peak loads",r3k:"Keel Weight",r3kd:"Musculature, stability",r3e:"Doldrums",r3ed:"Exhaustion, stagnation, burnout",r4k:"Sails",r4kd:"Lungs, breath, cardiac output",r4e:"Course",r4ed:"Strategy, direction, priorities",r5k:"Instruments",r5kd:"Wearables, biomarkers, data",r5e:"Regatta",r5ed:"Business, family, full life",mey2:"The Method",mhl2:"Vitality.\nAnchored in daily life.",mtx:"Retreats open the mind. Achtgrad anchors it in daily life. Translating clarity into a sustainable rhythm.",sg1:"DeepMap",st1t:"Assessment",st1p:"Complete calibration. Biomarkers, resilience, patterns. Your personal baseline in clear numbers.",sg2:"PrecisionPlan",st2t:"Course Description",st2p:"Your individual annual plan. Clear goals, concrete levers. No generic program, no standard.",sg3:"Implement",st3t:"Continuous Trim",st3p:"Weekly monitoring. Wearable analysis, real-time adjustment. The program does not end when you leave.",sg4:"Sustain & Adapt",st4t:"Delta and New Course",st4p:"What has measurably changed? Where is the next lever? Set a new course for the coming year.",aey:"The Helmsman",anm:"Alexander Ataii MBA",asu:"Physiotherapist, Innsbruck",acap:"Physiotherapist, Innsbruck",ap1:"I have spent over a decade in Europe's most exclusive healthcare environments. From leading clinics in Tyrol to direct care of individuals for whom health cannot be left to chance.",ap2:"What I have learned: excellent individual treatments are not enough. It requires someone who keeps the full picture in view. Every day. Someone willing to take responsibility.",aqt:'"It is not enough to know, one must also apply; it is not enough to wish, one must also act."',c1t:"Movement Medicine and Rehabilitation",c1s:"State-certified physiotherapist, Practice owner since 2014",c2t:"Health Economics and Strategy",c2s:"MBA Healthcare, FHG Tyrol",c3t:"FX Mayr Medicine",c3s:"Park Igls, Lanserhof Lans",c4t:"Private UHNW Service",c4s:"Physiotherapist, Austria and Germany",c5t:"AI and Digital Health",c5s:"AI License WIFI Tyrol, active practitioner",c6t:"Languages",csince:"Since 2018",cact:"Active",cey:"Contact",chl:"Curious?",ctx:"I look forward to a personal conversation.",cbt:"Request Consultation",impr:"Legal Notice"},
-ar:{nsv:"الخدمات",nph:"الفلسفة",nme:"المنهجية",nab:"عن الطبيب",nct:"طلب استشارة",hov:"الوقاية، العلاج الطبيعي، إدارة الصحة",hl1:"جسدك.",hl2:"رأس مالك.",hl3:"في أفضل حال.",hsu:"أرافق أشخاصاً لا يقبلون التنازل في ما يخص صحتهم.",hct:"ابدأ المسار",hsv:"اكتشف الخدمات",scr:"تمرير",sey:"ما ستحصل عليه",shl:"كثير من النتائج. كثير من المعلومات.\nلكن لا أحد يتابع الصورة كاملة.",stx:"الأطباء يشخصون. المعالجون يعالجون. ما ينقصه شخص يجمع كل ذلك وينسقه ويرافق العميل يومياً.",s1t:"علاج طبيعي بأعلى المستويات",s1p:"علاج يدوي، تحليل الحركة، تدريب وظيفي.",s2t:"تنسيق صحي",s2p:"أنظم المواعيد وأجمع السجلات وأتولى التواصل مع الأطباء.",s3t:"تحليل الأجهزة والروتين",s3p:"بياناتك تحكي قصة. أنا أقرأها.",s4t:"معالجة البيانات",s4p:"نتائج الفحوصات وقيم المختبر.",s5t:"تتبع المؤشرات",s5p:"تحليل منتظم لقيم المختبر.",s6t:"السرية والتوافر",s6p:"أعمل مع دائرة صغيرة من العملاء.",st1:"أبعاد",st2:"سنوات خبرة",st3:"مراقبة",st4:"جسدك. فريد.",pey:"الفكرة الأساسية",phl:"جسدك هو أثمن رأس مالك.",pp1:"كل شركة ناجحة تعرف مؤشراتها.",pp2:"Achtgrad يجلب هذا الوضوح.",pdim:"٠٨ أبعاد",d1t:"القدرة القلبية",d1s:"VO₂max",d2t:"القوة والاستقرار",d2s:"العضلات، التوازن",d3t:"المرونة وجودة الأنسجة",d3s:"اللفافة، الحركة",d4t:"القدرة التنفسية",d4s:"حجم الرئة",d5t:"الوضعية والحركة",d5s:"نمط المشي",d6t:"التعافي والنوم",d6s:"HRV",d7t:"المرونة والحدة",d7s:"الوضوح الذهني",d8t:"التوازن الجهازي",d8s:"مؤشرات الالتهاب",mey:"المجاز",mhl:"ثماني درجات نحو الريح.",mqt:"في الإبحار، ثماني درجات نحو الريح تعني الاقتراب من مصدر القوة.",mci:"مبدأ Achtgrad",mnt:"من يعامل جسده كأفضل سفنه.",ac1:"الجسد",ac2:"الطاقة",r1k:"الهيكل",r1kd:"الجسد، الأعضاء",r1e:"ريح مواتية",r1ed:"الحيوية",r2k:"الضبط",r2kd:"التغذية، النوم",r2e:"عواصف",r2ed:"الضغط",r3k:"ثقل العارضة",r3kd:"العضلات",r3e:"ركود",r3ed:"الإرهاق",r4k:"الأشرعة",r4kd:"الرئتان",r4e:"المسار",r4ed:"الاستراتيجية",r5k:"الأجهزة",r5kd:"البيانات",r5e:"سباق",r5ed:"العمل، الأسرة",mey2:"المنهجية",mhl2:"الحيوية.\nراسخة في الحياة.",mtx:"Achtgrad يرسخ الوضوح في الحياة.",sg1:"DeepMap",st1t:"تقييم",st1p:"معايرة كاملة.",sg2:"PrecisionPlan",st2t:"تحديد المسار",st2p:"خطتك السنوية.",sg3:"تطبيق",st3t:"ضبط مستمر",st3p:"متابعة أسبوعية.",sg4:"استدامة",st4t:"مسار جديد",st4p:"ما الذي تغير?",aey:"الربان",anm:"ألكسندر عطائي MBA",asu:"معالج فيزيائي، مهندس صحي، إنسبروك",acap:"معالج فيزيائي، مهندس صحي",ap1:"عملت لأكثر من عقد في أرقى البيئات الطبية في أوروبا.",ap2:"العلاجات الفردية الممتازة لا تكفي.",aqt:"«لا يكفي أن تعرف، بل يجب أن تطبّق.»",c1t:"طب الحركة",c1s:"معالج معتمد، صاحب عيادة منذ 2014",c2t:"اقتصاديات الصحة",c2s:"MBA Healthcare، FHG تيرول",c3t:"طب FX ماير",c3s:"Park Igls، Lanserhof",c4t:"خدمة UHNW",c4s:"معالج فيزيائي، النمسا وألمانيا",c5t:"الذكاء الاصطناعي",c5s:"رخصة AI، ممارس نشط",c6t:"اللغات",csince:"منذ 2018",cact:"نشط",cey:"مستعد؟",chl:"المحادثة الأولى مجانية.",ctx:"محادثة. عنك وعن أهدافك.",cbt:"طلب استشارة",impr:"بيانات قانونية"}
+de:{nsv:"Leistungen",nab:"Über mich",nct:"Gespräch anfragen",hov:"Prävention, Physiotherapie, Longevity",hl1:"Ihr Körper.",hl2:"Ihr Kapital.",hl3:"Gepflegt.",hsu:"Das System für Menschen, die bei ihrer Gesundheit keine Kompromisse machen.",syshl:"Das Achtgrad-System führt Ihre Gesundheit mit derselben Präzision wie Ihr bestes Unternehmen.",hct:"Kurs aufnehmen",hsv:"Leistungen entdecken",scr:"Scroll",sey:"Was Achtgrad leistet",shl:"Ein System das den Überblick behält.\nKontinuierlich.",stx:"Das Achtgrad-System begleitet Ihre Gesundheit mit derselben Präzision, die Sie in Ihrem besten Unternehmen erwarten. Klare Kennzahlen. Ein persönlicher Jahresplan. Wöchentliches Monitoring. Acht Dimensionen. Ein Ansprechpartner.",s1t:"Physiotherapie auf höchstem Niveau",s1p:"Manuelle Therapie, Bewegungsanalyse, funktionelles Training. Aufgebaut auf über zehn Jahren Praxis in den exklusivsten medizinischen Umgebungen Europas.",s2t:"Gesundheitskoordination",s2p:"Ich organisiere Termine bei Spezialisten, führe Unterlagen zusammen und übernehme die Kommunikation mit Ärzten. Sie müssen sich um nichts kümmern.",s3t:"Wearable Auswertung und Tagesroutinen",s3p:"Ihre Daten erzählen eine Geschichte. Ich lese sie. Schlaf, HRV, Aktivität, Erholung. Daraus entsteht ein Rhythmus, der zu Ihrem Leben passt.",s4t:"Datenaufbereitung und Befundstruktur",s4p:"Befunde, Laborwerte, Arztberichte. Ich übersetze komplexe Informationen in klare Handlungsempfehlungen und halte Ihre Gesundheitshistorie strukturiert aufbereitet.",s5t:"Biomarker Tracking",s5p:"Regelmässige Auswertung von Laborwerten, Vitalzeichen und Leistungsparametern. Kein Jahreslabor ohne Konsequenz. Jeder Wert wird eingeordnet und beantwortet.",s6t:"Diskretion und Verfügbarkeit",s6p:"Ich arbeite mit einem kleinen, ausgewählten Klientenkreis. Das bedeutet echte Verfügbarkeit, echtes Engagement und eine Zusammenarbeit, die über Jahrzehnte trägt.",st1:"Dimensionen",st2:"Jahre Praxis",st3:"Monitoring",st4:"Ihr Körper. Einzigartig.",pey:"Die Grundidee",phl:"Ihr Körper ist Ihr wertvollstes Kapital.",pp1:"Jedes gut geführte Unternehmen kennt seine Kennzahlen und handelt wenn etwas aus dem Takt gerät. Die meisten tun das für ihre Gesundheit nicht.",pp2:"Achtgrad bringt diese Klarheit. Durch das präzise Abstimmen von acht Dimensionen. Kontinuierlich. Diskret.",pdim:"08 Dimensionen",d1t:"Kardiovaskuläre Kapazität",d1s:"VO₂max, Herzfrequenz, Ausdauer.",d2t:"Kraft und Stabilität",d2s:"Muskulatur, Belastbarkeit, Gleichgewicht.",d3t:"Beweglichkeit und Gewebsqualität",d3s:"Faszien, Mobilität, Schmerzfreiheit.",d4t:"Atemkapazität",d4s:"Atemmuskulatur, Lungenvolumen, Effizienz.",d5t:"Haltung und Körpermechanik",d5s:"Gangbild, posturale Kontrolle, Ausrichtung.",d6t:"Regeneration und Schlaf",d6s:"HRV, Schlaftiefe, Ruhepuls.",d7t:"Stressresilienz und mentale Schärfe",d7s:"Kognitive Klarheit, emotionale Steuerung.",d8t:"Systemische Balance",d8s:"Entzündungsmarker, Biometrie, Mikronährstoffe.",mey:"Die Metapher",mhl:"Acht Grad höher am Wind. Der Unterschied zwischen ankommen und gewinnen.",mqt:"Im Segeln bedeutet acht Grad höher am Wind: näher an die Quelle der Kraft, präziser, effizienter und schneller am Ziel. Im Körper bedeutet es dasselbe. Nicht mehr Aufwand. Der richtige Kurs.",mci:"Das Prinzip von Achtgrad",mnt:"Wer seinen Körper so behandelt wie sein bestes Schiff, beweist sich nicht nur bei Idealwind. Sondern in der Flaute und im Sturm.",ac1:"DER KÖRPER",ac2:"DIE ENERGIE",r1k:"Rumpf und Rigg",r1kd:"Körper, Organe, Biometrie",r1e:"Fahrtwind",r1ed:"Vitalität, Antrieb, Lebensfreude",r2k:"Trimm",r2kd:"Ernährung, Schlaf, Regeneration",r2e:"Böen",r2ed:"Stress, Krisen, Belastungsspitzen",r3k:"Kielgewicht",r3kd:"Muskulatur, Stabilität",r3e:"Flaute",r3ed:"Erschöpfung, Stagnation, Burnout",r4k:"Segel",r4kd:"Lunge, Atem, kardiale Leistung",r4e:"Kurs",r4ed:"Strategie, Richtung, Prioritäten",r5k:"Instrumente",r5kd:"Wearables, Biomarker, Daten",r5e:"Regatta",r5ed:"Business, Familie, das volle Leben",mey2:"Die Methode",mhl2:"Vitalität.\nIm Alltag verankert.",mtx:"Eigene Auswertungs- und Dokumentationswerkzeuge. Kontinuierliches Monitoring. Ein persönliches Gesundheitsportal. Das Achtgrad-System macht Ihre Gesundheit messbar und begleitet sie dauerhaft.",sg1:"DeepMap",st1t:"Bestandsaufnahme",st1p:"Strukturierte Leistungserfassung für Biomarker, kardiovaskuläre Kapazität, Bewegungsqualität und Metabolismus. Ihr persönlicher Ausgangspunkt in klaren Zahlen. Dokumentiert und gesichert.",sg2:"PrecisionPlan",st2t:"Kursbeschreibung",st2p:"Auf Basis der Leistungserfassung entsteht Ihr individueller Jahresplan. Klare Ziele. Konkrete Hebel. Messbare Meilensteine.",sg3:"Implement",st3t:"Kontinuierlicher Trimm",st3p:"Wöchentliches Monitoring via Wearables und CGM-Auswertung. Jede Sitzung erzeugt einen strukturierten Bericht, direkt in Ihrem persönlichen Portal.",sg4:"Sustain & Adapt",st4t:"Delta und neuer Kurs",st4p:"Biomarker, Vitalität, Leistung als Kurve über Zeit. Ihr gesamtes Gesundheitsprotokoll jederzeit abrufbar. Der nächste Hebel ist immer sichtbar.",aey:"Der Gründer",anm:"Alexander Ataii MBA",asu:"Physiotherapeut, Innsbruck",acap:"Physiotherapeut, Innsbruck",ap1:"Über ein Jahrzehnt in den exklusivsten medizinischen Umgebungen Europas. Lanserhof Lans, Park Igls, UHNW Privatdienst. Das Achtgrad-System entstand aus dieser Erfahrung.",ap2:"Was ich gelernt habe: Exzellente Einzelbehandlungen reichen nicht. Es braucht jemanden, der die Gesamtheit im Blick hat. Jeden Tag. Und der bereit ist, Verantwortung zu übernehmen.",aqt:'„Es ist nicht genug zu wissen, man muss auch anwenden; es ist nicht genug zu wollen, man muss auch tun.”',c1t:"Bewegungsmedizin und Rehabilitation",c1s:"Staatl. gepr. Physiotherapeut, Praxisinhaber seit 2014",c2t:"Gesundheitsökonomie und Strategie",c2s:"MBA Healthcare, FHG Tirol",c3t:"FX Mayr Medizin",c3s:"Park Igls, Lanserhof Lans",c4t:"Privater UHNW Dienst",c4s:"Physiotherapeut, Österreich und Deutschland",c5t:"KI und Digitale Gesundheit",c5s:"KI Lizenz WIFI Tirol, aktiver Anwender",c6t:"Sprachen",csince:"Seit 2018",cact:"Aktiv",cey:"Kontakt",chl:"Neugierig geworden?",ctx:"Ich freue mich auf ein persönliches Gespräch.",cbt:"Gespräch anfragen",impr:"Impressum"},
+en:{nsv:"Services",nab:"About",nct:"Request Consultation",hov:"Prevention, Physiotherapy, Health Management",hl1:"Your Body.",hl2:"Your Capital.",hl3:"Cared For.",hsu:"I work with people who refuse to compromise when it comes to their health.",hct:"Start the Course",hsv:"Discover Services",scr:"Scroll",sey:"What You Get From Me",shl:"Someone who keeps the overview.\nFor you.",stx:"Doctors diagnose. Therapists treat. Coaches motivate. What is missing is someone who holds it all together, coordinates and accompanies the client in daily life. Not as a replacement for specialists, but as the connection between them.",s1t:"Physiotherapy at the Highest Level",s1p:"Manual therapy, movement analysis, functional training. Built on over ten years of practice in the most exclusive medical environments in Europe.",s2t:"Health Coordination",s2p:"I organise specialist appointments, consolidate records and handle all communication with physicians. You focus on what matters.",s3t:"Wearable Analysis and Daily Routines",s3p:"Your data tells a story. I read it. Sleep, HRV, activity, recovery. From that, a rhythm emerges that fits your life.",s4t:"Data Processing and Record Structure",s4p:"Test results, lab values, medical reports. I translate complex information into clear recommendations and keep your health history structured and accessible.",s5t:"Biomarker Tracking",s5p:"Regular analysis of lab values, vital signs and performance parameters. No annual test without consequence. Every value is interpreted and addressed.",s6t:"Discretion and Availability",s6p:"I work with a small, selected group of clients. That means real availability, real commitment and a partnership that holds over decades.",st1:"Dimensions",st2:"Years Practice",st3:"Monitoring",st4:"Your Body. Unique.",pey:"The Core Idea",phl:"Your body is your most valuable asset.",pp1:"Every well-run company knows its metrics and acts when something falls out of rhythm. Most people do not apply this to their health.",pp2:"Achtgrad brings this clarity. Through the precise calibration of eight dimensions. Continuously. Discreetly.",pdim:"08 Dimensions",d1t:"Cardiovascular Capacity",d1s:"VO₂max, heart rate, endurance.",d2t:"Strength and Stability",d2s:"Musculature, resilience, balance.",d3t:"Mobility and Tissue Quality",d3s:"Fascia, mobility, pain-free movement.",d4t:"Respiratory Capacity",d4s:"Breathing muscles, lung volume, efficiency.",d5t:"Posture and Body Mechanics",d5s:"Gait, postural control, alignment.",d6t:"Recovery and Sleep",d6s:"HRV, sleep depth, resting heart rate.",d7t:"Stress Resilience and Mental Clarity",d7s:"Cognitive clarity, emotional regulation.",d8t:"Systemic Balance",d8s:"Inflammation markers, biometrics, micronutrients.",mey:"The Metaphor",mhl:"Eight degrees higher into the wind. The difference between arriving and winning.",mqt:"In sailing, eight degrees higher into the wind means closer to the source of power, more precise, more efficient and faster to the goal. In the body, it means the same. Not more effort. The right course.",mci:"The Achtgrad Principle",mnt:"Those who treat their body like their finest vessel prove themselves not only in perfect conditions. But in the doldrums and the storm.",ac1:"THE BODY",ac2:"THE ENERGY",r1k:"Hull and Rigging",r1kd:"Body, organs, biometrics",r1e:"Fair Wind",r1ed:"Vitality, drive, joie de vivre",r2k:"Trim",r2kd:"Nutrition, sleep, recovery",r2e:"Gusts",r2ed:"Stress, crises, peak loads",r3k:"Keel Weight",r3kd:"Musculature, stability",r3e:"Doldrums",r3ed:"Exhaustion, stagnation, burnout",r4k:"Sails",r4kd:"Lungs, breath, cardiac output",r4e:"Course",r4ed:"Strategy, direction, priorities",r5k:"Instruments",r5kd:"Wearables, biomarkers, data",r5e:"Regatta",r5ed:"Business, family, full life",mey2:"The Method",mhl2:"Vitality.\nAnchored in daily life.",mtx:"Retreats open the mind. Achtgrad anchors it in daily life. Translating clarity into a sustainable rhythm.",sg1:"DeepMap",st1t:"Assessment",st1p:"Complete calibration. Biomarkers, resilience, patterns. Your personal baseline in clear numbers.",sg2:"PrecisionPlan",st2t:"Course Description",st2p:"Your individual annual plan. Clear goals, concrete levers. No generic program, no standard.",sg3:"Implement",st3t:"Continuous Trim",st3p:"Weekly monitoring. Wearable analysis, real-time adjustment. The program does not end when you leave.",sg4:"Sustain & Adapt",st4t:"Delta and New Course",st4p:"What has measurably changed? Where is the next lever? Set a new course for the coming year.",aey:"The Helmsman",anm:"Alexander Ataii MBA",asu:"Physiotherapist, Innsbruck",acap:"Physiotherapist, Innsbruck",ap1:"I have spent over a decade in Europe's most exclusive healthcare environments. From leading clinics in Tyrol to direct care of individuals for whom health cannot be left to chance.",ap2:"What I have learned: excellent individual treatments are not enough. It requires someone who keeps the full picture in view. Every day. Someone willing to take responsibility.",aqt:'"It is not enough to know, one must also apply; it is not enough to wish, one must also act."',c1t:"Movement Medicine and Rehabilitation",c1s:"State-certified physiotherapist, Practice owner since 2014",c2t:"Health Economics and Strategy",c2s:"MBA Healthcare, FHG Tyrol",c3t:"FX Mayr Medicine",c3s:"Park Igls, Lanserhof Lans",c4t:"Private UHNW Service",c4s:"Physiotherapist, Austria and Germany",c5t:"AI and Digital Health",c5s:"AI License WIFI Tyrol, active practitioner",c6t:"Languages",csince:"Since 2018",cact:"Active",cey:"Contact",chl:"Curious?",ctx:"I look forward to a personal conversation.",cbt:"Request Consultation",impr:"Legal Notice"},
+ar:{nsv:"الخدمات",nab:"عن الطبيب",nct:"طلب استشارة",hov:"الوقاية، العلاج الطبيعي، إدارة الصحة",hl1:"جسدك.",hl2:"رأس مالك.",hl3:"في أفضل حال.",hsu:"أرافق أشخاصاً لا يقبلون التنازل في ما يخص صحتهم.",hct:"ابدأ المسار",hsv:"اكتشف الخدمات",scr:"تمرير",sey:"ما ستحصل عليه",shl:"كثير من النتائج. كثير من المعلومات.\nلكن لا أحد يتابع الصورة كاملة.",stx:"الأطباء يشخصون. المعالجون يعالجون. ما ينقصه شخص يجمع كل ذلك وينسقه ويرافق العميل يومياً.",s1t:"علاج طبيعي بأعلى المستويات",s1p:"علاج يدوي، تحليل الحركة، تدريب وظيفي.",s2t:"تنسيق صحي",s2p:"أنظم المواعيد وأجمع السجلات وأتولى التواصل مع الأطباء.",s3t:"تحليل الأجهزة والروتين",s3p:"بياناتك تحكي قصة. أنا أقرأها.",s4t:"معالجة البيانات",s4p:"نتائج الفحوصات وقيم المختبر.",s5t:"تتبع المؤشرات",s5p:"تحليل منتظم لقيم المختبر.",s6t:"السرية والتوافر",s6p:"أعمل مع دائرة صغيرة من العملاء.",st1:"أبعاد",st2:"سنوات خبرة",st3:"مراقبة",st4:"جسدك. فريد.",pey:"الفكرة الأساسية",phl:"جسدك هو أثمن رأس مالك.",pp1:"كل شركة ناجحة تعرف مؤشراتها.",pp2:"Achtgrad يجلب هذا الوضوح.",pdim:"٠٨ أبعاد",d1t:"القدرة القلبية",d1s:"VO₂max",d2t:"القوة والاستقرار",d2s:"العضلات، التوازن",d3t:"المرونة وجودة الأنسجة",d3s:"اللفافة، الحركة",d4t:"القدرة التنفسية",d4s:"حجم الرئة",d5t:"الوضعية والحركة",d5s:"نمط المشي",d6t:"التعافي والنوم",d6s:"HRV",d7t:"المرونة والحدة",d7s:"الوضوح الذهني",d8t:"التوازن الجهازي",d8s:"مؤشرات الالتهاب",mey:"المجاز",mhl:"ثماني درجات نحو الريح.",mqt:"في الإبحار، ثماني درجات نحو الريح تعني الاقتراب من مصدر القوة.",mci:"مبدأ Achtgrad",mnt:"من يعامل جسده كأفضل سفنه.",ac1:"الجسد",ac2:"الطاقة",r1k:"الهيكل",r1kd:"الجسد، الأعضاء",r1e:"ريح مواتية",r1ed:"الحيوية",r2k:"الضبط",r2kd:"التغذية، النوم",r2e:"عواصف",r2ed:"الضغط",r3k:"ثقل العارضة",r3kd:"العضلات",r3e:"ركود",r3ed:"الإرهاق",r4k:"الأشرعة",r4kd:"الرئتان",r4e:"المسار",r4ed:"الاستراتيجية",r5k:"الأجهزة",r5kd:"البيانات",r5e:"سباق",r5ed:"العمل، الأسرة",mey2:"المنهجية",mhl2:"الحيوية.\nراسخة في الحياة.",mtx:"Achtgrad يرسخ الوضوح في الحياة.",sg1:"DeepMap",st1t:"تقييم",st1p:"معايرة كاملة.",sg2:"PrecisionPlan",st2t:"تحديد المسار",st2p:"خطتك السنوية.",sg3:"تطبيق",st3t:"ضبط مستمر",st3p:"متابعة أسبوعية.",sg4:"استدامة",st4t:"مسار جديد",st4p:"ما الذي تغير?",aey:"الربان",anm:"ألكسندر عطائي MBA",asu:"معالج فيزيائي، مهندس صحي، إنسبروك",acap:"معالج فيزيائي، مهندس صحي",ap1:"عملت لأكثر من عقد في أرقى البيئات الطبية في أوروبا.",ap2:"العلاجات الفردية الممتازة لا تكفي.",aqt:"«لا يكفي أن تعرف، بل يجب أن تطبّق.»",c1t:"طب الحركة",c1s:"معالج معتمد، صاحب عيادة منذ 2014",c2t:"اقتصاديات الصحة",c2s:"MBA Healthcare، FHG تيرول",c3t:"طب FX ماير",c3s:"Park Igls، Lanserhof",c4t:"خدمة UHNW",c4s:"معالج فيزيائي، النمسا وألمانيا",c5t:"الذكاء الاصطناعي",c5s:"رخصة AI، ممارس نشط",c6t:"اللغات",csince:"منذ 2018",cact:"نشط",cey:"مستعد؟",chl:"المحادثة الأولى مجانية.",ctx:"محادثة. عنك وعن أهدافك.",cbt:"طلب استشارة",impr:"بيانات قانونية"}
 };
 
 let lang='de';
