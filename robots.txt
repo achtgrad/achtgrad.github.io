@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://achtgrad.at/sitemap.xml
