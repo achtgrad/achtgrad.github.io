@@ -579,14 +579,17 @@ mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
 }));
 
 // reveal
-const obs=new IntersectionObserver(entries=>entries.forEach(e=>{
-  if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}
-}),{threshold:.08,rootMargin:'0px 0px -32px 0px'});
-document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
 setTimeout(()=>document.querySelectorAll('.rv').forEach(el=>el.classList.add('in')),350);
+if('IntersectionObserver' in window){
+  const obs=new IntersectionObserver(entries=>entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}
+  }),{threshold:.08,rootMargin:'0px 0px -32px 0px'});
+  document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+}
 
 // impressum toggle
-document.getElementById('ibt').addEventListener('click',()=>document.getElementById('ibd').classList.toggle('open'));
+const ibt=document.getElementById('ibt');
+if(ibt)ibt.addEventListener('click',()=>document.getElementById('ibd').classList.toggle('open'));
 
 // smooth scroll anchors
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
